@@ -84,14 +84,13 @@ def assign_wand():
     print("Ollivander looks you up and down, studying you carefully... \n")
 
     wand_options = [
-        "Harry Potter's Wand",
-        "Albus Dumbledore's Wand",
-        "Rubeus Hagrid's Wand"]
+        "Harry Potter's wand",
+        "Albus Dumbledore's wand",
+        "Rubeus Hagrid's wand"]
 
     random_wand_options = random.choice(wand_options)
 
     print(f"{random_wand_options} will suit you nicely!")
-    #print(f"{player_name}, {wand_options} will suit you nicely!")
 
     if "Harry Potter's Wand" in random_wand_options:
         print("This wand is 11 inches long,")
