@@ -81,7 +81,7 @@ def assign_wand():
     """
     Randomly assigns the player one of three wand options
     """
-    print("Ollivander looks you up and down, studying you carefully...")
+    print("Ollivander looks you up and down, studying you carefully... \n")
 
     wand_options = [
         "Harry Potter's Wand",
@@ -94,15 +94,23 @@ def assign_wand():
     #print(f"{player_name}, {wand_options} will suit you nicely!")
 
     if "Harry Potter's Wand" in random_wand_options:
-        print("This wand is 11 inches long, made with holly wood, \
-            has a Phoenix feather core, and is nice and supple.")
+        print("This wand is 11 inches long,")
+        print("is made with holly wood,")
+        print("has a Phoenix feather core,")
+        print("and is nice and supple.")
+        print("\U0001F426 \n")
     elif "Albus Dumbledore's Wand" in random_wand_options:
-        print("This wand is 15 inches long, made with elder wood, \
-            has a Thestral tail hair core, and is the most powerful wand ever \
-            to exist!")
+        print("This wand is 15 inches long,")
+        print("is made with elder wood,")
+        print("has a Thestral tail hair core,")
+        print("and is the most powerful wand ever to exist!")
+        print("\U0001F31F \n")
     elif "Rubeus Hagrid's Wand" in random_wand_options:
-        print("This wand is 16 inches long, made with oak wood, \
-            has an unknown core, and is rather bendy.")
+        print("This wand is 16 inches long,")
+        print("is made with oak wood,")
+        print("has an unknown core,")
+        print("and is rather bendy.")
+        print("\U0001F333 \n")
 
 
 def exit_game():
