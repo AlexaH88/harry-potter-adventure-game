@@ -19,6 +19,7 @@ def game_intro():
     print("Could you be the witch or wizard we've been looking for?")
     print("\U0001F9D9\u200D\u2642\uFE0F")
     print("Please help, the Wizarding World needs you!")
+    print("\U0001F30D")
 
 
 def choose_play_game():
@@ -28,11 +29,14 @@ def choose_play_game():
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
         print("Great choice, let the adventure begin!")
+        print("\U0001F642")
     elif play_game_options == "n":
         print("That's a shame, maybe next time!")
+        print("\U0001F641")
         exit_game()
     else:
         print("Please choose either y or n.")
+        print("\U0001F610")
         choose_play_game()
 
 
