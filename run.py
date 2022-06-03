@@ -15,6 +15,7 @@ def game_intro():
     print("Strange things have been happening at Hogwarts lately...")
     print("\U0001F3F0")
     print("And no one seems to be able to work out how to stop them...")
+    print("\U0001F632")
     print("Could you be the witch or wizard we've been looking for?")
     print("\U0001F9D9\u200D\u2642\uFE0F")
     print("Please help, the Wizarding World needs you!")
@@ -52,10 +53,12 @@ def wand_backstory():
     """
     Prints backstory on Ollivander and player wand selection
     """
-    print("Now, first things first.")
+    print("Now, let's see.")
+    print("\U0001F914")
     print("In order to save Hogwarts you're going to need a wand!")
     print("\U0001F320")
-    print("Let's go and see our favourite wandmaker, Garrick Ollivander! \n")
+    print("Let's go and see our favourite wandmaker, Garrick Ollivander!")
+    print("\U0001F474 \n")
 
 
 def wand_request():
@@ -64,6 +67,7 @@ def wand_request():
     """
     ask_for_wand = input(
         "Ollivander: 'Welcome, are you in need of a wand?' (y/n) \n")
+
     if ask_for_wand == "y":
         print("Lovely, let's see what we can find for you!")
         print("\U0001F642 \n")
@@ -81,7 +85,8 @@ def assign_wand():
     """
     Randomly assigns the player one of three wand options
     """
-    print("Ollivander looks you up and down, studying you carefully... \n")
+    print("Ollivander looks you up and down, studying you carefully...")
+    print("\U0001F9D0 \n")
 
     wand_options = [
         "Harry Potter's wand",
@@ -91,20 +96,21 @@ def assign_wand():
     random_wand_options = random.choice(wand_options)
 
     print(f"{random_wand_options} will suit you nicely!")
+    print("\U0001F320 \n")
 
-    if "Harry Potter's Wand" in random_wand_options:
+    if "Harry Potter's wand" in random_wand_options:
         print("This wand is 11 inches long,")
         print("is made with holly wood,")
         print("has a Phoenix feather core,")
         print("and is nice and supple.")
         print("\U0001F426 \n")
-    elif "Albus Dumbledore's Wand" in random_wand_options:
+    elif "Albus Dumbledore's wand" in random_wand_options:
         print("This wand is 15 inches long,")
         print("is made with elder wood,")
         print("has a Thestral tail hair core,")
         print("and is the most powerful wand ever to exist!")
         print("\U0001F31F \n")
-    elif "Rubeus Hagrid's Wand" in random_wand_options:
+    elif "Rubeus Hagrid's wand" in random_wand_options:
         print("This wand is 16 inches long,")
         print("is made with oak wood,")
         print("has an unknown core,")
@@ -121,7 +127,7 @@ def exit_game():
 
 def main():
     """
-    Run all programme functions
+    Runs all programme functions
     """
     game_intro()
     choose_play_game()
