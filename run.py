@@ -54,7 +54,7 @@ def wand_backstory():
     """
     print("Now, first things first.")
     print("In order to save Hogwarts you're going to need a wand!")
-    print("\U0001FA84")
+    print("\U0001F320")
     print("Let's go and see our favourite wandmaker, Garrick Ollivander! \n")
 
 
@@ -63,7 +63,7 @@ def wand_request():
     Asks the player to request a wand
     """
     ask_for_wand = input(
-        "Ollivander: Welcome to my shop, are you in need of a wand? (y/n) \n")
+        "Ollivander: 'Welcome, are you in need of a wand?' (y/n) \n")
     if ask_for_wand == "y":
         print("Lovely, let's see what we can find for you!")
         print("\U0001F642 \n")
