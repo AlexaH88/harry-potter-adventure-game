@@ -3,6 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 import random
+import sys
 
 
 def game_intro():
@@ -23,15 +24,14 @@ def choose_play_game():
     """
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
-        #play_game()
-        #continue
-        print("Play game")
+        print("Great choice, let the adventure begin!")
+        play_game()
     elif play_game_options == "n":
-        #exit_game()
-        #break
-        print("Exit game")
+        print("That's a shame, maybe next time!")
+        exit_game()
     else:
         print("Please choose either y or n.")
+        choose_play_game()
 
 
 def choose_player_name():
@@ -79,29 +79,29 @@ def assign_wand():
             has an unknown core, and is rather bendy.")
 
 
-#def play_game():
-#"""
-#Starts the game
-#"""
+def play_game():
+    """
+    Starts the game
+    """
+    main()
 
 
-#def exit_game():
-#"""
-#Exits the game
-#"""
+def exit_game():
+    """
+    Exits the game
+    """
+    sys.exit()
 
 
 def main():
     """
     Run all programme functions
     """
-    game_intro()
-    choose_play_game()
     choose_player_name()
     wand_backstory()
     assign_wand()
-    #play_game()
-    #exit_game()
 
 
+game_intro()
+choose_play_game()
 main()
