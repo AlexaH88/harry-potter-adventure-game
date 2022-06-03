@@ -12,9 +12,11 @@ def choose_play_game():
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
         #play_game()
+        #continue
         print("Play game")
     elif play_game_options == "n":
         #exit_game()
+        #break
         print("Exit game")
     else:
         print("Please choose either y or n.")
@@ -28,17 +30,41 @@ def choose_player_name():
     print(f"Welcome, {player_name}!")
 
 
+def wand_backstory():
+    """
+    Prints backstory on Ollivander and player wand selection
+    """
+    print("Now, first things first.")
+    print("In order to beat Voldemort you're going to need a wand!")
+    print("So, let's ask our favourite wandmaker, \
+        Garrick Ollivander to assign you one!")
+
+
 def assign_wand():
     """
-    Assigns the player one of three wand options
+    Randomly assigns the player one of three wand options
     """
-    wand_options = random.choice([
+    wand_options = [
         "Harry Potter's Wand",
-        "James Potter's Wand",
-        "Lily Potter's Wand"])
-    print("Garrick Ollivander looks you up and down, studying you carefully.")
-    print(f"Test, {wand_options} will suit you nicely!")
+        "Albus Dumbledore's Wand",
+        "Rubeus Hagrid's Wand"]
+
+    random_wand_options = random.choice(wand_options)
+
+    print("Ollivander looks you up and down, studying you carefully.")
+    print(f"{random_wand_options} will suit you nicely!")
     #print(f"{player_name}, {wand_options} will suit you nicely!")
+
+    if "Harry Potter's Wand" in random_wand_options:
+        print(f"{wand_options[0]} is 11 inches long, made with holly wood, \
+            has a Phoenix feather core, and is nice and supple.")
+    elif "Albus Dumbledore's Wand" in random_wand_options:
+        print(f"{wand_options[1]} is 15 inches long, made with elder wood, \
+            has a Thestral tail hair core, and is the most powerful wand ever \
+            to exist!")
+    elif "Rubeus Hagrid's Wand" in random_wand_options:
+        print(f"{wand_options[2]} is 16 inches long, made with oak wood, \
+            has an unknown core, and is rather bendy.")
 
 
 #def play_game():
@@ -57,8 +83,9 @@ def main():
     """
     Run all programme functions
     """
-    choose_player_name()
     choose_play_game()
+    choose_player_name()
+    wand_backstory()
     assign_wand()
     #play_game()
     #exit_game()
