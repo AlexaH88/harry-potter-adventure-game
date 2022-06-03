@@ -5,6 +5,18 @@
 import random
 
 
+def game_intro():
+    """
+    Runs game intro text
+    """
+    print("Welcome to the Harry Potter Adventure Game!")
+    print("Strange things have been happening at Hogwarts School of Witchcraft \
+        and Wizardry...")
+    print("And no one seems to be able to work out how to stop them...")
+    print("Could you be the witch or wizard we've been looking for?")
+    print("Please help, the Wizarding World needs you!")
+
+
 def choose_play_game():
     """
     Asks the user if they want to play the game or not
@@ -83,6 +95,7 @@ def main():
     """
     Run all programme functions
     """
+    game_intro()
     choose_play_game()
     choose_player_name()
     wand_backstory()
