@@ -25,7 +25,6 @@ def choose_play_game():
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
         print("Great choice, let the adventure begin!")
-        play_game()
     elif play_game_options == "n":
         print("That's a shame, maybe next time!")
         exit_game()
@@ -79,13 +78,6 @@ def assign_wand():
             has an unknown core, and is rather bendy.")
 
 
-def play_game():
-    """
-    Starts the game
-    """
-    main()
-
-
 def exit_game():
     """
     Exits the game
@@ -97,11 +89,11 @@ def main():
     """
     Run all programme functions
     """
+    game_intro()
+    choose_play_game()
     choose_player_name()
     wand_backstory()
     assign_wand()
 
 
-game_intro()
-choose_play_game()
 main()
