@@ -118,6 +118,20 @@ def assign_wand():
         print("\U0001F333 \n")
 
 
+def pet_backstory():
+    """
+    Prints backstory on The Magical Menagerie and player pet selection
+    """
+    print("Right, what's next?")
+    print("\U0001F914 \n")
+    print("An animal companion to help you on your quest!")
+    print("\U0001F495 \n")
+    print("Let's pop into The Magical Menagerie to get one!")
+    print("\U0001F3EC \n")
+    print("'Welcome to my shop, let me show you what lovely pets we've got!'")
+    print("\U0001F431 \U0001F42D \U0001F438 \U0001F989 \n")
+
+
 def pet_request():
     """
     Asks the player to choose one of four pet types
@@ -127,15 +141,7 @@ def pet_request():
         "rat",
         "toad",
         "owl"]
-    
-    #for pet in pet_types:
-        #pet_types[0] = "a" or "a)" or "cat"
-        #pet_types[1] = "b" or "b)" or "rat"
-        #pet_types[2] = "c" or "c)" or "toad"
-        #pet_types[3] = "d" or "d)" or "owl"
 
-    print("Welcome to my shop, let me show you what lovely animals we've got!")
-    print("\U0001F6CD \n")
     print("You can choose from the following: ")
     print("a) cat")
     print("b) rat")
@@ -185,12 +191,13 @@ def main():
     """
     Runs all programme functions
     """
-    #game_intro()
-    #choose_play_game()
-    #choose_player_name()
-    #wand_backstory()
-    #wand_request()
-    #assign_wand()
+    game_intro()
+    choose_play_game()
+    choose_player_name()
+    wand_backstory()
+    wand_request()
+    assign_wand()
+    pet_backstory()
     pet_request()
 
 
