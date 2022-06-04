@@ -35,7 +35,7 @@ def choose_play_game():
     elif play_game_options == "n":
         print("That's a shame, maybe next time!")
         print("\U0001F641 \n")
-        game_intro()
+        main_one()
     else:
         print("Please choose either y or n.")
         print("\U0001F610 \n")
@@ -55,7 +55,7 @@ def choose_game_instructions():
     elif game_instructions_options == "n":
         print("Ok, let's carry on with the quest!")
         print("\U0001F642 \n")
-        choose_player_name()
+        main_two()
     else:
         print("Please choose either y or n.")
         print("\U0001F610 \n")
@@ -84,7 +84,7 @@ def game_instructions():
     print("Good luck, we're counting on you!")
     print("\U0001F340 \n")
 
-    choose_player_name()
+    main_two()
 
 
 def choose_player_name():
@@ -318,14 +318,20 @@ def exit_game():
     sys.exit()
 
 
-def main():
+def main_one():
     """
-    Runs all programme functions
+    Runs first set of programme functions
     """
     game_intro()
     choose_play_game()
     choose_game_instructions()
-    request_inventory()
+
+
+def main_two():
+    """
+    Runs second set of programme functions
+    """
+    choose_player_name()
     wand_backstory()
     wand_request()
     assign_wand()
@@ -335,4 +341,6 @@ def main():
     first_door_challenge()
 
 
-main()
+main_one()
+request_exit_game()
+request_inventory()
