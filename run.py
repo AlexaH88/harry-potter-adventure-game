@@ -190,7 +190,7 @@ def pet_request():
     toad = Pet("toad", "swimming")
     owl = Pet("owl", "flying")
 
-    print("You can choose from the following: ")
+    print("You can choose from the following:")
     print("(a) cat")
     print("(b) rat")
     print("(c) toad")
