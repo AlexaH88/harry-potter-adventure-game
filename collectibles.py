@@ -1,5 +1,8 @@
 # Contains classes for all the collectibles in the game
 
+inventory = []
+
+
 class Pet:
     """
     Pet class
@@ -25,6 +28,5 @@ class Pet:
         """
         Adds pet to the player's inventory
         """
-        inventory = []
         inventory.append({self.kind})
         return f"Your {self.kind} was added to your inventory."

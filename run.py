@@ -5,6 +5,7 @@
 import random
 import sys
 from collectibles import Pet
+from collectibles import inventory
 
 
 def game_intro():
@@ -284,6 +285,23 @@ def first_door_challenge():
         first_door_challenge()
 
 
+def request_inventory():
+    """
+    Allows the player to request viewing their inventory
+    detailing all of their collected items
+    """
+    player_input = input(" ")
+    if "i" in player_input:
+        show_inventory()
+
+
+def show_inventory():
+    """
+    Shows the player's inventory of collected items
+    """
+    print(inventory)
+
+
 def exit_game():
     """
     Exits the game
@@ -298,6 +316,7 @@ def main():
     game_intro()
     choose_play_game()
     choose_game_instructions()
+    request_inventory()
     wand_backstory()
     wand_request()
     assign_wand()
@@ -307,5 +326,4 @@ def main():
     first_door_challenge()
 
 
-#main()
-pet_request()
+main()
