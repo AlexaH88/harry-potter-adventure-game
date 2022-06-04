@@ -49,7 +49,7 @@ def choose_game_instructions():
     if game_instructions_options == "y":
         print("Right, let me explain the game to you!")
         print("\U0001F642 \n")
-        #game_instructions()
+        game_instructions()
     elif game_instructions_options == "n":
         print("Ok, let's carry on with the quest!")
         print("\U0001F642 \n")
@@ -58,6 +58,31 @@ def choose_game_instructions():
         print("Please choose either y or n.")
         print("\U0001F610 \n")
         choose_game_instructions()
+
+
+def game_instructions():
+    """
+    Prints game instructions
+    """
+    print("The aim of the game is to find your way through Hogwarts")
+    print("School of Witchcraft and Wizardry, and to stop the dark")
+    print("magic that has been happening here recently...")
+    print("\U0001F311 \n")
+
+    print("You must collect 5 items, by answering 5 questions correctly,")
+    print("asked by friendly faces that you encounter along the way.")
+    print("\U0001F917 \n")
+
+    print("Each item will allow you to unlock the next room, where you will")
+    print("find the next item. In the 5th and final room, you will discover")
+    print("who is behind the malevolence, and you must beat them by")
+    print("casting 3 spells in the correct order...")
+    print("\U0001F320 \n")
+
+    print("Good luck, we're counting on you!")
+    print("\U0001F340 \n")
+
+    choose_player_name()
 
 
 def choose_player_name():
