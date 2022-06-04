@@ -59,6 +59,8 @@ def wand_backstory():
     print("\U0001F320")
     print("Let's go and see our favourite wandmaker, Garrick Ollivander!")
     print("\U0001F474 \n")
+    print("'Welcome to my shop, you've come to the right place!'")
+    print("\U0001F3EC")
 
 
 def wand_request():
@@ -66,13 +68,13 @@ def wand_request():
     Asks the player to request a wand
     """
     ask_for_wand = input(
-        "Ollivander: 'Welcome, are you in need of a wand?' (y/n) \n")
+        "'So, tell me, are you in need of a wand?' (y/n) \n")
 
     if ask_for_wand == "y":
-        print("Lovely, let's see what we can find for you!")
+        print("'Lovely, let's see what we can find for you!'")
         print("\U0001F642 \n")
     elif ask_for_wand == "n":
-        print("Fine, but you won't get far without one!")
+        print("'Fine, but you won't get far without one!'")
         print("\U0001F641 \n")
         exit_game()
     else:
@@ -95,26 +97,26 @@ def assign_wand():
 
     random_wand_options = random.choice(wand_options)
 
-    print(f"{random_wand_options} will suit you nicely!")
+    print(f"'{random_wand_options} will suit you nicely!'")
     print("\U0001F320 \n")
 
     if "Harry Potter's wand" in random_wand_options:
-        print("This wand is 11 inches long,")
-        print("is made with holly wood,")
-        print("has a Phoenix feather core,")
-        print("and is nice and supple.")
+        print("'This wand is 11 inches long,'")
+        print("'is made with holly wood,'")
+        print("'has a Phoenix feather core,'")
+        print("'and is nice and supple.'")
         print("\U0001F426 \n")
     elif "Albus Dumbledore's wand" in random_wand_options:
-        print("This wand is 15 inches long,")
-        print("is made with elder wood,")
-        print("has a Thestral tail hair core,")
-        print("and is the most powerful wand ever to exist!")
+        print("'This wand is 15 inches long,'")
+        print("'is made with elder wood,'")
+        print("'has a Thestral tail hair core,'")
+        print("'and is the most powerful wand ever to exist!'")
         print("\U0001F31F \n")
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        print("This wand is 16 inches long,")
-        print("is made with oak wood,")
-        print("has an unknown core,")
-        print("and is rather bendy.")
+        print("'This wand is 16 inches long,'")
+        print("'is made with oak wood,'")
+        print("'has an unknown core,'")
+        print("'and is rather bendy.'")
         print("\U0001F333 \n")
 
 
@@ -148,31 +150,31 @@ def pet_request():
     print("c) toad")
     print("d) owl \n")
 
-    ask_for_pet = input("Which pet would you like? (a, b, c, d)\n")
+    ask_for_pet = input("'Which pet would you like? (a, b, c, d)' \n")
 
     if "a" in ask_for_pet:
-        print(f"Great choice! You'll love your {pet_types[0]} ")
-        print(f"{pet_types[0]}s are known for: ")
-        print("their impressive climbing skills.")
-        print("Use this wisely!")
+        print(f"'Great choice! You'll love your {pet_types[0]}'")
+        print(f"'{pet_types[0]}s are known for:'")
+        print("'their impressive climbing skills'.")
+        print("'Use this wisely!'")
         print("\U0001F431 \n")
     elif "b" in ask_for_pet:
-        print(f"Great choice! You'll love your {pet_types[1]} ")
-        print(f"{pet_types[1]}s are known for: ")
-        print("their impressive chewing skills.")
-        print("Use this wisely!")
+        print(f"'Great choice! You'll love your {pet_types[1]}'")
+        print(f"'{pet_types[1]}s are known for:'")
+        print("'their impressive chewing skills.'")
+        print("'Use this wisely!'")
         print("\U0001F42D \n")
     elif "c" in ask_for_pet:
-        print(f"Great choice! You'll love your {pet_types[2]} ")
-        print(f"{pet_types[2]}s are known for: ")
-        print("their impressive swimming skills.")
-        print("Use this wisely!")
+        print(f"'Great choice! You'll love your {pet_types[2]}'")
+        print(f"'{pet_types[2]}s are known for:'")
+        print("'their impressive swimming skills.'")
+        print("'Use this wisely!'")
         print("\U0001F438 \n")
     elif "d" in ask_for_pet:
-        print(f"Great choice! You'll love your {pet_types[3]} ")
-        print(f"{pet_types[3]}s are known for: ")
-        print("their impressive flying skills.")
-        print("Use this wisely!")
+        print(f"'Great choice! You'll love your {pet_types[3]}'")
+        print(f"'{pet_types[3]}s are known for:'")
+        print("'their impressive flying skills.'")
+        print("'Use this wisely!'")
         print("\U0001F989 \n")
     else:
         print("Please enter a, b, c, or d.")
