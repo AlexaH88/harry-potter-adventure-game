@@ -4,6 +4,7 @@
 
 import random
 import sys
+from collectibles import Pet
 
 
 def game_intro():
@@ -183,43 +184,37 @@ def pet_request():
     """
     Asks the player to choose one of four pet types
     """
-    pet_types = [
-        "cat",
-        "rat",
-        "toad",
-        "owl"]
+    cat = Pet("cat", "climbing")
+    rat = Pet("rat", "chewing")
+    toad = Pet("toad", "swimming")
+    owl = Pet("owl", "flying")
 
     print("You can choose from the following: ")
     print("(a) cat")
     print("(b) rat")
     print("(c) toad")
     print("(d) owl \n")
-
     ask_for_pet = input("'Which pet would you like?' (a, b, c, d) \n")
 
     if "a" in ask_for_pet:
-        print(f"'Great choice! You'll love your {pet_types[0]}'")
-        print(f"'{pet_types[0]}s are known for:'")
-        print("'their impressive climbing skills'.")
-        print("'Use this wisely!'")
+        print(cat.choice_confirmation())
+        print(cat.description())
+        print(cat.add_pet_to_inventory())
         print("\U0001F431 \n")
     elif "b" in ask_for_pet:
-        print(f"'Great choice! You'll love your {pet_types[1]}'")
-        print(f"'{pet_types[1]}s are known for:'")
-        print("'their impressive chewing skills.'")
-        print("'Use this wisely!'")
+        print(rat.choice_confirmation())
+        print(rat.description())
+        print(rat.add_pet_to_inventory())
         print("\U0001F42D \n")
     elif "c" in ask_for_pet:
-        print(f"'Great choice! You'll love your {pet_types[2]}'")
-        print(f"'{pet_types[2]}s are known for:'")
-        print("'their impressive swimming skills.'")
-        print("'Use this wisely!'")
+        print(toad.choice_confirmation())
+        print(toad.description())
+        print(toad.add_pet_to_inventory())
         print("\U0001F438 \n")
     elif "d" in ask_for_pet:
-        print(f"'Great choice! You'll love your {pet_types[3]}'")
-        print(f"'{pet_types[3]}s are known for:'")
-        print("'their impressive flying skills.'")
-        print("'Use this wisely!'")
+        print(owl.choice_confirmation())
+        print(owl.description())
+        print(owl.add_pet_to_inventory())
         print("\U0001F989 \n")
     else:
         print("Please enter a, b, c, or d.")
@@ -312,4 +307,5 @@ def main():
     first_door_challenge()
 
 
-main()
+#main()
+pet_request()
