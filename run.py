@@ -33,11 +33,31 @@ def choose_play_game():
     elif play_game_options == "n":
         print("That's a shame, maybe next time!")
         print("\U0001F641 \n")
-        exit_game()
+        game_intro()
     else:
         print("Please choose either y or n.")
         print("\U0001F610 \n")
         choose_play_game()
+
+
+def choose_game_instructions():
+    """
+    Asks the player if they want to read the game instructions or not
+    """
+    game_instructions_options = input(
+        "Would you like to hear the game instructions first? (y/n) \n")
+    if game_instructions_options == "y":
+        print("Right, let me explain the game to you!")
+        print("\U0001F642 \n")
+        #game_instructions()
+    elif game_instructions_options == "n":
+        print("Ok, let's carry on with the quest!")
+        print("\U0001F642 \n")
+        choose_player_name()
+    else:
+        print("Please choose either y or n.")
+        print("\U0001F610 \n")
+        choose_game_instructions()
 
 
 def choose_player_name():
@@ -195,6 +215,7 @@ def main():
     """
     game_intro()
     choose_play_game()
+    choose_game_instructions()
     choose_player_name()
     wand_backstory()
     wand_request()
