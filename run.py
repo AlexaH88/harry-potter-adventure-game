@@ -2,10 +2,11 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
-import random
 import sys
-from collectibles import Pet
+import random
 from collectibles import inventory
+from collectibles import Wand
+from collectibles import Pet
 
 
 def game_intro():
@@ -147,23 +148,38 @@ def assign_wand():
     print(f"'{random_wand_options} will suit you nicely!'")
     print("\U0001F320 \n")
 
+    harry = Wand(
+        "Harry Potter's Wand",
+        "11 inches",
+        "holly",
+        "Phoenix feather",
+        "nice and supple")
+
+    albus = Wand(
+        "Albus Dumbledore's Wand",
+        "15 inches",
+        "elder",
+        "Thestral tail hair",
+        "the most powerful wand ever to exist")
+
+    rubeus = Wand(
+        "Rubeus Hagrid's Wand",
+        "16 inches",
+        "oak",
+        "unknown",
+        "rather bendy")
+
     if "Harry Potter's wand" in random_wand_options:
-        print("'This wand is 11 inches long,'")
-        print("'is made with holly wood,'")
-        print("'has a Phoenix feather core,'")
-        print("'and is nice and supple.'")
+        print(harry.description())
+        print(harry.add_wand_to_inventory())
         print("\U0001F426 \n")
     elif "Albus Dumbledore's wand" in random_wand_options:
-        print("'This wand is 15 inches long,'")
-        print("'is made with elder wood,'")
-        print("'has a Thestral tail hair core,'")
-        print("'and is the most powerful wand ever to exist!'")
+        print(albus.description())
+        print(albus.add_wand_to_inventory())
         print("\U0001F31F \n")
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        print("'This wand is 16 inches long,'")
-        print("'is made with oak wood,'")
-        print("'has an unknown core,'")
-        print("'and is rather bendy.'")
+        print(rubeus.description())
+        print(rubeus.add_wand_to_inventory())
         print("\U0001F333 \n")
 
 

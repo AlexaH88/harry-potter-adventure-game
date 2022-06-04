@@ -1,7 +1,5 @@
 # Contains classes for all the collectibles in the game
 
-import random
-
 
 inventory = []
 
@@ -10,7 +8,7 @@ class Wand:
     """
     Wand class
     """
-    def __init__(self, owner, length, wood, core, flexibility):
+    def __init__(self, owner, length, wood, core, characteristic):
         """
         Creates an instance of Wand
         """
@@ -18,13 +16,7 @@ class Wand:
         self.length = length
         self.wood = wood
         self.core = core
-        self.flexibility = flexibility
-
-    def random_selection(self):
-        """
-        Randomly assigns the player one of three wand options
-        """
-        return random.choice({self.owner}) + "'will suit you nicely!'"
+        self.characteristic = characteristic
 
     def description(self):
         """
@@ -32,8 +24,8 @@ class Wand:
         """
         return f'"This wand is {self.length} long, \
             is made with {self.wood} wood, \
-                has a {self.core} core, \
-                    and is {self.flexibility}."'
+                has a(n) {self.core} core, \
+                    and is {self.characteristic}!"'
 
     def add_wand_to_inventory(self):
         """
