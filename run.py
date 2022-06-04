@@ -241,7 +241,6 @@ def main():
     game_intro()
     choose_play_game()
     choose_game_instructions()
-    choose_player_name()
     wand_backstory()
     wand_request()
     assign_wand()
