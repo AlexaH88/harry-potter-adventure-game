@@ -302,6 +302,15 @@ def show_inventory():
     print(inventory)
 
 
+def request_exit_game():
+    """
+    Allows the player to request exiting the game
+    """
+    player_input = input(" ")
+    if "e" in player_input:
+        exit_game()
+
+
 def exit_game():
     """
     Exits the game
