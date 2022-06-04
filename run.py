@@ -190,10 +190,10 @@ def pet_request():
         "owl"]
 
     print("You can choose from the following: ")
-    print("a) cat")
-    print("b) rat")
-    print("c) toad")
-    print("d) owl \n")
+    print("(a) cat")
+    print("(b) rat")
+    print("(c) toad")
+    print("(d) owl \n")
 
     ask_for_pet = input("'Which pet would you like?' (a, b, c, d) \n")
 
@@ -239,6 +239,55 @@ def travel_to_hogwarts_backstory():
     print("Let's see now, how do we get inside?")
     print("\U0001F914 \n")
 
+    print("Ah, here's the entrance.")
+    print("OK, I can see here there are some instructions pinned to the door.")
+    print("\U0001F9D0 \n")
+
+
+def first_door_challenge():
+    """
+    Prompts the player to solve the first challenge,
+    in order to open the first door
+    """
+    print("The instructions read:")
+    print("You will need a key to unlock this door.")
+    print("\U0001F511 \n")
+
+    print("It's located in a chest in the Forbidden Forest.")
+    print("But there are several obstacles in the way:")
+    print("(a) A pond, perfect for swimming across...")
+    print("\U0001F4A7 \n")
+    print("(b) A big tree, perfect for climbing up...")
+    print("\U0001F332 \n")
+    print("(c) An ivy plant, perfect for chewing through...")
+    print("\U0001F33F \n")
+    print("(d) A small mountain, perfect for flying over...")
+    print("\U0001F5FB \n")
+
+    print("Maybe your pet could help you here...")
+    get_key = input("Which option do you pick? (a,b,c,d) \n")
+
+    if "a" in get_key:
+        print("Yes, well done!")
+        print("Your toad will tackle that no problem!")
+        print("\U0001F438 \n")
+    elif "b" in get_key:
+        print("Yes, well done!")
+        print("Your cat will tackle that no problem!")
+        print("\U0001F431 \n")
+    elif "c" in get_key:
+        print("Yes, well done!")
+        print("Your rat will tackle that no problem!")
+        print("\U0001F42D \n")
+    elif "d" in get_key:
+        print("Yes, well done!")
+        print("Your owl will tackle that no problem!")
+        print("\U0001F989 \n")
+    else:
+        print("Please enter a, b, c, or d.")
+        print("\U0001F610 \n")
+        first_door_challenge()
+
 
 def exit_game():
     """
@@ -260,6 +309,7 @@ def main():
     pet_backstory()
     pet_request()
     travel_to_hogwarts_backstory()
+    first_door_challenge()
 
 
 main()
