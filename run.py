@@ -195,7 +195,7 @@ def pet_request():
     print("c) toad")
     print("d) owl \n")
 
-    ask_for_pet = input("'Which pet would you like? (a, b, c, d)' \n")
+    ask_for_pet = input("'Which pet would you like?' (a, b, c, d) \n")
 
     if "a" in ask_for_pet:
         print(f"'Great choice! You'll love your {pet_types[0]}'")
@@ -227,6 +227,19 @@ def pet_request():
         pet_request()
 
 
+def travel_to_hogwarts_backstory():
+    """
+    Prints backstory on travelling to Hogwarts
+    """
+    print("So, now that that's done, let's get to it!")
+    print("Grab on to this portkey and let's go to Hogwarts!")
+    print("\U0001F3F0 \n")
+
+    print("Here we are, I hope you're ready!")
+    print("Let's see now, how do we get inside?")
+    print("\U0001F914 \n")
+
+
 def exit_game():
     """
     Exits the game
@@ -246,6 +259,7 @@ def main():
     assign_wand()
     pet_backstory()
     pet_request()
+    travel_to_hogwarts_backstory()
 
 
 main()
