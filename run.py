@@ -133,7 +133,8 @@ def wand_request():
 
 def assign_wand():
     """
-    Randomly assigns the player one of three wand options
+    Randomly assigns the player one of three wand options,
+    and adds it to the player's inventory
     """
     print("Ollivander looks you up and down, studying you carefully...")
     print("\U0001F9D0 \n")
@@ -199,7 +200,8 @@ def pet_backstory():
 
 def pet_request():
     """
-    Asks the player to choose one of four pet types
+    Asks the player to choose one of four pet types,
+    and adds it to the player's inventory
     """
     cat = Pet("cat", "climbing")
     rat = Pet("rat", "chewing")
