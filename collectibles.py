@@ -43,18 +43,19 @@ class Pet:
     """
     Pet class
     """
-    def __init__(self, kind, skill):
+    def __init__(self, kind, skill, emoji):
         """
         Creates an instance of Pet
         """
         self.kind = kind
         self.skill = skill
+        self.emoji = emoji
 
     def choice_confirmation(self):
         """
         Confirms pet choice
         """
-        return f"'Great choice! You'll love your {self.kind}!' "
+        return f"\n'Great choice! You'll love your {self.kind}!' {self.emoji} "
 
     def description(self):
         """
@@ -62,7 +63,7 @@ class Pet:
         """
         return (
             f"'{self.kind.capitalize()}s are known for their impressive "
-            f"{self.skill} skills. Use this wisely!' "
+            f"{self.skill} skills. Use this wisely!' \n"
         )
 
     def add_pet_to_inventory(self):
@@ -70,4 +71,4 @@ class Pet:
         Adds pet to the player's inventory
         """
         inventory.append(str({self.kind}))
-        return f"Your {self.kind} was added to your inventory. "
+        return f"Your {self.kind} was added to your inventory. \U0001F392 \n"

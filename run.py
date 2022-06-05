@@ -230,10 +230,10 @@ def pet_request():
     Asks the player to choose one of four pet types,
     and adds it to the player's inventory
     """
-    cat = Pet("cat", "climbing")
-    rat = Pet("rat", "chewing")
-    toad = Pet("toad", "swimming")
-    owl = Pet("owl", "flying")
+    cat = Pet("cat", "climbing", "\U0001F431")
+    rat = Pet("rat", "chewing", "\U0001F42D")
+    toad = Pet("toad", "swimming", "\U0001F438")
+    owl = Pet("owl", "flying", "\U0001F989")
 
     print(
         "You can choose from the following: \n"
@@ -245,21 +245,21 @@ def pet_request():
     ask_for_pet = input("'Which pet would you like?' \n")
 
     if "a" in ask_for_pet:
-        print("\n" + cat.choice_confirmation() + "\U0001F431")
-        print(cat.description() + "\n")
-        print(cat.add_pet_to_inventory() + "\U0001F392 \n")
+        print(cat.choice_confirmation())
+        print(cat.description())
+        print(cat.add_pet_to_inventory())
     elif "b" in ask_for_pet:
-        print("\n" + rat.choice_confirmation() + "\U0001F42D")
-        print(rat.description() + "\n")
-        print(rat.add_pet_to_inventory() + "\U0001F392 \n")
+        print(rat.choice_confirmation())
+        print(rat.description())
+        print(rat.add_pet_to_inventory())
     elif "c" in ask_for_pet:
-        print("\n" + toad.choice_confirmation() + "\U0001F438")
-        print(toad.description() + "\n")
-        print(toad.add_pet_to_inventory() + "\U0001F392 \n")
+        print(toad.choice_confirmation())
+        print(toad.description())
+        print(toad.add_pet_to_inventory())
     elif "d" in ask_for_pet:
-        print("\n" + owl.choice_confirmation() + "\U0001F989")
-        print(owl.description() + "\n")
-        print(owl.add_pet_to_inventory() + "\U0001F392 \n")
+        print(owl.choice_confirmation())
+        print(owl.description())
+        print(owl.add_pet_to_inventory())
     else:
         print(
             "\n"
