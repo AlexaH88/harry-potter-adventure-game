@@ -261,7 +261,7 @@ def pet_request():
 
     if "a" in ask_for_pet:
         print("\n" + cat.choice_confirmation() + "\U0001F431")
-        print(cat.description() + "\n") 
+        print(cat.description() + "\n")
         print(cat.add_pet_to_inventory() + "\U0001F392 \n")
     elif "b" in ask_for_pet:
         print("\n" + rat.choice_confirmation() + "\U0001F42D")

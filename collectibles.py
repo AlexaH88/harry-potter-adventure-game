@@ -59,7 +59,7 @@ class Pet:
         Describes the pet
         """
         return (
-            f"'{self.kind}s are known for their impressive "
+            f"'{self.kind.capitalize()}s are known for their impressive "
             f"{self.skill} skills. Use this wisely!' "
         )
 
