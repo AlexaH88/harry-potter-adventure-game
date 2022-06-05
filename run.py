@@ -262,7 +262,7 @@ def pet_request():
     if "a" in ask_for_pet:
         print("\n" + cat.choice_confirmation() + "\U0001F431")
         print(cat.description() + "\n") 
-        print(cat.add_pet_to_inventory() + "\U0001F392")
+        print(cat.add_pet_to_inventory() + "\U0001F392 \n")
     elif "b" in ask_for_pet:
         print("\n" + rat.choice_confirmation() + "\U0001F42D")
         print(rat.description() + "\n")
@@ -289,20 +289,20 @@ def travel_to_hogwarts_backstory():
     Prints backstory on travelling to Hogwarts
     """
     print(
-        "So, now that that's done, let's get to it!"
-        "Grab on to this portkey and let's go to Hogwarts!"
+        "So, now that that's done, let's get to it! "
+        "Grab on to this portkey and let's go to Hogwarts! "
         "\U0001F3F0 \n"
     )
 
     print(
-        "Here we are, I hope you're ready!"
-        "Let's see now, how do we get inside?"
+        "Here we are, I hope you're ready! "
+        "Let's see now, how do we get inside? "
         "\U0001F914 \n"
     )
 
     print(
-        "Ah, here's the entrance."
-        "OK, I can see here there are some instructions pinned to the door."
+        "Ah, here's the entrance. "
+        "OK, I can see here there are some instructions pinned to the door. "
         "\U0001F9D0 \n"
     )
 
@@ -312,43 +312,61 @@ def first_door_challenge():
     Prompts the player to solve the first challenge,
     in order to open the first door
     """
-    print("The instructions read:")
-    print("You will need a key to unlock this door.")
-    print("\U0001F511 \n")
+    print(
+        "The instructions read: "
+        "You will need a key to unlock this door. "
+        "\U0001F511 \n")
 
-    print("It's located in a chest in the Forbidden Forest.")
-    print("But there are several obstacles in the way:")
-    print("(a) A pond, perfect for swimming across...")
-    print("\U0001F4A7 \n")
-    print("(b) A big tree, perfect for climbing up...")
-    print("\U0001F332 \n")
-    print("(c) An ivy plant, perfect for chewing through...")
-    print("\U0001F33F \n")
-    print("(d) A small mountain, perfect for flying over...")
-    print("\U0001F5FB \n")
+    print(
+        "It's located in a chest in the Forbidden Forest. "
+        "But there are several obstacles in the way: \n"
+        "(a) A pond, perfect for swimming across... "
+        "\U0001F4A7 \n"
+        "(b) A big tree, perfect for climbing up... "
+        "\U0001F332 \n"
+        "(c) An ivy plant, perfect for chewing through... "
+        "\U0001F33F \n"
+        "(d) A small mountain, perfect for flying over... "
+        "\U0001F5FB \n"
+    )
 
     print("Maybe your pet could help you here...")
     get_key = input("Which option do you pick? (a,b,c,d) \n")
 
     if "a" in get_key:
-        print("Yes, well done!")
-        print("Your toad will tackle that no problem!")
-        print("\U0001F438 \n")
+        print(
+            "\n"
+            "Yes, well done! "
+            "Your toad will tackle that no problem! "
+            "\U0001F438 \n"
+        )
     elif "b" in get_key:
-        print("Yes, well done!")
-        print("Your cat will tackle that no problem!")
-        print("\U0001F431 \n")
+        print(
+            "\n"
+            "Yes, well done! "
+            "Your cat will tackle that no problem! "
+            "\U0001F431 \n"
+        )
     elif "c" in get_key:
-        print("Yes, well done!")
-        print("Your rat will tackle that no problem!")
-        print("\U0001F42D \n")
+        print(
+            "\n"
+            "Yes, well done! "
+            "Your rat will tackle that no problem! "
+            "\U0001F42D \n"
+        )
     elif "d" in get_key:
-        print("Yes, well done!")
-        print("Your owl will tackle that no problem!")
-        print("\U0001F989 \n")
+        print(
+            "\n"
+            "Yes, well done! "
+            "Your owl will tackle that no problem! "
+            "\U0001F989 \n"
+        )
     else:
-        print("Please enter a, b, c, or d.")
-        print("\U0001F610 \n")
+        print(
+            "\n"
+            "Please enter a, b, c, or d. "
+            "\U0001F610 \n"
+        )
         first_door_challenge()
 
 
