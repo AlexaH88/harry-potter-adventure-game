@@ -1,4 +1,6 @@
-# Contains classes for all the collectibles in the game
+"""
+Contains classes for all the collectibles in the game
+"""
 
 
 inventory = []
