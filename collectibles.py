@@ -22,10 +22,12 @@ class Wand:
         """
         Describes the wand
         """
-        return f'"This wand is {self.length} long, \
-            is made with {self.wood} wood, \
-                has a(n) {self.core} core, \
-                    and is {self.characteristic}!"'
+        return (
+            f"'This wand is {self.length} long, "
+            f"is made with {self.wood} wood, "
+            f"has a(n) {self.core} core, "
+            f"and is {self.characteristic}!' "
+        )
 
     def add_wand_to_inventory(self):
         """
@@ -56,8 +58,10 @@ class Pet:
         """
         Describes the pet
         """
-        return f"'{self.kind}s are known for their impressive \
-        {self.skill} skills. Use this wisely!'"
+        return (
+            f"'{self.kind}s are known for their impressive "
+            f"{self.skill} skills. Use this wisely!' "
+        )
 
     def add_pet_to_inventory(self):
         """
