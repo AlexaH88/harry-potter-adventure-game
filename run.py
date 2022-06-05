@@ -69,12 +69,21 @@ def choose_play_game():
     play_game_input = input("Ready to face up to the challenge? (y/n) \n")
 
     if play_game_input == "y":
-        slowprint(play_game_responses.yes_response())
+        slowprint(
+            play_game_responses.yes_response()
+            + emoji_choices.happy_emoji()
+            )
     elif play_game_input == "n":
-        slowprint(play_game_responses.no_response())
+        slowprint(
+            play_game_responses.no_response()
+            + emoji_choices.sad_emoji()
+            )
         exit_game()
     else:
-        slowprint(play_game_responses.other_response())
+        slowprint(
+            play_game_responses.other_response()
+            + emoji_choices.neutral_emoji()
+            )
         choose_play_game()
 
 
