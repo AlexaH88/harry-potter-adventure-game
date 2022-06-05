@@ -56,6 +56,8 @@ def game_intro():
         + emoji_choices.world_emoji()
     )
 
+    print("\n")
+
 
 def choose_play_game():
     """
@@ -68,22 +70,27 @@ def choose_play_game():
 
     play_game_input = input("Ready to face up to the challenge? (y/n) \n")
 
+    print("\n")
+
     if play_game_input == "y":
         slowprint(
             play_game_responses.yes_response()
             + emoji_choices.happy_emoji()
         )
+        print("\n")
     elif play_game_input == "n":
         slowprint(
             play_game_responses.no_response()
             + emoji_choices.sad_emoji()
         )
+        print("\n")
         exit_game()
     else:
         slowprint(
             play_game_responses.other_response()
             + emoji_choices.neutral_emoji()
         )
+        print("\n")
         choose_play_game()
 
 
@@ -100,23 +107,28 @@ def choose_game_instructions():
         "Would you like to hear the game instructions first? (y/n) \n"
         )
 
+    print("\n")
+
     if game_instructions_input == "y":
         slowprint(
             game_instructions_responses.yes_response()
             + emoji_choices.happy_emoji()
         )
+        print("\n")
         game_instructions()
     elif game_instructions_input == "n":
         slowprint(
             game_instructions_responses.no_response()
             + emoji_choices.happy_emoji()
         )
+        print("\n")
         main_two()
     else:
         slowprint(
             game_instructions_responses.other_response()
             + emoji_choices.neutral_emoji()
         )
+        print("\n")
         choose_game_instructions()
 
 
@@ -130,7 +142,7 @@ def game_instructions():
     )
 
     slowprint(
-        "And to stop the dark magic that has been happening here recently... "
+        "And to stop the dark magic that has been happening here recently..."
         + emoji_choices.darkmoon_emoji()
     )
 
@@ -160,7 +172,7 @@ def game_instructions():
     )
 
     slowprint(
-        "You must beat them by casting 3 spells in the correct order... "
+        "You must beat them by casting 3 spells in the correct order..."
         + emoji_choices.spell_emoji()
     )
 
@@ -168,6 +180,8 @@ def game_instructions():
         "Good luck, we're counting on you!"
         + emoji_choices.luck_emoji()
     )
+
+    print("\n")
 
     main_two()
 
@@ -182,6 +196,8 @@ def choose_player_name():
         f"\nWelcome, {player_name_input}! "
         "\U0001F9D9\u200D\u2642\uFE0F \n"
     )
+
+    print("\n")
 
 
 def wand_backstory():
