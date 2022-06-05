@@ -20,7 +20,7 @@ class YesNo:
         Runs response to player answering yes (y)
         """
         return (
-            f"\n {self.answer_yes} \U0001F642 \n"
+            f"\n{self.answer_yes} \U0001F642 \n"
         )
 
     def no_response(self):
@@ -28,7 +28,7 @@ class YesNo:
         Runs response to player answering no (n)
         """
         return (
-            f"\n {self.answer_no} \U0001F641 \n"
+            f"\n{self.answer_no} \U0001F641 \n"
         )
 
     def other_response(self):
@@ -36,5 +36,5 @@ class YesNo:
         Runs response to player answering eith any other key
         """
         return (
-            f"\n {self.answer_other} \U0001F610 \n"
+            f"\n{self.answer_other} \U0001F610 \n"
         )

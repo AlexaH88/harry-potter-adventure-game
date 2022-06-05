@@ -33,21 +33,21 @@ def choose_play_game():
     """
     Asks the user if they want to play the game or not
     """
-    play_game = YesNo(
+    play_game_responses = YesNo(
         "Great choice, let the adventure begin!",
         "That's a shame, maybe next time!",
         "Please choose either y or n.",
         )
 
-    play_game_options = input("Ready to face up to the challenge? (y/n) \n")
+    play_game_input = input("Ready to face up to the challenge? (y/n) \n")
 
-    if play_game_options == "y":
-        print(play_game.yes_response())
-    elif play_game_options == "n":
-        print(play_game.no_response())
+    if play_game_input == "y":
+        print(play_game_responses.yes_response())
+    elif play_game_input == "n":
+        print(play_game_responses.no_response())
         main_one()
     else:
-        print(play_game.other_response())
+        print(play_game_responses.other_response())
         choose_play_game()
 
 
@@ -55,29 +55,24 @@ def choose_game_instructions():
     """
     Asks the player if they want to read the game instructions or not
     """
-    game_instructions_options = input(
+    game_instructions_responses = YesNo(
+        "Right, let me explain the game to you!",
+        "Ok, let's carry on with the quest!",
+        "Please choose either y or n.",
+        )
+
+    game_instructions_input = input(
         "Would you like to hear the game instructions first? (y/n) \n"
         )
-    if game_instructions_options == "y":
-        print(
-            "\n"
-            "Right, let me explain the game to you! "
-            "\U0001F642 \n"
-        )
+
+    if game_instructions_input == "y":
+        print(game_instructions_responses.yes_response())
         game_instructions()
-    elif game_instructions_options == "n":
-        print(
-            "\n"
-            "Ok, let's carry on with the quest! "
-            "\U0001F642 \n"
-        )
+    elif game_instructions_input == "n":
+        print(game_instructions_responses.no_response())
         main_two()
     else:
-        print(
-            "\n"
-            "Please choose either y or n. "
-            "\U0001F610 \n"
-        )
+        print(game_instructions_responses.other_response())
         choose_game_instructions()
 
 
