@@ -2,6 +2,8 @@
 Runs the game
 """
 
+
+import time
 import sys
 import random
 from collectibles import inventory
@@ -14,31 +16,42 @@ from emojis import Emoji
 emoji_choices = Emoji()
 
 
+# code taken from codegrepper.com and adapted - see README for details
+def slowprint(all_strings):
+    """
+    Runs all text in the game on slow
+    """
+    for each_character in all_strings + '\n':
+        sys.stdout.write(each_character)
+        sys.stdout.flush()
+        time.sleep(1./20)
+
+
 def game_intro():
     """
     Runs game intro text
     """
-    print(
+    slowprint(
         "Welcome to the Harry Potter Adventure Game!"
         + emoji_choices.lightning_emoji()
     )
 
-    print(
+    slowprint(
         "Strange things have been happening at Hogwarts lately..."
         + emoji_choices.castle_emoji()
     )
 
-    print(
+    slowprint(
         "And no one seems to be able to work out how to stop them..."
         + emoji_choices.surprised_emoji()
     )
 
-    print(
+    slowprint(
         "Could you be the witch or wizard we've been looking for?"
         + emoji_choices.wizard_emoji()
     )
 
-    print(
+    slowprint(
         "Please help, the Wizarding World needs you!"
         + emoji_choices.world_emoji()
     )
@@ -56,12 +69,12 @@ def choose_play_game():
     play_game_input = input("Ready to face up to the challenge? (y/n) \n")
 
     if play_game_input == "y":
-        print(play_game_responses.yes_response())
+        slowprint(play_game_responses.yes_response())
     elif play_game_input == "n":
-        print(play_game_responses.no_response())
+        slowprint(play_game_responses.no_response())
         exit_game()
     else:
-        print(play_game_responses.other_response())
+        slowprint(play_game_responses.other_response())
         choose_play_game()
 
 
@@ -79,13 +92,13 @@ def choose_game_instructions():
         )
 
     if game_instructions_input == "y":
-        print(game_instructions_responses.yes_response())
+        slowprint(game_instructions_responses.yes_response())
         game_instructions()
     elif game_instructions_input == "n":
-        print(game_instructions_responses.no_response())
+        slowprint(game_instructions_responses.no_response())
         main_two()
     else:
-        print(game_instructions_responses.other_response())
+        slowprint(game_instructions_responses.other_response())
         choose_game_instructions()
 
 
@@ -93,7 +106,7 @@ def game_instructions():
     """
     Prints game instructions
     """
-    print(
+    slowprint(
         "The aim of the game is to find your way through Hogwarts "
         "School of Witchcraft and Wizardry, and to stop the dark "
         "magic that has been happening here recently... "
@@ -122,7 +135,7 @@ def choose_player_name():
     """
     player_name_input = input("Choose your witch or wizard name: \n")
 
-    print(
+    slowprint(
         f"\nWelcome, {player_name_input}! "
         "\U0001F9D9\u200D\u2642\uFE0F \n"
     )
@@ -132,7 +145,7 @@ def wand_backstory():
     """
     Prints backstory on Ollivander and player wand selection
     """
-    print(
+    slowprint(
         "Now, let's see. "
         "\U0001F914 \n"
         "In order to save Hogwarts you're going to need a wand! "
@@ -158,12 +171,12 @@ def wand_request():
         )
 
     if wand_request_input == "y":
-        print(wand_request_responses.yes_response())
+        slowprint(wand_request_responses.yes_response())
     elif wand_request_input == "n":
-        print(wand_request_responses.no_response())
+        slowprint(wand_request_responses.no_response())
         exit_game()
     else:
-        print(wand_request_responses.other_response())
+        slowprint(wand_request_responses.other_response())
         wand_request()
 
 
@@ -172,7 +185,7 @@ def assign_wand():
     Randomly assigns the player one of three wand options,
     and adds it to the player's inventory
     """
-    print(
+    slowprint(
         "Ollivander looks you up and down, studying you carefully... "
         "\U0001F9D0 \n"
     )
@@ -184,7 +197,7 @@ def assign_wand():
 
     random_wand_options = random.choice(wand_options)
 
-    print(
+    slowprint(
         f"'{random_wand_options} will suit you nicely!' "
         "\U0001F320"
     )
@@ -214,21 +227,21 @@ def assign_wand():
         "\U0001F333")
 
     if "Harry Potter's wand" in random_wand_options:
-        print(harry.description())
-        print(harry.add_wand_to_inventory())
+        slowprint(harry.description())
+        slowprint(harry.add_wand_to_inventory())
     elif "Albus Dumbledore's wand" in random_wand_options:
-        print(albus.description())
-        print(albus.add_wand_to_inventory())
+        slowprint(albus.description())
+        slowprint(albus.add_wand_to_inventory())
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        print(rubeus.description())
-        print(rubeus.add_wand_to_inventory())
+        slowprint(rubeus.description())
+        slowprint(rubeus.add_wand_to_inventory())
 
 
 def pet_backstory():
     """
     Prints backstory on The Magical Menagerie and player pet selection
     """
-    print(
+    slowprint(
         "Right, what's next? "
         "\U0001F914 \n"
         "An animal companion to help you on your quest! "
@@ -250,7 +263,7 @@ def pet_request():
     toad = Pet("toad", "swimming", "\U0001F438")
     owl = Pet("owl", "flying", "\U0001F989")
 
-    print(
+    slowprint(
         "You can choose from the following: \n"
         "(a) cat \U0001F431 \n"
         "(b) rat \U0001F42D \n"
@@ -260,23 +273,23 @@ def pet_request():
     ask_for_pet = input("'Which pet would you like?' \n")
 
     if "a" in ask_for_pet:
-        print(cat.choice_confirmation())
-        print(cat.description())
-        print(cat.add_pet_to_inventory())
+        slowprint(cat.choice_confirmation())
+        slowprint(cat.description())
+        slowprint(cat.add_pet_to_inventory())
     elif "b" in ask_for_pet:
-        print(rat.choice_confirmation())
-        print(rat.description())
-        print(rat.add_pet_to_inventory())
+        slowprint(rat.choice_confirmation())
+        slowprint(rat.description())
+        slowprint(rat.add_pet_to_inventory())
     elif "c" in ask_for_pet:
-        print(toad.choice_confirmation())
-        print(toad.description())
-        print(toad.add_pet_to_inventory())
+        slowprint(toad.choice_confirmation())
+        slowprint(toad.description())
+        slowprint(toad.add_pet_to_inventory())
     elif "d" in ask_for_pet:
-        print(owl.choice_confirmation())
-        print(owl.description())
-        print(owl.add_pet_to_inventory())
+        slowprint(owl.choice_confirmation())
+        slowprint(owl.description())
+        slowprint(owl.add_pet_to_inventory())
     else:
-        print(
+        slowprint(
             "\n"
             "Please enter a, b, c, or d. "
             "\U0001F610 \n"
@@ -288,19 +301,19 @@ def travel_to_hogwarts_backstory():
     """
     Prints backstory on travelling to Hogwarts
     """
-    print(
+    slowprint(
         "So, now that that's done, let's get to it! "
         "Grab on to this portkey and let's go to Hogwarts! "
         "\U0001F3F0 \n"
     )
 
-    print(
+    slowprint(
         "Here we are, I hope you're ready! "
         "Let's see now, how do we get inside? "
         "\U0001F914 \n"
     )
 
-    print(
+    slowprint(
         "Ah, here's the entrance. "
         "OK, I can see here there are some instructions pinned to the door. "
         "\U0001F9D0 \n"
@@ -312,12 +325,12 @@ def first_door_challenge():
     Prompts the player to solve the first challenge,
     in order to open the first door
     """
-    print(
+    slowprint(
         "The instructions read: "
         "You will need a key to unlock this door. "
         "\U0001F511 \n")
 
-    print(
+    slowprint(
         "It's located in a chest in the Forbidden Forest. "
         "But there are several obstacles in the way: \n"
         "(a) A pond, perfect for swimming across... "
@@ -330,51 +343,51 @@ def first_door_challenge():
         "\U0001F5FB \n"
     )
 
-    print("Maybe your pet could help you here...")
+    slowprint("Maybe your pet could help you here...")
     get_key = input("Which option do you pick? \n")
 
     if "a" in get_key and "{'toad'}" in inventory:
-        print(
+        slowprint(
             "\n"
             "Yes, well done! "
             "Your toad will tackle that no problem! "
             "\U0001F438 \n"
         )
     elif "b" in get_key and "{'cat'}" in inventory:
-        print(
+        slowprint(
             "\n"
             "Yes, well done! "
             "Your cat will tackle that no problem! "
             "\U0001F431 \n"
         )
     elif "c" in get_key and "{'rat'}" in inventory:
-        print(
+        slowprint(
             "\n"
             "Yes, well done! "
             "Your rat will tackle that no problem! "
             "\U0001F42D \n"
         )
     elif "d" in get_key and "{'owl'}" in inventory:
-        print(
+        slowprint(
             "\n"
             "Yes, well done! "
             "Your owl will tackle that no problem! "
             "\U0001F989 \n"
         )
     elif "a" in get_key and "{'toad'}" not in inventory:
-        print("\n Hmm no, your pet can't do that... \n")
+        slowprint("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "b" in get_key and "{'cat'}" not in inventory:
-        print("\n Hmm no, your pet can't do that... \n")
+        slowprint("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "c" in get_key and "{'rat'}" not in inventory:
-        print("\n Hmm no, your pet can't do that... \n")
+        slowprint("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "d" in get_key and "{'owl'}" not in inventory:
-        print("\n Hmm no, your pet can't do that... \n")
+        slowprint("\n Hmm no, your pet can't do that... \n")
         exit_game()
     else:
-        print(
+        slowprint(
             "\n"
             "Please enter a, b, c, or d. "
             "\U0001F610 \n"
@@ -412,7 +425,7 @@ def exit_game():
     """
     Exits the game
     """
-    print("Game Over! \U0001F47E \n")
+    slowprint("Game Over! \U0001F47E \n")
     sys.exit()
 
 
