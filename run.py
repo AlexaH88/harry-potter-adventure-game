@@ -45,7 +45,7 @@ def choose_play_game():
         print(play_game_responses.yes_response())
     elif play_game_input == "n":
         print(play_game_responses.no_response())
-        main_one()
+        exit_game()
     else:
         print(play_game_responses.other_response())
         choose_play_game()
@@ -107,10 +107,10 @@ def choose_player_name():
     """
     Asks the player to choose their witch or wizard name
     """
-    player_name = input("Choose your witch or wizard name: \n")
+    player_name_input = input("Choose your witch or wizard name: \n")
+
     print(
-        "\n"
-        f"Welcome, {player_name}! "
+        f"\nWelcome, {player_name_input}! "
         "\U0001F9D9\u200D\u2642\uFE0F \n"
     )
 
@@ -353,36 +353,16 @@ def first_door_challenge():
             "\U0001F989 \n"
         )
     elif "a" in get_key and "{'toad'}" not in inventory:
-        print(
-            "\n"
-            "Hmm no, your pet can't do that... \n"
-            "Game Over! "
-            "\U0001F47E \n"
-            )
+        print("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "b" in get_key and "{'cat'}" not in inventory:
-        print(
-            "\n"
-            "Hmm no, your pet can't do that... \n"
-            "Game Over! "
-            "\U0001F47E \n"
-            )
+        print("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "c" in get_key and "{'rat'}" not in inventory:
-        print(
-            "\n"
-            "Hmm no, your pet can't do that... \n"
-            "Game Over! "
-            "\U0001F47E \n"
-            )
+        print("\n Hmm no, your pet can't do that... \n")
         exit_game()
     elif "d" in get_key and "{'owl'}" not in inventory:
-        print(
-            "\n"
-            "Hmm no, your pet can't do that... \n"
-            "Game Over! "
-            "\U0001F47E \n"
-            )
+        print("\n Hmm no, your pet can't do that... \n")
         exit_game()
     else:
         print(
@@ -423,6 +403,7 @@ def exit_game():
     """
     Exits the game
     """
+    print("Game Over! \U0001F47E \n")
     sys.exit()
 
 
