@@ -69,5 +69,5 @@ class Pet:
         """
         Adds pet to the player's inventory
         """
-        inventory.append({self.kind})
+        inventory.append(str({self.kind}))
         return f"Your {self.kind} was added to your inventory. "

@@ -333,28 +333,28 @@ def first_door_challenge():
     print("Maybe your pet could help you here...")
     get_key = input("Which option do you pick? \n")
 
-    if "a" in get_key:
+    if "a" in get_key and "{'toad'}" in inventory:
         print(
             "\n"
             "Yes, well done! "
             "Your toad will tackle that no problem! "
             "\U0001F438 \n"
         )
-    elif "b" in get_key:
+    elif "b" in get_key and "{'cat'}" in inventory:
         print(
             "\n"
             "Yes, well done! "
             "Your cat will tackle that no problem! "
             "\U0001F431 \n"
         )
-    elif "c" in get_key:
+    elif "c" in get_key and "{'rat'}" in inventory:
         print(
             "\n"
             "Yes, well done! "
             "Your rat will tackle that no problem! "
             "\U0001F42D \n"
         )
-    elif "d" in get_key:
+    elif "d" in get_key and "{'owl'}" in inventory:
         print(
             "\n"
             "Yes, well done! "
