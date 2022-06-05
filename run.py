@@ -8,6 +8,10 @@ from collectibles import inventory
 from collectibles import Wand
 from collectibles import Pet
 from questions import YesNo
+from emojis import Emoji
+
+
+emoji_choices = Emoji()
 
 
 def game_intro():
@@ -15,17 +19,28 @@ def game_intro():
     Runs game intro text
     """
     print(
-        "\n"
-        "Welcome to the Harry Potter Adventure Game! "
-        "\u26A1 \n \n"
-        "Strange things have been happening at Hogwarts lately... "
-        "\U0001F3F0 \n"
-        "And no one seems to be able to work out how to stop them... "
-        "\U0001F632 \n \n"
-        "Could you be the witch or wizard we've been looking for? "
-        "\U0001F9D9\u200D\u2642\uFE0F \n"
-        "Please help, the Wizarding World needs you! "
-        "\U0001F30D \n"
+        "Welcome to the Harry Potter Adventure Game!"
+        + emoji_choices.lightning_emoji()
+    )
+
+    print(
+        "Strange things have been happening at Hogwarts lately..."
+        + emoji_choices.castle_emoji()
+    )
+
+    print(
+        "And no one seems to be able to work out how to stop them..."
+        + emoji_choices.surprised_emoji()
+    )
+
+    print(
+        "Could you be the witch or wizard we've been looking for?"
+        + emoji_choices.wizard_emoji()
+    )
+
+    print(
+        "Please help, the Wizarding World needs you!"
+        + emoji_choices.world_emoji()
     )
 
 

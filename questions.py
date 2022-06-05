@@ -9,7 +9,7 @@ class YesNo:
     """
     def __init__(self, answer_yes, answer_no):
         """
-        Creates an instance of Yes No questions
+        Creates an instance of Yes No
         """
         self.answer_yes = answer_yes
         self.answer_no = answer_no
@@ -29,6 +29,6 @@ class YesNo:
 
     def other_response(self):
         """
-        Runs response to player answering eith any other key
+        Runs response to player answering with any other key
         """
         return f"\n{self.answer_other} \U0001F610 \n"
