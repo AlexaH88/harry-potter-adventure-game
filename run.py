@@ -13,16 +13,19 @@ def game_intro():
     """
     Runs game intro text
     """
-    print("Welcome to the Harry Potter Adventure Game!")
-    print("\u26A1")
-    print("Strange things have been happening at Hogwarts lately...")
-    print("\U0001F3F0")
-    print("And no one seems to be able to work out how to stop them...")
-    print("\U0001F632")
-    print("Could you be the witch or wizard we've been looking for?")
-    print("\U0001F9D9\u200D\u2642\uFE0F")
-    print("Please help, the Wizarding World needs you!")
-    print("\U0001F30D \n")
+    print(
+        "\n"
+        "Welcome to the Harry Potter Adventure Game! "
+        "\u26A1 \n \n"
+        "Strange things have been happening at Hogwarts lately... "
+        "\U0001F3F0 \n"
+        "And no one seems to be able to work out how to stop them... "
+        "\U0001F632 \n \n"
+        "Could you be the witch or wizard we've been looking for? "
+        "\U0001F9D9\u200D\u2642\uFE0F \n"
+        "Please help, the Wizarding World needs you! "
+        "\U0001F30D \n"
+    )
 
 
 def choose_play_game():
@@ -31,15 +34,21 @@ def choose_play_game():
     """
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
-        print("Great choice, let the adventure begin!")
-        print("\U0001F642 \n")
+        print(
+            "Great choice, let the adventure begin! "
+            "\U0001F642 \n"
+        )
     elif play_game_options == "n":
-        print("That's a shame, maybe next time!")
-        print("\U0001F641 \n")
+        print(
+            "That's a shame, maybe next time! "
+            "\U0001F641 \n"
+        )
         main_one()
     else:
-        print("Please choose either y or n.")
-        print("\U0001F610 \n")
+        print(
+            "Please choose either y or n. "
+            "\U0001F610 \n"
+        )
         choose_play_game()
 
 
@@ -48,18 +57,25 @@ def choose_game_instructions():
     Asks the player if they want to read the game instructions or not
     """
     game_instructions_options = input(
-        "Would you like to hear the game instructions first? (y/n) \n")
+        "Would you like to hear the game instructions first? (y/n) \n"
+        )
     if game_instructions_options == "y":
-        print("Right, let me explain the game to you!")
-        print("\U0001F642 \n")
+        print(
+            "Right, let me explain the game to you! "
+            "\U0001F642 \n"
+        )
         game_instructions()
     elif game_instructions_options == "n":
-        print("Ok, let's carry on with the quest!")
-        print("\U0001F642 \n")
+        print(
+            "Ok, let's carry on with the quest! "
+            "\U0001F642 \n"
+        )
         main_two()
     else:
-        print("Please choose either y or n.")
-        print("\U0001F610 \n")
+        print(
+            "Please choose either y or n. "
+            "\U0001F610 \n"
+        )
         choose_game_instructions()
 
 
@@ -67,23 +83,25 @@ def game_instructions():
     """
     Prints game instructions
     """
-    print("The aim of the game is to find your way through Hogwarts")
-    print("School of Witchcraft and Wizardry, and to stop the dark")
-    print("magic that has been happening here recently...")
-    print("\U0001F311 \n")
+    print(
+        "The aim of the game is to find your way through Hogwarts "
+        "School of Witchcraft and Wizardry, and to stop the dark "
+        "magic that has been happening here recently... "
+        "\U0001F311 \n \n"
 
-    print("You must collect 5 items, by answering 5 questions correctly,")
-    print("asked by friendly faces that you encounter along the way.")
-    print("\U0001F917 \n")
+        "You must collect 5 items, by answering 5 questions correctly, "
+        "asked by friendly faces that you encounter along the way. "
+        "\U0001F917 \n \n"
 
-    print("Each item will allow you to unlock the next room, where you will")
-    print("find the next item. In the 5th and final room, you will discover")
-    print("who is behind the malevolence, and you must beat them by")
-    print("casting 3 spells in the correct order...")
-    print("\U0001F320 \n")
+        "Each item will allow you to unlock the next room, where you will "
+        "find the next item. In the 5th and final room, you will discover "
+        "who is behind the malevolence, and you must beat them by "
+        "casting 3 spells in the correct order... "
+        "\U0001F320 \n \n"
 
-    print("Good luck, we're counting on you!")
-    print("\U0001F340 \n")
+        "Good luck, we're counting on you! "
+        "\U0001F340 \n"
+    )
 
     main_two()
 
@@ -93,22 +111,26 @@ def choose_player_name():
     Asks the player to choose their witch or wizard name
     """
     player_name = input("Choose your witch or wizard name: \n")
-    print(f"Welcome, {player_name}!")
-    print("\U0001F9D9\u200D\u2642\uFE0F \n")
+    print(
+        f"Welcome, {player_name}! "
+        "\U0001F9D9\u200D\u2642\uFE0F \n"
+    )
 
 
 def wand_backstory():
     """
     Prints backstory on Ollivander and player wand selection
     """
-    print("Now, let's see.")
-    print("\U0001F914")
-    print("In order to save Hogwarts you're going to need a wand!")
-    print("\U0001F320")
-    print("Let's go and see our favourite wandmaker, Garrick Ollivander!")
-    print("\U0001F474 \n")
-    print("'Welcome to my shop, you've come to the right place!'")
-    print("\U0001F3EC")
+    print(
+        "Now, let's see. "
+        "\U0001F914 \n"
+        "In order to save Hogwarts you're going to need a wand! "
+        "\U0001F320 \n"
+        "Let's go and see our favourite wandmaker, Garrick Ollivander! "
+        "\U0001F474 \n \n"
+        "'Welcome to my shop, you've come to the right place!' "
+        "\U0001F3EC"
+    )
 
 
 def wand_request():
@@ -116,18 +138,25 @@ def wand_request():
     Asks the player to request a wand
     """
     ask_for_wand = input(
-        "'So, tell me, are you in need of a wand?' (y/n) \n")
+        "'So, tell me, are you in need of a wand?' (y/n) \n"
+        )
 
     if ask_for_wand == "y":
-        print("'Lovely, let's see what we can find for you!'")
-        print("\U0001F642 \n")
+        print(
+            "'Lovely, let's see what we can find for you!' "
+            "\U0001F642 \n"
+        )
     elif ask_for_wand == "n":
-        print("'Fine, but you won't get far without one!'")
-        print("\U0001F641 \n")
+        print(
+            "'Fine, but you won't get far without one!' "
+            "\U0001F641 \n"
+        )
         exit_game()
     else:
-        print("Please choose either y or n.")
-        print("\U0001F610 \n")
+        print(
+            "Please choose either y or n. "
+            "\U0001F610 \n"
+        )
         wand_request()
 
 
@@ -136,8 +165,10 @@ def assign_wand():
     Randomly assigns the player one of three wand options,
     and adds it to the player's inventory
     """
-    print("Ollivander looks you up and down, studying you carefully...")
-    print("\U0001F9D0 \n")
+    print(
+        "Ollivander looks you up and down, studying you carefully..."
+        "\U0001F9D0 \n"
+    )
 
     wand_options = [
         "Harry Potter's wand",
@@ -146,59 +177,57 @@ def assign_wand():
 
     random_wand_options = random.choice(wand_options)
 
-    print(f"'{random_wand_options} will suit you nicely!'")
-    print("\U0001F320 \n")
+    print(
+        f"'{random_wand_options} will suit you nicely!' "
+        "\U0001F320"
+    )
 
     harry = Wand(
-        "Harry Potter's Wand",
+        "Harry Potter's wand",
         "11 inches",
         "holly",
         "Phoenix feather",
         "nice and supple")
 
     albus = Wand(
-        "Albus Dumbledore's Wand",
+        "Albus Dumbledore's wand",
         "15 inches",
         "elder",
         "Thestral tail hair",
         "the most powerful wand ever to exist")
 
     rubeus = Wand(
-        "Rubeus Hagrid's Wand",
+        "Rubeus Hagrid's wand",
         "16 inches",
         "oak",
         "unknown",
         "rather bendy")
 
     if "Harry Potter's wand" in random_wand_options:
-        print(harry.description())
-        print("\U0001F426 \n")
-        print(harry.add_wand_to_inventory())
-        print("\U0001F392 \n")
+        print(harry.description() + "\U0001F426 \n")
+        print(harry.add_wand_to_inventory() + "\U0001F392 \n")
     elif "Albus Dumbledore's wand" in random_wand_options:
-        print(albus.description())
-        print("\U0001F31F \n")
-        print(albus.add_wand_to_inventory())
-        print("\U0001F392 \n")
+        print(albus.description() + "\U0001F31F \n")
+        print(albus.add_wand_to_inventory() + "\U0001F392 \n")
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        print(rubeus.description())
-        print("\U0001F333 \n")
-        print(rubeus.add_wand_to_inventory())
-        print("\U0001F392 \n")
+        print(rubeus.description() + "\U0001F333 \n")
+        print(rubeus.add_wand_to_inventory() + "\U0001F392 \n")
 
 
 def pet_backstory():
     """
     Prints backstory on The Magical Menagerie and player pet selection
     """
-    print("Right, what's next?")
-    print("\U0001F914 \n")
-    print("An animal companion to help you on your quest!")
-    print("\U0001F495 \n")
-    print("Let's pop into The Magical Menagerie to get one!")
-    print("\U0001F3EC \n")
-    print("'Welcome to my shop, let me show you what lovely pets we've got!'")
-    print("\U0001F431 \U0001F42D \U0001F438 \U0001F989 \n")
+    print(
+        "Right, what's next? "
+        "\U0001F914 \n"
+        "An animal companion to help you on your quest! "
+        "\U0001F495 \n"
+        "Let's pop into The Magical Menagerie to get one! "
+        "\U0001F3EC \n \n"
+        "'Welcome to my shop, let me show you what lovely pets we've got!' "
+        "\U0001F475 \n"
+    )
 
 
 def pet_request():
@@ -211,40 +240,36 @@ def pet_request():
     toad = Pet("toad", "swimming")
     owl = Pet("owl", "flying")
 
-    print("You can choose from the following:")
-    print("(a) cat")
-    print("(b) rat")
-    print("(c) toad")
-    print("(d) owl \n")
+    print(
+        "You can choose from the following: \n"
+        "(a) cat \U0001F431 \n"
+        "(b) rat \U0001F42D \n"
+        "(c) toad \U0001F438 \n"
+        "(d) owl \U0001F989 \n"
+    )
     ask_for_pet = input("'Which pet would you like?' (a, b, c, d) \n")
 
     if "a" in ask_for_pet:
         print(cat.choice_confirmation())
-        print(cat.description())
-        print("\U0001F431 \n")
-        print(cat.add_pet_to_inventory())
-        print("\U0001F392 \n")
+        print(cat.description() + "\U0001F431 \n")
+        print(cat.add_pet_to_inventory() + "\U0001F392 \n")
     elif "b" in ask_for_pet:
         print(rat.choice_confirmation())
-        print(rat.description())
-        print("\U0001F42D \n")
-        print(rat.add_pet_to_inventory())
-        print("\U0001F392 \n")
+        print(rat.description() + "\U0001F42D \n")
+        print(rat.add_pet_to_inventory() + "\U0001F392 \n")
     elif "c" in ask_for_pet:
         print(toad.choice_confirmation())
-        print(toad.description())
-        print("\U0001F438 \n")
-        print(toad.add_pet_to_inventory())
-        print("\U0001F392 \n")
+        print(toad.description() + "\U0001F438 \n")
+        print(toad.add_pet_to_inventory() + "\U0001F392 \n")
     elif "d" in ask_for_pet:
         print(owl.choice_confirmation())
-        print(owl.description())
-        print("\U0001F989 \n")
-        print(owl.add_pet_to_inventory())
-        print("\U0001F392 \n")
+        print(owl.description() + "\U0001F989 \n")
+        print(owl.add_pet_to_inventory() + "\U0001F392 \n")
     else:
-        print("Please enter a, b, c, or d.")
-        print("\U0001F610 \n")
+        print(
+            "Please enter a, b, c, or d. "
+            "\U0001F610 \n"
+        )
         pet_request()
 
 
