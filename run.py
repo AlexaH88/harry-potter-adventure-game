@@ -35,17 +35,20 @@ def choose_play_game():
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
     if play_game_options == "y":
         print(
+            "\n"
             "Great choice, let the adventure begin! "
             "\U0001F642 \n"
         )
     elif play_game_options == "n":
         print(
+            "\n"
             "That's a shame, maybe next time! "
             "\U0001F641 \n"
         )
         main_one()
     else:
         print(
+            "\n"
             "Please choose either y or n. "
             "\U0001F610 \n"
         )
@@ -61,18 +64,21 @@ def choose_game_instructions():
         )
     if game_instructions_options == "y":
         print(
+            "\n"
             "Right, let me explain the game to you! "
             "\U0001F642 \n"
         )
         game_instructions()
     elif game_instructions_options == "n":
         print(
+            "\n"
             "Ok, let's carry on with the quest! "
             "\U0001F642 \n"
         )
         main_two()
     else:
         print(
+            "\n"
             "Please choose either y or n. "
             "\U0001F610 \n"
         )
@@ -112,6 +118,7 @@ def choose_player_name():
     """
     player_name = input("Choose your witch or wizard name: \n")
     print(
+        "\n"
         f"Welcome, {player_name}! "
         "\U0001F9D9\u200D\u2642\uFE0F \n"
     )
@@ -143,17 +150,20 @@ def wand_request():
 
     if ask_for_wand == "y":
         print(
+            "\n"
             "'Lovely, let's see what we can find for you!' "
             "\U0001F642 \n"
         )
     elif ask_for_wand == "n":
         print(
+            "\n"
             "'Fine, but you won't get far without one!' "
             "\U0001F641 \n"
         )
         exit_game()
     else:
         print(
+            "\n"
             "Please choose either y or n. "
             "\U0001F610 \n"
         )
@@ -166,7 +176,7 @@ def assign_wand():
     and adds it to the player's inventory
     """
     print(
-        "Ollivander looks you up and down, studying you carefully..."
+        "Ollivander looks you up and down, studying you carefully... "
         "\U0001F9D0 \n"
     )
 
@@ -250,23 +260,24 @@ def pet_request():
     ask_for_pet = input("'Which pet would you like?' (a, b, c, d) \n")
 
     if "a" in ask_for_pet:
-        print(cat.choice_confirmation())
-        print(cat.description() + "\U0001F431 \n")
-        print(cat.add_pet_to_inventory() + "\U0001F392 \n")
+        print("\n" + cat.choice_confirmation() + "\U0001F431")
+        print(cat.description() + "\n") 
+        print(cat.add_pet_to_inventory() + "\U0001F392")
     elif "b" in ask_for_pet:
-        print(rat.choice_confirmation())
-        print(rat.description() + "\U0001F42D \n")
+        print("\n" + rat.choice_confirmation() + "\U0001F42D")
+        print(rat.description() + "\n")
         print(rat.add_pet_to_inventory() + "\U0001F392 \n")
     elif "c" in ask_for_pet:
-        print(toad.choice_confirmation())
-        print(toad.description() + "\U0001F438 \n")
+        print("\n" + toad.choice_confirmation() + "\U0001F438")
+        print(toad.description() + "\n")
         print(toad.add_pet_to_inventory() + "\U0001F392 \n")
     elif "d" in ask_for_pet:
-        print(owl.choice_confirmation())
-        print(owl.description() + "\U0001F989 \n")
+        print("\n" + owl.choice_confirmation() + "\U0001F989")
+        print(owl.description() + "\n")
         print(owl.add_pet_to_inventory() + "\U0001F392 \n")
     else:
         print(
+            "\n"
             "Please enter a, b, c, or d. "
             "\U0001F610 \n"
         )
@@ -277,17 +288,23 @@ def travel_to_hogwarts_backstory():
     """
     Prints backstory on travelling to Hogwarts
     """
-    print("So, now that that's done, let's get to it!")
-    print("Grab on to this portkey and let's go to Hogwarts!")
-    print("\U0001F3F0 \n")
+    print(
+        "So, now that that's done, let's get to it!"
+        "Grab on to this portkey and let's go to Hogwarts!"
+        "\U0001F3F0 \n"
+    )
 
-    print("Here we are, I hope you're ready!")
-    print("Let's see now, how do we get inside?")
-    print("\U0001F914 \n")
+    print(
+        "Here we are, I hope you're ready!"
+        "Let's see now, how do we get inside?"
+        "\U0001F914 \n"
+    )
 
-    print("Ah, here's the entrance.")
-    print("OK, I can see here there are some instructions pinned to the door.")
-    print("\U0001F9D0 \n")
+    print(
+        "Ah, here's the entrance."
+        "OK, I can see here there are some instructions pinned to the door."
+        "\U0001F9D0 \n"
+    )
 
 
 def first_door_challenge():

@@ -34,7 +34,7 @@ class Wand:
         Adds wand to the player's inventory
         """
         inventory.append({self.owner})
-        return f"{self.owner} was added to your inventory."
+        return f"{self.owner} was added to your inventory. "
 
 
 class Pet:
@@ -52,7 +52,7 @@ class Pet:
         """
         Confirms pet choice
         """
-        return f"'Great choice! You'll love your {self.kind}!'"
+        return f"'Great choice! You'll love your {self.kind}!' "
 
     def description(self):
         """
@@ -68,4 +68,4 @@ class Pet:
         Adds pet to the player's inventory
         """
         inventory.append({self.kind})
-        return f"Your {self.kind} was added to your inventory."
+        return f"Your {self.kind} was added to your inventory. "
