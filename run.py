@@ -361,6 +361,38 @@ def first_door_challenge():
             "Your owl will tackle that no problem! "
             "\U0001F989 \n"
         )
+    elif "a" in get_key and "{'toad'}" not in inventory:
+        print(
+            "\n"
+            "Hmm no, your pet can't do that... \n"
+            "Game Over! "
+            "\U0001F47E \n"
+            )
+        exit_game()
+    elif "b" in get_key and "{'cat'}" not in inventory:
+        print(
+            "\n"
+            "Hmm no, your pet can't do that... \n"
+            "Game Over! "
+            "\U0001F47E \n"
+            )
+        exit_game()
+    elif "c" in get_key and "{'rat'}" not in inventory:
+        print(
+            "\n"
+            "Hmm no, your pet can't do that... \n"
+            "Game Over! "
+            "\U0001F47E \n"
+            )
+        exit_game()
+    elif "d" in get_key and "{'owl'}" not in inventory:
+        print(
+            "\n"
+            "Hmm no, your pet can't do that... \n"
+            "Game Over! "
+            "\U0001F47E \n"
+            )
+        exit_game()
     else:
         print(
             "\n"
