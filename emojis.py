@@ -19,6 +19,14 @@ class Emoji:
         self.happy = " \U0001F642 \n"
         self.sad = " \U0001F641 \n"
         self.neutral = " \U0001F610 \n"
+        self.darkmoon = " \U0001F311 \n"
+        self.question = " \U0001F64B \n"
+        self.hug = " \U0001F917 \n"
+        self.door = " \U0001F6AA \n"
+        self.magicball = " \U0001F52E \n"
+        self.evil = " \U0001F608 \n"
+        self.spell = " \U0001F320 \n"
+        self.luck = " \U0001F340 \n"
 
     def lightning_emoji(self):
         """
@@ -67,3 +75,51 @@ class Emoji:
         Runs neutral emoji
         """
         return f"{self.neutral}"
+
+    def darkmoon_emoji(self):
+        """
+        Runs darkmoon emoji
+        """
+        return f"{self.darkmoon}"
+
+    def question_emoji(self):
+        """
+        Runs question emoji
+        """
+        return f"{self.question}"
+
+    def hug_emoji(self):
+        """
+        Runs hug emoji
+        """
+        return f"{self.hug}"
+
+    def door_emoji(self):
+        """
+        Runs door emoji
+        """
+        return f"{self.door}"
+
+    def magicball_emoji(self):
+        """
+        Runs magicball emoji
+        """
+        return f"{self.magicball}"
+
+    def evil_emoji(self):
+        """
+        Runs evil emoji
+        """
+        return f"{self.evil}"
+
+    def spell_emoji(self):
+        """
+        Runs spell emoji
+        """
+        return f"{self.spell}"
+
+    def luck_emoji(self):
+        """
+        Runs luck emoji
+        """
+        return f"{self.luck}"

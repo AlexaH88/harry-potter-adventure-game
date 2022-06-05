@@ -72,18 +72,18 @@ def choose_play_game():
         slowprint(
             play_game_responses.yes_response()
             + emoji_choices.happy_emoji()
-            )
+        )
     elif play_game_input == "n":
         slowprint(
             play_game_responses.no_response()
             + emoji_choices.sad_emoji()
-            )
+        )
         exit_game()
     else:
         slowprint(
             play_game_responses.other_response()
             + emoji_choices.neutral_emoji()
-            )
+        )
         choose_play_game()
 
 
@@ -104,19 +104,19 @@ def choose_game_instructions():
         slowprint(
             game_instructions_responses.yes_response()
             + emoji_choices.happy_emoji()
-            )
+        )
         game_instructions()
     elif game_instructions_input == "n":
         slowprint(
             game_instructions_responses.no_response()
             + emoji_choices.happy_emoji()
-            )
+        )
         main_two()
     else:
         slowprint(
             game_instructions_responses.other_response()
             + emoji_choices.neutral_emoji()
-            )
+        )
         choose_game_instructions()
 
 
@@ -125,23 +125,48 @@ def game_instructions():
     Prints game instructions
     """
     slowprint(
-        "The aim of the game is to find your way through Hogwarts "
-        "School of Witchcraft and Wizardry, and to stop the dark "
-        "magic that has been happening here recently... "
-        "\U0001F311 \n \n"
+        "The aim of the game is to find your way through Hogwarts."
+        + emoji_choices.castle_emoji()
+    )
 
-        "You must collect 5 items, by answering 5 questions correctly, "
-        "asked by friendly faces that you encounter along the way. "
-        "\U0001F917 \n \n"
+    slowprint(
+        "And to stop the dark magic that has been happening here recently... "
+        + emoji_choices.darkmoon_emoji()
+    )
 
-        "Each item will allow you to unlock the next room, where you will "
-        "find the next item. In the 5th and final room, you will discover "
-        "who is behind the malevolence, and you must beat them by "
-        "casting 3 spells in the correct order... "
-        "\U0001F320 \n \n"
+    slowprint(
+        "You must collect 5 items, by answering 5 questions correctly."
+        + emoji_choices.question_emoji()
+    )
 
-        "Good luck, we're counting on you! "
-        "\U0001F340 \n"
+    slowprint(
+        "These will be asked by friendly faces that you encounter as you go."
+        + emoji_choices.hug_emoji()
+    )
+
+    slowprint(
+        "Each item will allow you to unlock the next room."
+        + emoji_choices.door_emoji()
+    )
+
+    slowprint(
+        "Here you will find the next item."
+        + emoji_choices.magicball_emoji()
+    )
+
+    slowprint(
+        "In the final room you will discover who is behind the malevolence."
+        + emoji_choices.evil_emoji()
+    )
+
+    slowprint(
+        "You must beat them by casting 3 spells in the correct order... "
+        + emoji_choices.spell_emoji()
+    )
+
+    slowprint(
+        "Good luck, we're counting on you!"
+        + emoji_choices.luck_emoji()
     )
 
     main_two()
