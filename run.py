@@ -35,8 +35,7 @@ def choose_play_game():
     """
     play_game_responses = YesNo(
         "Great choice, let the adventure begin!",
-        "That's a shame, maybe next time!",
-        "Please choose either y or n.",
+        "That's a shame, maybe next time!"
         )
 
     play_game_input = input("Ready to face up to the challenge? (y/n) \n")
@@ -57,8 +56,7 @@ def choose_game_instructions():
     """
     game_instructions_responses = YesNo(
         "Right, let me explain the game to you!",
-        "Ok, let's carry on with the quest!",
-        "Please choose either y or n.",
+        "Ok, let's carry on with the quest!"
         )
 
     game_instructions_input = input(
@@ -137,8 +135,7 @@ def wand_request():
     """
     wand_request_responses = YesNo(
         "'Lovely, let's see what we can find for you!'",
-        "'Fine, but you won't get far without one!'",
-        "Please choose either y or n.",
+        "'Fine, but you won't get far without one!'"
         )
 
     wand_request_input = input(
