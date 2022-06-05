@@ -7,6 +7,7 @@ import random
 from collectibles import inventory
 from collectibles import Wand
 from collectibles import Pet
+from questions import YesNo
 
 
 def game_intro():
@@ -32,26 +33,21 @@ def choose_play_game():
     """
     Asks the user if they want to play the game or not
     """
+    play_game = YesNo(
+        "Great choice, let the adventure begin!",
+        "That's a shame, maybe next time!",
+        "Please choose either y or n.",
+        )
+
     play_game_options = input("Ready to face up to the challenge? (y/n) \n")
+
     if play_game_options == "y":
-        print(
-            "\n"
-            "Great choice, let the adventure begin! "
-            "\U0001F642 \n"
-        )
+        print(play_game.yes_response())
     elif play_game_options == "n":
-        print(
-            "\n"
-            "That's a shame, maybe next time! "
-            "\U0001F641 \n"
-        )
+        print(play_game.no_response())
         main_one()
     else:
-        print(
-            "\n"
-            "Please choose either y or n. "
-            "\U0001F610 \n"
-        )
+        print(play_game.other_response())
         choose_play_game()
 
 
