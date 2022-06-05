@@ -135,29 +135,23 @@ def wand_request():
     """
     Asks the player to request a wand
     """
-    ask_for_wand = input(
+    wand_request_responses = YesNo(
+        "'Lovely, let's see what we can find for you!'",
+        "'Fine, but you won't get far without one!'",
+        "Please choose either y or n.",
+        )
+
+    wand_request_input = input(
         "'So, tell me, are you in need of a wand?' (y/n) \n"
         )
 
-    if ask_for_wand == "y":
-        print(
-            "\n"
-            "'Lovely, let's see what we can find for you!' "
-            "\U0001F642 \n"
-        )
-    elif ask_for_wand == "n":
-        print(
-            "\n"
-            "'Fine, but you won't get far without one!' "
-            "\U0001F641 \n"
-        )
+    if wand_request_input == "y":
+        print(wand_request_responses.yes_response())
+    elif wand_request_input == "n":
+        print(wand_request_responses.no_response())
         exit_game()
     else:
-        print(
-            "\n"
-            "Please choose either y or n. "
-            "\U0001F610 \n"
-        )
+        print(wand_request_responses.other_response())
         wand_request()
 
 
