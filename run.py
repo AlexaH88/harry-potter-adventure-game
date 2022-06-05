@@ -172,16 +172,19 @@ def assign_wand():
 
     if "Harry Potter's wand" in random_wand_options:
         print(harry.description())
-        print(harry.add_wand_to_inventory())
         print("\U0001F426 \n")
+        print(harry.add_wand_to_inventory())
+        print("\U0001F392 \n")
     elif "Albus Dumbledore's wand" in random_wand_options:
         print(albus.description())
-        print(albus.add_wand_to_inventory())
         print("\U0001F31F \n")
+        print(albus.add_wand_to_inventory())
+        print("\U0001F392 \n")
     elif "Rubeus Hagrid's wand" in random_wand_options:
         print(rubeus.description())
-        print(rubeus.add_wand_to_inventory())
         print("\U0001F333 \n")
+        print(rubeus.add_wand_to_inventory())
+        print("\U0001F392 \n")
 
 
 def pet_backstory():
@@ -218,23 +221,27 @@ def pet_request():
     if "a" in ask_for_pet:
         print(cat.choice_confirmation())
         print(cat.description())
-        print(cat.add_pet_to_inventory())
         print("\U0001F431 \n")
+        print(cat.add_pet_to_inventory())
+        print("\U0001F392 \n")
     elif "b" in ask_for_pet:
         print(rat.choice_confirmation())
         print(rat.description())
-        print(rat.add_pet_to_inventory())
         print("\U0001F42D \n")
+        print(rat.add_pet_to_inventory())
+        print("\U0001F392 \n")
     elif "c" in ask_for_pet:
         print(toad.choice_confirmation())
         print(toad.description())
-        print(toad.add_pet_to_inventory())
         print("\U0001F438 \n")
+        print(toad.add_pet_to_inventory())
+        print("\U0001F392 \n")
     elif "d" in ask_for_pet:
         print(owl.choice_confirmation())
         print(owl.description())
-        print(owl.add_pet_to_inventory())
         print("\U0001F989 \n")
+        print(owl.add_pet_to_inventory())
+        print("\U0001F392 \n")
     else:
         print("Please enter a, b, c, or d.")
         print("\U0001F610 \n")
