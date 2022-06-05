@@ -10,7 +10,7 @@ class Wand:
     """
     Wand class
     """
-    def __init__(self, owner, length, wood, core, characteristic):
+    def __init__(self, owner, length, wood, core, characteristic, emoji):
         """
         Creates an instance of Wand
         """
@@ -19,6 +19,7 @@ class Wand:
         self.wood = wood
         self.core = core
         self.characteristic = characteristic
+        self.emoji = emoji
 
     def description(self):
         """
@@ -29,6 +30,7 @@ class Wand:
             f"is made with {self.wood} wood, "
             f"has a(n) {self.core} core, "
             f"and is {self.characteristic}!' "
+            f"{self.emoji} \n"
         )
 
     def add_wand_to_inventory(self):
@@ -36,7 +38,10 @@ class Wand:
         Adds wand to the player's inventory
         """
         inventory.append({self.owner})
-        return f"{self.owner} was added to your inventory. "
+        return (
+            f"{self.owner} was added to your inventory. "
+            "\U0001F392 \n"
+        )
 
 
 class Pet:

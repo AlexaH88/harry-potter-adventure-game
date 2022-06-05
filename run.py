@@ -179,31 +179,34 @@ def assign_wand():
         "11 inches",
         "holly",
         "Phoenix feather",
-        "nice and supple")
+        "nice and supple",
+        "\U0001F426")
 
     albus = Wand(
         "Albus Dumbledore's wand",
         "15 inches",
         "elder",
         "Thestral tail hair",
-        "the most powerful wand ever to exist")
+        "the most powerful wand ever to exist",
+        "\U0001F31F")
 
     rubeus = Wand(
         "Rubeus Hagrid's wand",
         "16 inches",
         "oak",
         "unknown",
-        "rather bendy")
+        "rather bendy",
+        "\U0001F333")
 
     if "Harry Potter's wand" in random_wand_options:
-        print(harry.description() + "\U0001F426 \n")
-        print(harry.add_wand_to_inventory() + "\U0001F392 \n")
+        print(harry.description())
+        print(harry.add_wand_to_inventory())
     elif "Albus Dumbledore's wand" in random_wand_options:
-        print(albus.description() + "\U0001F31F \n")
-        print(albus.add_wand_to_inventory() + "\U0001F392 \n")
+        print(albus.description())
+        print(albus.add_wand_to_inventory())
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        print(rubeus.description() + "\U0001F333 \n")
-        print(rubeus.add_wand_to_inventory() + "\U0001F392 \n")
+        print(rubeus.description())
+        print(rubeus.add_wand_to_inventory())
 
 
 def pet_backstory():
