@@ -101,13 +101,22 @@ def choose_game_instructions():
         )
 
     if game_instructions_input == "y":
-        slowprint(game_instructions_responses.yes_response())
+        slowprint(
+            game_instructions_responses.yes_response()
+            + emoji_choices.happy_emoji()
+            )
         game_instructions()
     elif game_instructions_input == "n":
-        slowprint(game_instructions_responses.no_response())
+        slowprint(
+            game_instructions_responses.no_response()
+            + emoji_choices.happy_emoji()
+            )
         main_two()
     else:
-        slowprint(game_instructions_responses.other_response())
+        slowprint(
+            game_instructions_responses.other_response()
+            + emoji_choices.neutral_emoji()
+            )
         choose_game_instructions()
 
 
@@ -180,12 +189,20 @@ def wand_request():
         )
 
     if wand_request_input == "y":
-        slowprint(wand_request_responses.yes_response())
+        slowprint(
+            wand_request_responses.yes_response()
+            + emoji_choices.happy_emoji()
+            )
     elif wand_request_input == "n":
-        slowprint(wand_request_responses.no_response())
+        slowprint(
+            wand_request_responses.no_response()
+            + emoji_choices.sad_emoji()
+            )
         exit_game()
     else:
-        slowprint(wand_request_responses.other_response())
+        slowprint(
+            wand_request_responses.other_response()
+            + emoji_choices.neutral_emoji())
         wand_request()
 
 
