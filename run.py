@@ -220,7 +220,7 @@ def wand_backstory():
     )
 
     slowprint(
-        "In order to save Hogwarts you're going to need a wand!"
+        "In order to save Hogwarts, you're going to need a wand!"
         + emoji_choices.spell_emoji()
     )
 
@@ -384,27 +384,11 @@ def pet_request():
     )
 
     slowprint(
-        "You can choose from the following:"
-    )
-
-    slowprint(
-        "(a) cat"
-        + emoji_choices.cat_emoji()
-    )
-
-    slowprint(
-        "(b) rat"
-        + emoji_choices.rat_emoji()
-    )
-
-    slowprint(
-        "(c) toad"
-        + emoji_choices.toad_emoji()
-    )
-
-    slowprint(
-        "(d) owl"
-        + emoji_choices.owl_emoji()
+        "You can choose from the following: \n"
+        "(a) cat \U0001F431 \n"
+        "(b) rat \U0001F42D \n"
+        "(c) toad \U0001F438 \n"
+        "(d) owl \U0001F989 \n"
     )
 
     ask_for_pet = input("'Which pet would you like?' \n")
@@ -414,9 +398,12 @@ def pet_request():
     if "a" in ask_for_pet:
         slowprint(
             cat.choice_confirmation()
+            + emoji_choices.twohearts_emoji()
+        )
+        slowprint(
+            cat.description()
             + emoji_choices.cat_emoji()
         )
-        slowprint(cat.description())
         slowprint(
             cat.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
@@ -424,9 +411,12 @@ def pet_request():
     elif "b" in ask_for_pet:
         slowprint(
             rat.choice_confirmation()
+            + emoji_choices.twohearts_emoji()
+        )
+        slowprint(
+            rat.description()
             + emoji_choices.rat_emoji()
         )
-        slowprint(rat.description())
         slowprint(
             rat.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
@@ -434,9 +424,12 @@ def pet_request():
     elif "c" in ask_for_pet:
         slowprint(
             toad.choice_confirmation()
+            + emoji_choices.twohearts_emoji()
+        )
+        slowprint(
+            toad.description()
             + emoji_choices.toad_emoji()
         )
-        slowprint(toad.description())
         slowprint(
             toad.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
@@ -444,9 +437,12 @@ def pet_request():
     elif "d" in ask_for_pet:
         slowprint(
             owl.choice_confirmation()
+            + emoji_choices.twohearts_emoji()
+        )
+        slowprint(
+            owl.description()
             + emoji_choices.owl_emoji()
-            )
-        slowprint(owl.description())
+        )
         slowprint(
             owl.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
