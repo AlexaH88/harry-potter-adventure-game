@@ -357,7 +357,7 @@ def pet_backstory():
 
     slowprint(
         "An animal companion to help you on your quest!"
-        + emoji_choices.twohearts_emoji()
+        + emoji_choices.animal_emoji()
     )
 
     slowprint(
@@ -388,7 +388,7 @@ def pet_request():
         "(a) cat \U0001F431 \n"
         "(b) rat \U0001F42D \n"
         "(c) toad \U0001F438 \n"
-        "(d) owl \U0001F989 \n"
+        "(d) owl \U0001F989"
     )
 
     ask_for_pet = input("'Which pet would you like?' \n")
@@ -398,7 +398,7 @@ def pet_request():
     if "a" in ask_for_pet:
         slowprint(
             cat.choice_confirmation()
-            + emoji_choices.twohearts_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             cat.description()
@@ -411,7 +411,7 @@ def pet_request():
     elif "b" in ask_for_pet:
         slowprint(
             rat.choice_confirmation()
-            + emoji_choices.twohearts_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             rat.description()
@@ -424,7 +424,7 @@ def pet_request():
     elif "c" in ask_for_pet:
         slowprint(
             toad.choice_confirmation()
-            + emoji_choices.twohearts_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             toad.description()
@@ -437,7 +437,7 @@ def pet_request():
     elif "d" in ask_for_pet:
         slowprint(
             owl.choice_confirmation()
-            + emoji_choices.twohearts_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             owl.description()
@@ -462,21 +462,33 @@ def travel_to_hogwarts_backstory():
     new_line()
 
     slowprint(
-        "So, now that that's done, let's get to it! "
-        "Grab on to this portkey and let's go to Hogwarts! "
-        "\U0001F3F0"
+        "So, now that that's done, let's get to it!"
+        + emoji_choices.lightning_emoji()
     )
 
     slowprint(
-        "Here we are, I hope you're ready! "
-        "Let's see now, how do we get inside? "
-        "\U0001F914"
+        "Grab on to this portkey and let's go to Hogwarts!"
+        + emoji_choices.castle_emoji()
     )
 
     slowprint(
-        "Ah, here's the entrance. "
-        "OK, I can see here there are some instructions pinned to the door. "
-        "\U0001F9D0"
+        "Here we are, I hope you're ready!"
+        + emoji_choices.luck_emoji()
+    )
+
+    slowprint(
+        "Let's see now, how do we get inside?"
+        + emoji_choices.thinking_emoji()
+    )
+
+    slowprint(
+        "Ah, here's the entrance!"
+        + emoji_choices.door_emoji()
+    )
+
+    slowprint(
+        "OK, I can see here there are some instructions pinned to the door."
+        + emoji_choices.note_emoji()
     )
 
 
@@ -488,12 +500,17 @@ def first_door_challenge():
     new_line()
 
     slowprint(
-        "The instructions read: "
-        "You will need a key to unlock this door. "
-        "\U0001F511")
+        "The instructions read: \n"
+        "You will need a key to unlock this door."
+        + emoji_choices.key_emoji()
+    )
 
     slowprint(
-        "It's located in a chest in the Forbidden Forest. "
+        "It's located in a chest in the Forbidden Forest."
+        + emoji_choices.forest_emoji()
+    )
+
+    slowprint(
         "But there are several obstacles in the way: \n"
         "(a) A pond, perfect for swimming across... "
         "\U0001F4A7 \n"
@@ -502,10 +519,13 @@ def first_door_challenge():
         "(c) An ivy plant, perfect for chewing through... "
         "\U0001F33F \n"
         "(d) A small mountain, perfect for flying over... "
-        "\U0001F5FB \n"
+        "\U0001F5FB"
     )
 
-    slowprint("Maybe your pet could help you here...")
+    slowprint(
+        "Maybe your pet could help you here..."
+        + emoji_choices.animal_emoji()
+        )
     get_key = input("Which option do you pick? \n")
 
     print("\n")

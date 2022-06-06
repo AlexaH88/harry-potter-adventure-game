@@ -1,5 +1,5 @@
 """
-Contains classes for all the questions in the game
+Contains classes for the questions in the game
 """
 
 
