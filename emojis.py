@@ -34,7 +34,7 @@ class Emoji:
         self.harrywand = " \U0001F426"
         self.albuswand = " \U0001F31F"
         self.rubeuswand = " \U0001F333"
-        self.animal = " \U0001F495"
+        self.animal = " \U0001F43E"
         self.oldlady = " \U0001F475"
         self.backpack = " \U0001F392"
         self.cat = " \U0001F431"

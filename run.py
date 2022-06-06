@@ -10,10 +10,13 @@ from collectibles import inventory
 from collectibles import Wand
 from collectibles import Pet
 from questions import YesNo
+from questions import Abcd
+from questions import AbcdOther
 from emojis import Emoji
 
 
 emoji_choices = Emoji()
+abcd_other_responses = AbcdOther()
 
 
 # code taken from codegrepper.com and adapted - see README for details
@@ -398,11 +401,11 @@ def pet_request():
     if "a" in ask_for_pet:
         slowprint(
             cat.choice_confirmation()
-            + emoji_choices.animal_emoji()
+            + emoji_choices.cat_emoji()
         )
         slowprint(
             cat.description()
-            + emoji_choices.cat_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             cat.add_pet_to_inventory()
@@ -411,11 +414,11 @@ def pet_request():
     elif "b" in ask_for_pet:
         slowprint(
             rat.choice_confirmation()
-            + emoji_choices.animal_emoji()
+            + emoji_choices.rat_emoji()
         )
         slowprint(
             rat.description()
-            + emoji_choices.rat_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             rat.add_pet_to_inventory()
@@ -424,11 +427,11 @@ def pet_request():
     elif "c" in ask_for_pet:
         slowprint(
             toad.choice_confirmation()
-            + emoji_choices.animal_emoji()
+            + emoji_choices.toad_emoji()
         )
         slowprint(
             toad.description()
-            + emoji_choices.toad_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             toad.add_pet_to_inventory()
@@ -437,11 +440,11 @@ def pet_request():
     elif "d" in ask_for_pet:
         slowprint(
             owl.choice_confirmation()
-            + emoji_choices.animal_emoji()
+            + emoji_choices.owl_emoji()
         )
         slowprint(
             owl.description()
-            + emoji_choices.owl_emoji()
+            + emoji_choices.animal_emoji()
         )
         slowprint(
             owl.add_pet_to_inventory()
@@ -449,8 +452,8 @@ def pet_request():
         )
     else:
         slowprint(
-            "Please enter a, b, c, or d. "
-            "\U0001F610"
+            abcd_other_responses.other_response()
+            + emoji_choices.neutral_emoji()
         )
         pet_request()
 
@@ -488,7 +491,7 @@ def travel_to_hogwarts_backstory():
 
     slowprint(
         "OK, I can see here there are some instructions pinned to the door."
-        + emoji_choices.note_emoji()
+        + emoji_choices.monocle_emoji()
     )
 
 
@@ -500,8 +503,7 @@ def first_door_challenge():
     new_line()
 
     slowprint(
-        "The instructions read: \n"
-        "You will need a key to unlock this door."
+        "The instructions read: 'You will need a key to unlock this door.'"
         + emoji_choices.key_emoji()
     )
 
@@ -568,8 +570,8 @@ def first_door_challenge():
         exit_game()
     else:
         slowprint(
-            "Please enter a, b, c, or d. "
-            "\U0001F610"
+            abcd_other_responses.other_response()
+            + emoji_choices.neutral_emoji()
         )
         first_door_challenge()
 
@@ -631,6 +633,9 @@ def main_two():
     first_door_challenge()
 
 
-main_one()
-request_exit_game()
-request_inventory()
+#main_one()
+#request_exit_game()
+#request_inventory()
+
+pet_request()
+first_door_challenge()
