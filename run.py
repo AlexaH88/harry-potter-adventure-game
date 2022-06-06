@@ -299,39 +299,45 @@ def assign_wand():
         "11 inches",
         "holly",
         "Phoenix feather",
-        "nice and supple",
-        "\U0001F426")
+        "nice and supple")
 
     albus = Wand(
         "Albus Dumbledore's wand",
         "15 inches",
         "elder",
         "Thestral tail hair",
-        "the most powerful wand ever to exist",
-        "\U0001F31F")
+        "the most powerful wand ever to exist")
 
     rubeus = Wand(
         "Rubeus Hagrid's wand",
         "16 inches",
         "oak",
         "unknown",
-        "rather bendy",
-        "\U0001F333")
+        "rather bendy")
 
     if "Harry Potter's wand" in random_wand_options:
-        slowprint(harry.description())
+        slowprint(
+            harry.description()
+            + emoji_choices.harrywand_emoji()
+        )
         slowprint(
             harry.add_wand_to_inventory()
             + emoji_choices.backpack_emoji()
         )
     elif "Albus Dumbledore's wand" in random_wand_options:
-        slowprint(albus.description())
+        slowprint(
+            albus.description()
+            + emoji_choices.albuswand_emoji()
+        )
         slowprint(
             albus.add_wand_to_inventory()
             + emoji_choices.backpack_emoji()
         )
     elif "Rubeus Hagrid's wand" in random_wand_options:
-        slowprint(rubeus.description())
+        slowprint(
+            rubeus.description()
+            + emoji_choices.rubeuswand_emoji()
+        )
         slowprint(
             rubeus.add_wand_to_inventory()
             + emoji_choices.backpack_emoji()
@@ -367,10 +373,10 @@ def pet_request():
     """
     new_line()
 
-    cat = Pet("cat", "climbing", "\U0001F431")
-    rat = Pet("rat", "chewing", "\U0001F42D")
-    toad = Pet("toad", "swimming", "\U0001F438")
-    owl = Pet("owl", "flying", "\U0001F989")
+    cat = Pet("cat", "climbing")
+    rat = Pet("rat", "chewing")
+    toad = Pet("toad", "swimming")
+    owl = Pet("owl", "flying")
 
     slowprint(
         "'Welcome to my shop, let me show you what lovely pets we've got!'"
@@ -378,39 +384,68 @@ def pet_request():
     )
 
     slowprint(
-        "You can choose from the following: \n"
-        "(a) cat \U0001F431 \n"
-        "(b) rat \U0001F42D \n"
-        "(c) toad \U0001F438 \n"
-        "(d) owl \U0001F989 \n"
+        "You can choose from the following:"
     )
+
+    slowprint(
+        "(a) cat"
+        + emoji_choices.cat_emoji()
+    )
+
+    slowprint(
+        "(b) rat"
+        + emoji_choices.rat_emoji()
+    )
+
+    slowprint(
+        "(c) toad"
+        + emoji_choices.toad_emoji()
+    )
+
+    slowprint(
+        "(d) owl"
+        + emoji_choices.owl_emoji()
+    )
+
     ask_for_pet = input("'Which pet would you like?' \n")
 
     print("\n")
 
     if "a" in ask_for_pet:
-        slowprint(cat.choice_confirmation())
+        slowprint(
+            cat.choice_confirmation()
+            + emoji_choices.cat_emoji()
+        )
         slowprint(cat.description())
         slowprint(
             cat.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
         )
     elif "b" in ask_for_pet:
-        slowprint(rat.choice_confirmation())
+        slowprint(
+            rat.choice_confirmation()
+            + emoji_choices.rat_emoji()
+        )
         slowprint(rat.description())
         slowprint(
             rat.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
         )
     elif "c" in ask_for_pet:
-        slowprint(toad.choice_confirmation())
+        slowprint(
+            toad.choice_confirmation()
+            + emoji_choices.toad_emoji()
+        )
         slowprint(toad.description())
         slowprint(
             toad.add_pet_to_inventory()
             + emoji_choices.backpack_emoji()
         )
     elif "d" in ask_for_pet:
-        slowprint(owl.choice_confirmation())
+        slowprint(
+            owl.choice_confirmation()
+            + emoji_choices.owl_emoji()
+            )
         slowprint(owl.description())
         slowprint(
             owl.add_pet_to_inventory()

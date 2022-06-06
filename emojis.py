@@ -31,9 +31,16 @@ class Emoji:
         self.oldman = " \U0001F474"
         self.shop = " \U0001F3EC"
         self.monocle = " \U0001F9D0"
+        self.harrywand = " \U0001F426"
+        self.albuswand = " \U0001F31F"
+        self.rubeuswand = " \U0001F333"
         self.twohearts = " \U0001F495"
         self.oldlady = " \U0001F475"
         self.backpack = " \U0001F392"
+        self.cat = " \U0001F431"
+        self.rat = " \U0001F42D"
+        self.toad = " \U0001F438"
+        self.owl = " \U0001F989"
 
     def lightning_emoji(self):
         """
@@ -155,6 +162,24 @@ class Emoji:
         """
         return f"{self.monocle}"
 
+    def harrywand_emoji(self):
+        """
+        Runs harrywand emoji
+        """
+        return f"{self.harrywand}"
+
+    def albuswand_emoji(self):
+        """
+        Runs albuswand emoji
+        """
+        return f"{self.albuswand}"
+
+    def rubeuswand_emoji(self):
+        """
+        Runs rubeuswand emoji
+        """
+        return f"{self.rubeuswand}"
+
     def twohearts_emoji(self):
         """
         Runs twohearts emoji
@@ -172,3 +197,27 @@ class Emoji:
         Runs backpack emoji
         """
         return f"{self.backpack}"
+
+    def cat_emoji(self):
+        """
+        Runs cat emoji
+        """
+        return f"{self.cat}"
+
+    def rat_emoji(self):
+        """
+        Runs rat emoji
+        """
+        return f"{self.rat}"
+
+    def toad_emoji(self):
+        """
+        Runs toad emoji
+        """
+        return f"{self.toad}"
+
+    def owl_emoji(self):
+        """
+        Runs owl emoji
+        """
+        return f"{self.owl}"
