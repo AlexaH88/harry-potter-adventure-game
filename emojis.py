@@ -27,6 +27,9 @@ class Emoji:
         self.evil = " \U0001F608"
         self.spell = " \U0001F320"
         self.luck = " \U0001F340"
+        self.thinking = " \U0001F914"
+        self.oldman = " \U0001F474"
+        self.shop = " \U0001F3EC"
 
     def lightning_emoji(self):
         """
@@ -123,3 +126,21 @@ class Emoji:
         Runs luck emoji
         """
         return f"{self.luck}"
+
+    def thinking_emoji(self):
+        """
+        Runs thinking emoji
+        """
+        return f"{self.thinking}"
+
+    def oldman_emoji(self):
+        """
+        Runs oldman emoji
+        """
+        return f"{self.oldman}"
+
+    def shop_emoji(self):
+        """
+        Runs shop emoji
+        """
+        return f"{self.shop}"

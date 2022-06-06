@@ -39,7 +39,7 @@ def game_intro():
     """
     Runs game intro text
     """
-    print("\n")
+    new_line()
 
     slowprint(
         "Welcome to the Harry Potter Adventure Game!"
@@ -215,14 +215,18 @@ def wand_backstory():
     new_line()
 
     slowprint(
-        "Now, let's see. "
-        "\U0001F914"
-        "In order to save Hogwarts you're going to need a wand! "
-        "\U0001F320"
-        "Let's go and see our favourite wandmaker, Garrick Ollivander! "
-        "\U0001F474"
-        "'Welcome to my shop, you've come to the right place!' "
-        "\U0001F3EC"
+        "Now, let's see."
+        + emoji_choices.thinking_emoji()
+    )
+
+    slowprint(
+        "In order to save Hogwarts you're going to need a wand!"
+        + emoji_choices.spell_emoji()
+    )
+
+    slowprint(
+        "Let's go and see our favourite wandmaker, Garrick Ollivander!"
+        + emoji_choices.oldman_emoji()
     )
 
 
@@ -236,6 +240,11 @@ def wand_request():
         "'Lovely, let's see what we can find for you!'",
         "'Fine, but you won't get far without one!'"
         )
+
+    slowprint(
+        "'Welcome to my shop, you've come to the right place!'"
+        + emoji_choices.shop_emoji()
+    )
 
     wand_request_input = input(
         "'So, tell me, are you in need of a wand?' (y/n) \n"
