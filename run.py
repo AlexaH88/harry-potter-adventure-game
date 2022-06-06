@@ -24,7 +24,7 @@ def slowprint(all_strings):
     for each_character in all_strings + '\n':
         sys.stdout.write(each_character)
         sys.stdout.flush()
-        time.sleep(1./20)
+        time.sleep(1./15)
 
 
 def game_intro():
