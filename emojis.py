@@ -30,6 +30,9 @@ class Emoji:
         self.thinking = " \U0001F914"
         self.oldman = " \U0001F474"
         self.shop = " \U0001F3EC"
+        self.monocle = " \U0001F9D0"
+        self.twohearts = " \U0001F495"
+        self.oldlady = " \U0001F475"
 
     def lightning_emoji(self):
         """
@@ -144,3 +147,21 @@ class Emoji:
         Runs shop emoji
         """
         return f"{self.shop}"
+
+    def monocle_emoji(self):
+        """
+        Runs monocle emoji
+        """
+        return f"{self.monocle}"
+
+    def twohearts_emoji(self):
+        """
+        Runs twohearts emoji
+        """
+        return f"{self.twohearts}"
+
+    def oldlady_emoji(self):
+        """
+        Runs oldlady emoji
+        """
+        return f"{self.oldlady}"

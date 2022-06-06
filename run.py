@@ -278,8 +278,8 @@ def assign_wand():
     new_line()
 
     slowprint(
-        "Ollivander looks you up and down, studying you carefully... "
-        "\U0001F9D0"
+        "Ollivander looks you up and down, studying you carefully..."
+        + emoji_choices.monocle_emoji()
     )
 
     wand_options = [
@@ -290,8 +290,8 @@ def assign_wand():
     random_wand_options = random.choice(wand_options)
 
     slowprint(
-        f"'{random_wand_options} will suit you nicely!' "
-        "\U0001F320"
+        f"'{random_wand_options} will suit you nicely!'"
+        + emoji_choices.spell_emoji()
     )
 
     harry = Wand(
@@ -336,14 +336,18 @@ def pet_backstory():
     new_line()
 
     slowprint(
-        "Right, what's next? "
-        "\U0001F914"
-        "An animal companion to help you on your quest! "
-        "\U0001F495"
-        "Let's pop into The Magical Menagerie to get one! "
-        "\U0001F3EC"
-        "'Welcome to my shop, let me show you what lovely pets we've got!' "
-        "\U0001F475"
+        "Right, what's next?"
+        + emoji_choices.thinking_emoji()
+    )
+
+    slowprint(
+        "An animal companion to help you on your quest!"
+        + emoji_choices.twohearts_emoji()
+    )
+
+    slowprint(
+        "Let's pop into The Magical Menagerie to get one!"
+        + emoji_choices.shop_emoji()
     )
 
 
@@ -358,6 +362,11 @@ def pet_request():
     rat = Pet("rat", "chewing", "\U0001F42D")
     toad = Pet("toad", "swimming", "\U0001F438")
     owl = Pet("owl", "flying", "\U0001F989")
+
+    slowprint(
+        "'Welcome to my shop, let me show you what lovely pets we've got!'"
+        + emoji_choices.oldlady_emoji()
+    )
 
     slowprint(
         "You can choose from the following: \n"
