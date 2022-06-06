@@ -30,7 +30,7 @@ class Wand:
             f"is made with {self.wood} wood, "
             f"has a(n) {self.core} core, "
             f"and is {self.characteristic}!' "
-            f"{self.emoji} \n"
+            f"{self.emoji}"
         )
 
     def add_wand_to_inventory(self):
@@ -39,8 +39,7 @@ class Wand:
         """
         inventory.append({self.owner})
         return (
-            f"{self.owner} was added to your inventory. "
-            "\U0001F392 \n"
+            f"{self.owner} was added to your inventory."
         )
 
 
@@ -60,7 +59,7 @@ class Pet:
         """
         Confirms pet choice
         """
-        return f"\n'Great choice! You'll love your {self.kind}!' {self.emoji} "
+        return f"'Great choice! You'll love your {self.kind}!' {self.emoji} "
 
     def description(self):
         """
@@ -68,7 +67,7 @@ class Pet:
         """
         return (
             f"'{self.kind.capitalize()}s are known for their impressive "
-            f"{self.skill} skills. Use this wisely!' \n"
+            f"{self.skill} skills. Use this wisely!'"
         )
 
     def add_pet_to_inventory(self):
@@ -76,4 +75,4 @@ class Pet:
         Adds pet to the player's inventory
         """
         inventory.append(str({self.kind}))
-        return f"Your {self.kind} was added to your inventory. \U0001F392 \n"
+        return f"Your {self.kind} was added to your inventory."

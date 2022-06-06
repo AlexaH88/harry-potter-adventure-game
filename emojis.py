@@ -33,6 +33,7 @@ class Emoji:
         self.monocle = " \U0001F9D0"
         self.twohearts = " \U0001F495"
         self.oldlady = " \U0001F475"
+        self.backpack = " \U0001F392"
 
     def lightning_emoji(self):
         """
@@ -165,3 +166,9 @@ class Emoji:
         Runs oldlady emoji
         """
         return f"{self.oldlady}"
+
+    def backpack_emoji(self):
+        """
+        Runs backpack emoji
+        """
+        return f"{self.backpack}"

@@ -320,13 +320,22 @@ def assign_wand():
 
     if "Harry Potter's wand" in random_wand_options:
         slowprint(harry.description())
-        slowprint(harry.add_wand_to_inventory())
+        slowprint(
+            harry.add_wand_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     elif "Albus Dumbledore's wand" in random_wand_options:
         slowprint(albus.description())
-        slowprint(albus.add_wand_to_inventory())
+        slowprint(
+            albus.add_wand_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     elif "Rubeus Hagrid's wand" in random_wand_options:
         slowprint(rubeus.description())
-        slowprint(rubeus.add_wand_to_inventory())
+        slowprint(
+            rubeus.add_wand_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
 
 
 def pet_backstory():
@@ -382,19 +391,31 @@ def pet_request():
     if "a" in ask_for_pet:
         slowprint(cat.choice_confirmation())
         slowprint(cat.description())
-        slowprint(cat.add_pet_to_inventory())
+        slowprint(
+            cat.add_pet_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     elif "b" in ask_for_pet:
         slowprint(rat.choice_confirmation())
         slowprint(rat.description())
-        slowprint(rat.add_pet_to_inventory())
+        slowprint(
+            rat.add_pet_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     elif "c" in ask_for_pet:
         slowprint(toad.choice_confirmation())
         slowprint(toad.description())
-        slowprint(toad.add_pet_to_inventory())
+        slowprint(
+            toad.add_pet_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     elif "d" in ask_for_pet:
         slowprint(owl.choice_confirmation())
         slowprint(owl.description())
-        slowprint(owl.add_pet_to_inventory())
+        slowprint(
+            owl.add_pet_to_inventory()
+            + emoji_choices.backpack_emoji()
+        )
     else:
         slowprint(
             "Please enter a, b, c, or d. "
