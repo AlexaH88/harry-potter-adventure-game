@@ -502,6 +502,14 @@ def first_door_challenge():
     """
     new_line()
 
+    first_door_choices = Abcd(
+        "Yes, well done! Your toad will tackle that no problem!",
+        "Yes, well done! Your cat will tackle that no problem!",
+        "Yes, well done! Your rat will tackle that no problem!",
+        "Yes, well done! Your owl will tackle that no problem!",
+        "Hmm no, your pet can't do that!"
+    )
+
     slowprint(
         "The instructions read: 'You will need a key to unlock this door.'"
         + emoji_choices.key_emoji()
@@ -534,39 +542,47 @@ def first_door_challenge():
 
     if "a" in get_key and "{'toad'}" in inventory:
         slowprint(
-            "Yes, well done! "
-            "Your toad will tackle that no problem! "
-            "\U0001F438"
+            first_door_choices.a_response_correct()
+            + emoji_choices.toad_emoji()
         )
     elif "b" in get_key and "{'cat'}" in inventory:
         slowprint(
-            "Yes, well done! "
-            "Your cat will tackle that no problem! "
-            "\U0001F431"
+            first_door_choices.b_response_correct()
+            + emoji_choices.cat_emoji()
         )
     elif "c" in get_key and "{'rat'}" in inventory:
         slowprint(
-            "Yes, well done! "
-            "Your rat will tackle that no problem! "
-            "\U0001F42D"
+            first_door_choices.c_response_correct()
+            + emoji_choices.rat_emoji()
         )
     elif "d" in get_key and "{'owl'}" in inventory:
         slowprint(
-            "Yes, well done! "
-            "Your owl will tackle that no problem! "
-            "\U0001F989"
+            first_door_choices.d_response_correct()
+            + emoji_choices.owl_emoji()
         )
     elif "a" in get_key and "{'toad'}" not in inventory:
-        slowprint("Hmm no, your pet can't do that...")
+        slowprint(
+            first_door_choices.response_incorrect()
+            + emoji_choices.animal_emoji()
+        )
         exit_game()
     elif "b" in get_key and "{'cat'}" not in inventory:
-        slowprint("Hmm no, your pet can't do that...")
+        slowprint(
+            first_door_choices.response_incorrect()
+            + emoji_choices.animal_emoji()
+        )
         exit_game()
     elif "c" in get_key and "{'rat'}" not in inventory:
-        slowprint("Hmm no, your pet can't do that...")
+        slowprint(
+            first_door_choices.response_incorrect()
+            + emoji_choices.animal_emoji()
+        )
         exit_game()
     elif "d" in get_key and "{'owl'}" not in inventory:
-        slowprint("Hmm no, your pet can't do that...")
+        slowprint(
+            first_door_choices.response_incorrect()
+            + emoji_choices.animal_emoji()
+        )
         exit_game()
     else:
         slowprint(
@@ -633,9 +649,6 @@ def main_two():
     first_door_challenge()
 
 
-#main_one()
-#request_exit_game()
-#request_inventory()
-
-pet_request()
-first_door_challenge()
+main_one()
+request_exit_game()
+request_inventory()
