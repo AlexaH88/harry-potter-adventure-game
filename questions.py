@@ -34,9 +34,26 @@ class YesNo:
         return f"{self.answer_other}"
 
 
-class Abcd:
+class AbcdOther:
     """
-    Abcd questions class
+    AbcdOther questions class
+    """
+    def __init__(self):
+        """
+        Creates an instance of AbcdOther
+        """
+        self.answer_other = "Please enter a, b, c, or d."
+
+    def other_response(self):
+        """
+        Runs response to player answering with any other key
+        """
+        return f"{self.answer_other}"
+
+
+class AbcdChallenge:
+    """
+    AbcdChallenge questions class
     """
     def __init__(
         self,
@@ -47,7 +64,7 @@ class Abcd:
         answer_incorrect,
     ):
         """
-        Creates an instance of Abcd
+        Creates an instance of AbcdChallenge
         """
         self.answer_a_correct = answer_a_correct
         self.answer_b_correct = answer_b_correct
@@ -86,18 +103,29 @@ class Abcd:
         return f"{self.answer_incorrect}"
 
 
-class AbcdOther:
+class AbcdQuestion:
     """
-    AbcdOther questions class
+    AbcdQuestion questions class
     """
-    def __init__(self):
+    def __init__(
+        self,
+        answer_correct,
+        answer_incorrect,
+    ):
         """
-        Creates an instance of AbcdOther
+        Creates an instance of AbcdQuestion
         """
-        self.answer_other = "Please enter a, b, c, or d."
+        self.answer_correct = answer_correct
+        self.answer_incorrect = answer_incorrect
 
-    def other_response(self):
+    def response_correct(self):
         """
-        Runs response to player answering with any other key
+        Runs response to player answering correctly
         """
-        return f"{self.answer_other}"
+        return f"{self.answer_correct}"
+
+    def response_incorrect(self):
+        """
+        Runs response to player answering incorrectly
+        """
+        return f"{self.answer_incorrect}"

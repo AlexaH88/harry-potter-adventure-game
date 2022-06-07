@@ -7,7 +7,7 @@ import time
 import sys
 import random
 from collectibles import inventory, Wand, Pet
-from questions import YesNo, Abcd, AbcdOther
+from questions import YesNo, AbcdOther, AbcdChallenge, AbcdQuestion
 from emojis import Emoji
 
 
@@ -439,7 +439,7 @@ def pet_request():
 
 def travel_to_hogwarts_backstory():
     """
-    Prints backstory on travelling to Hogwarts
+    Runs backstory on travelling to Hogwarts
     """
     new_line()
 
@@ -481,7 +481,7 @@ def first_door_challenge():
     """
     new_line()
 
-    first_door_choices = Abcd(
+    first_door_choices = AbcdChallenge(
         "Yes, well done! Your toad will tackle that no problem!",
         "Yes, well done! Your cat will tackle that no problem!",
         "Yes, well done! Your rat will tackle that no problem!",
@@ -515,57 +515,57 @@ def first_door_challenge():
         "Maybe your pet could help you here..."
         + emoji_choices.animal_emoji()
         )
-    get_key = input("Which option do you pick? \n")
+    first_door_input = input("Which option do you pick? \n")
 
     print("\n")
 
-    if "a" in get_key and "{'toad'}" in inventory:
+    if "a" in first_door_input and "{'toad'}" in inventory:
         slowprint(
             first_door_choices.a_response_correct()
             + emoji_choices.toad_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
-    elif "b" in get_key and "{'cat'}" in inventory:
+    elif "b" in first_door_input and "{'cat'}" in inventory:
         slowprint(
             first_door_choices.b_response_correct()
             + emoji_choices.cat_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
-    elif "c" in get_key and "{'rat'}" in inventory:
+    elif "c" in first_door_input and "{'rat'}" in inventory:
         slowprint(
             first_door_choices.c_response_correct()
             + emoji_choices.rat_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
-    elif "d" in get_key and "{'owl'}" in inventory:
+    elif "d" in first_door_input and "{'owl'}" in inventory:
         slowprint(
             first_door_choices.d_response_correct()
             + emoji_choices.owl_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
-    elif "a" in get_key and "{'toad'}" not in inventory:
+    elif "a" in first_door_input and "{'toad'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
             + emoji_choices.animal_emoji()
         )
         exit_game()
-    elif "b" in get_key and "{'cat'}" not in inventory:
+    elif "b" in first_door_input and "{'cat'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
             + emoji_choices.animal_emoji()
         )
         exit_game()
-    elif "c" in get_key and "{'rat'}" not in inventory:
+    elif "c" in first_door_input and "{'rat'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
             + emoji_choices.animal_emoji()
         )
         exit_game()
-    elif "d" in get_key and "{'owl'}" not in inventory:
+    elif "d" in first_door_input and "{'owl'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
             + emoji_choices.animal_emoji()
@@ -579,10 +579,9 @@ def first_door_challenge():
         first_door_challenge()
 
 
-def second_door_backstory():
+def first_room_backstory():
     """
-    Prompts the player to solve the second challenge,
-    in order to open the second door
+    Runs backstory on first room
     """
     new_line()
 
@@ -621,6 +620,57 @@ def second_door_backstory():
         "'But first you have to answer our question correctly!'"
         + emoji_choices.question_emoji()
     )
+
+
+def first_room_question():
+    """
+    Prompts the player to solve the first room question,
+    in order to obtain an item required to open the
+    next door
+    """
+    new_line()
+
+    first_room_choices = AbcdQuestion(
+        "'I see you're a fan! I think you'll like this item...'",
+        "'Nope, that's from a different shop in Diagon Alley!'"
+    )
+
+    slowprint(
+        "Out of the following items: \n"
+        "(a) The Monster Book of Monsters. "
+        "\U0001F4D6 \n"
+        "(b) Dungbombs. "
+        "\U0001F4A3 \n"
+        "(c) Extendable Ears. "
+        "\U0001F442 \n"
+        "(d) Butterbeer. "
+        "\U0001F37A"
+    )
+
+    first_room_input = input(
+        "'Which item is available for sale at Weasleys' Wizard Wheezes?' \n"
+        )
+
+    print("\n")
+
+    if "c" in first_room_input:
+        slowprint(
+            first_room_choices.response_correct()
+            + emoji_choices.map_emoji()
+        )
+        add_to_inventory("Marauder's Map")
+    elif "a" or "b" or "d" in first_room_input:
+        slowprint(
+            first_room_choices.response_incorrect()
+            + emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response()
+            + emoji_choices.neutral_emoji()
+        )
+        first_room_question()
 
 
 # Functions that are repeatedly called in the game story above
@@ -736,10 +786,8 @@ def main_two():
     pet_request()
     travel_to_hogwarts_backstory()
     first_door_challenge()
-    second_door_backstory()
-    second_door_challenge()
+    first_room_backstory()
+    first_room_question()
 
 
-#main_one()
-second_door_backstory()
-second_door_challenge()
+main_one()
