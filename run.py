@@ -579,6 +579,50 @@ def first_door_challenge():
         first_door_challenge()
 
 
+def second_door_backstory():
+    """
+    Prompts the player to solve the second challenge,
+    in order to open the second door
+    """
+    new_line()
+
+    slowprint(
+        "You enter the castle and look around the first room..."
+        + emoji_choices.castle_emoji()
+    )
+
+    slowprint(
+        "Hang on, is that a pygmy puff?! That can only mean one thing..."
+        + emoji_choices.animal_emoji()
+    )
+
+    slowprint(
+        "Fred and George Weasley are here!"
+        + emoji_choices.hug_emoji()
+    )
+
+    slowprint(
+        "Let's see if they can help us."
+        + emoji_choices.wizard_emoji()
+        + emoji_choices.wizard_emoji()
+    )
+
+    slowprint(
+        "'Look who we have here!'"
+        + emoji_choices.monocle_emoji()
+    )
+
+    slowprint(
+        "'We have something that could help you on your quest...'"
+        + emoji_choices.magicball_emoji()
+    )
+
+    slowprint(
+        "'But first you have to answer our question correctly!'"
+        + emoji_choices.question_emoji()
+    )
+
+
 # Functions that are repeatedly called in the game story above
 
 # code taken from codegrepper.com and adapted - see README for details
@@ -692,6 +736,10 @@ def main_two():
     pet_request()
     travel_to_hogwarts_backstory()
     first_door_challenge()
+    second_door_backstory()
+    second_door_challenge()
 
 
-main_one()
+#main_one()
+second_door_backstory()
+second_door_challenge()
