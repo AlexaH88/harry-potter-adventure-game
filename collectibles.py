@@ -3,10 +3,6 @@ Contains classes for all the collectibles in the game
 """
 
 
-from emojis import Emoji
-
-
-emoji_choices = Emoji()
 inventory = []
 
 
@@ -77,15 +73,3 @@ class Pet:
         """
         inventory.append(str({self.kind}))
         return f"Your {self.kind} was added to your inventory."
-
-
-def add_to_inventory(item):
-    """
-    Adds the collectible found by the player to their inventory
-    """
-    inventory.append(str({item}))
-
-    print(
-        f"The {item} was added to your inventory."
-        + emoji_choices.backpack_emoji()
-    )

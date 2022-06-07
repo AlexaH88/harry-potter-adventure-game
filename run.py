@@ -6,7 +6,7 @@ Runs the game
 import time
 import sys
 import random
-from collectibles import inventory, Wand, Pet, add_to_inventory
+from collectibles import inventory, Wand, Pet
 from questions import YesNo, Abcd, AbcdOther
 from emojis import Emoji
 
@@ -15,24 +15,7 @@ emoji_choices = Emoji()
 abcd_other_responses = AbcdOther()
 
 
-# code taken from codegrepper.com and adapted - see README for details
-def slowprint(all_strings):
-    """
-    Runs all text in the game on slow
-    """
-    for each_character in all_strings + "\n \n":
-        sys.stdout.write(each_character)
-        sys.stdout.flush()
-        time.sleep(1./15)
-
-
-def new_line():
-    """
-    Creates one new line, allowing for two new lines
-    in between slowprint functions
-    """
-    print()
-
+# Functions that run the game story, in order
 
 def game_intro():
     """
@@ -139,7 +122,7 @@ def choose_game_instructions():
 
 def game_instructions():
     """
-    Prints game instructions
+    Runs game instructions
     """
     new_line()
 
@@ -209,7 +192,7 @@ def choose_player_name():
 
 def wand_backstory():
     """
-    Prints backstory on Ollivander and player wand selection
+    Runs backstory on Ollivander and player wand selection
     """
     new_line()
 
@@ -345,7 +328,7 @@ def assign_wand():
 
 def pet_backstory():
     """
-    Prints backstory on The Magical Menagerie and player pet selection
+    Runs backstory on The Magical Menagerie and player pet selection
     """
     new_line()
 
@@ -541,25 +524,29 @@ def first_door_challenge():
             first_door_choices.a_response_correct()
             + emoji_choices.toad_emoji()
         )
-        add_to_inventory("key")
+        collect_key_backstory()
+        unlock_door_request()
     elif "b" in get_key and "{'cat'}" in inventory:
         slowprint(
             first_door_choices.b_response_correct()
             + emoji_choices.cat_emoji()
         )
-        add_to_inventory("key")
+        collect_key_backstory()
+        unlock_door_request()
     elif "c" in get_key and "{'rat'}" in inventory:
         slowprint(
             first_door_choices.c_response_correct()
             + emoji_choices.rat_emoji()
         )
-        add_to_inventory("key")
+        collect_key_backstory()
+        unlock_door_request()
     elif "d" in get_key and "{'owl'}" in inventory:
         slowprint(
             first_door_choices.d_response_correct()
             + emoji_choices.owl_emoji()
         )
-        add_to_inventory("key")
+        collect_key_backstory()
+        unlock_door_request()
     elif "a" in get_key and "{'toad'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
@@ -592,30 +579,83 @@ def first_door_challenge():
         first_door_challenge()
 
 
-def request_inventory():
+# Functions that are repeatedly called in the game story above
+
+# code taken from codegrepper.com and adapted - see README for details
+def slowprint(all_strings):
     """
-    Allows the player to request viewing their inventory
-    detailing all of their collected items
+    Runs all text in the game on slow
     """
-    player_input = input(" ")
-    if "i" in player_input:
-        show_inventory()
+    for each_character in all_strings + "\n \n":
+        sys.stdout.write(each_character)
+        sys.stdout.flush()
+        time.sleep(1./15)
 
 
-def show_inventory():
+def new_line():
     """
-    Shows the player's inventory of collected items
+    Creates one new line, allowing for two new lines
+    in between slowprint functions
     """
-    print(inventory)
+    print()
 
 
-def request_exit_game():
+def add_to_inventory(item):
     """
-    Allows the player to request exiting the game
+    Adds the collectible found by the player to their inventory
     """
-    player_input = input(" ")
-    if "e" in player_input:
+    inventory.append(str({item}))
+
+    slowprint(
+        f"The {item} was added to your inventory."
+        + emoji_choices.backpack_emoji()
+    )
+
+
+def collect_key_backstory():
+    """
+    Runs backstory on player collecting key from chest
+    """
+    slowprint(
+        "Nice work, now you can reach the chest and get the key!"
+        + emoji_choices.key_emoji()
+    )
+
+    add_to_inventory("key")
+
+
+def unlock_door_request():
+    """
+    Asks the player if they want to unlock the door or not
+    """
+    unlock_door_responses = YesNo(
+        "Of course you do! Here we go...",
+        "Unusual choice, but it's your decision..."
+        )
+
+    use_key_input = input(
+        "Do you want to use the key to unlock the door? (y/n) \n"
+        )
+
+    print("\n")
+
+    if use_key_input == "y":
+        slowprint(
+            unlock_door_responses.yes_response()
+            + emoji_choices.happy_emoji()
+        )
+    elif use_key_input == "n":
+        slowprint(
+            unlock_door_responses.no_response()
+            + emoji_choices.neutral_emoji()
+        )
         exit_game()
+    else:
+        slowprint(
+            unlock_door_responses.other_response()
+            + emoji_choices.neutral_emoji()
+        )
+        unlock_door_request()
 
 
 def exit_game():
@@ -628,6 +668,8 @@ def exit_game():
     )
     sys.exit()
 
+
+# Call the functions from game story to allow it to run
 
 def main_one():
     """
@@ -653,5 +695,3 @@ def main_two():
 
 
 main_one()
-request_exit_game()
-request_inventory()
