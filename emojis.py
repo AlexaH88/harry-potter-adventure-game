@@ -44,6 +44,7 @@ class Emoji:
         self.note = " \U0001F4DD"
         self.key = " \U0001F511"
         self.forest = " \U0001F342"
+        self.gameover = " \U0001F47E"
 
     def lightning_emoji(self):
         """
@@ -242,3 +243,9 @@ class Emoji:
         Runs forest emoji
         """
         return f"{self.forest}"
+
+    def gameover_emoji(self):
+        """
+        Runs gameover emoji
+        """
+        return f"{self.gameover}"

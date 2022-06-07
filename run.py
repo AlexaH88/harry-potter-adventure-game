@@ -622,7 +622,10 @@ def exit_game():
     """
     Exits the game
     """
-    slowprint("Game Over! \U0001F47E")
+    slowprint(
+        "Game Over!"
+        + emoji_choices.gameover_emoji()
+    )
     sys.exit()
 
 
