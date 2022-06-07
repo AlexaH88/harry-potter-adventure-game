@@ -6,12 +6,8 @@ Runs the game
 import time
 import sys
 import random
-from collectibles import inventory
-from collectibles import Wand
-from collectibles import Pet
-from questions import YesNo
-from questions import Abcd
-from questions import AbcdOther
+from collectibles import inventory, Wand, Pet, add_to_inventory
+from questions import YesNo, Abcd, AbcdOther
 from emojis import Emoji
 
 
@@ -545,21 +541,25 @@ def first_door_challenge():
             first_door_choices.a_response_correct()
             + emoji_choices.toad_emoji()
         )
+        add_to_inventory("key")
     elif "b" in get_key and "{'cat'}" in inventory:
         slowprint(
             first_door_choices.b_response_correct()
             + emoji_choices.cat_emoji()
         )
+        add_to_inventory("key")
     elif "c" in get_key and "{'rat'}" in inventory:
         slowprint(
             first_door_choices.c_response_correct()
             + emoji_choices.rat_emoji()
         )
+        add_to_inventory("key")
     elif "d" in get_key and "{'owl'}" in inventory:
         slowprint(
             first_door_choices.d_response_correct()
             + emoji_choices.owl_emoji()
         )
+        add_to_inventory("key")
     elif "a" in get_key and "{'toad'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect()
