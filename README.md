@@ -48,11 +48,17 @@
 
         - The piano and computer mouse icons on the Instructions Page were added to avoid having a text-heavy page and to create a playful and fun look and feel. The graphics use the same colours and style of the site in order to keep things coherent.  
 
--   ### ***Wireframes***
+-   ### ***Wireframe***
 
     - A simple design was used to embellish the simplicity of the CLI, and create a more visually pleasing experience for the user. 
 
-        ![Wireframe](assets/images/wireframe.png)
+        ![Wireframe](/assets/images/wireframe.png)
+
+-   ### ***Flowchart***
+
+    - A flowchart was produced to show how the game runs, including user interactions and data management.  
+
+        ![Flowchart](/assets/images/flowchart.png)
 
 ## __Features__
 
