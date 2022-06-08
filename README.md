@@ -195,7 +195,7 @@
     - Canva was used to create the wireframes during the design process.
 
 1. [Font Awesome Favicon Generator:](https://gauger.io/fonticon/)
-    - Font Awesome Favicon Generator was used to reproduce a favicon version of the [Font Awesome Music Icon](https://fontawesome.com/icons/music?s=solid) used in the header site name.
+    - Font Awesome Favicon Generator was used to produce the favicon version of the [Font Awesome Lightning Bolt Icon](https://fontawesome.com/icons/bolt-lightning?s=solid).
 
 ## __Testing__
 
