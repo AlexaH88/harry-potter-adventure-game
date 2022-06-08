@@ -1,6 +1,6 @@
 <h1 align="center">Harry Potter Adventure Game</h1>
 
-[Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.com/) has been developed for xxxxxxx.
+[Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.com/) has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.
 
 <h2 align="center"><img src="assets/images/mockup-pianotes.png"></h2>
 
