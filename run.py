@@ -24,28 +24,28 @@ def game_intro():
     new_line()
 
     slowprint(
-        "Welcome to the Harry Potter Adventure Game!"
-        + emoji_choices.lightning_emoji()
+        "Welcome to the Harry Potter Adventure Game!" +
+        emoji_choices.lightning_emoji()
     )
 
     slowprint(
-        "Strange things have been happening at Hogwarts lately..."
-        + emoji_choices.castle_emoji()
+        "Strange things have been happening at Hogwarts lately..." +
+        emoji_choices.castle_emoji()
     )
 
     slowprint(
-        "And no one seems to be able to work out how to stop them..."
-        + emoji_choices.surprised_emoji()
+        "And no one seems to be able to work out how to stop them..." +
+        emoji_choices.surprised_emoji()
     )
 
     slowprint(
-        "Could you be the witch or wizard we've been looking for?"
-        + emoji_choices.wizard_emoji()
+        "Could you be the witch or wizard we've been looking for?" +
+        emoji_choices.wizard_emoji()
     )
 
     slowprint(
-        "Please help, the Wizarding World needs you!"
-        + emoji_choices.world_emoji()
+        "Please help, the Wizarding World needs you!" +
+        emoji_choices.world_emoji()
     )
 
 
@@ -66,19 +66,19 @@ def choose_play_game():
 
     if play_game_input == "y":
         slowprint(
-            play_game_responses.yes_response()
-            + emoji_choices.happy_emoji()
+            play_game_responses.yes_response() +
+            emoji_choices.happy_emoji()
         )
     elif play_game_input == "n":
         slowprint(
-            play_game_responses.no_response()
-            + emoji_choices.sad_emoji()
+            play_game_responses.no_response() +
+            emoji_choices.sad_emoji()
         )
         exit_game()
     else:
         slowprint(
-            play_game_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            play_game_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         choose_play_game()
 
@@ -102,20 +102,20 @@ def choose_game_instructions():
 
     if game_instructions_input == "y":
         slowprint(
-            game_instructions_responses.yes_response()
-            + emoji_choices.happy_emoji()
+            game_instructions_responses.yes_response() +
+            emoji_choices.happy_emoji()
         )
         game_instructions()
     elif game_instructions_input == "n":
         slowprint(
-            game_instructions_responses.no_response()
-            + emoji_choices.happy_emoji()
+            game_instructions_responses.no_response() +
+            emoji_choices.happy_emoji()
         )
         main_two()
     else:
         slowprint(
-            game_instructions_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            game_instructions_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         choose_game_instructions()
 
@@ -127,48 +127,48 @@ def game_instructions():
     new_line()
 
     slowprint(
-        "The aim of the game is to find your way through Hogwarts."
-        + emoji_choices.castle_emoji()
+        "The aim of the game is to find your way through Hogwarts." +
+        emoji_choices.castle_emoji()
     )
 
     slowprint(
-        "And to stop the dark magic that has been happening here recently..."
-        + emoji_choices.darkmoon_emoji()
+        "And to stop the dark magic that has been happening here recently..." +
+        emoji_choices.darkmoon_emoji()
     )
 
     slowprint(
-        "You must collect 5 items, by answering 5 questions correctly."
-        + emoji_choices.question_emoji()
+        "You must collect 5 items, by answering 5 questions correctly." +
+        emoji_choices.question_emoji()
     )
 
     slowprint(
-        "These will be asked by friendly faces that you encounter as you go."
-        + emoji_choices.hug_emoji()
+        "These will be asked by friendly faces that you encounter as you go." +
+        emoji_choices.hug_emoji()
     )
 
     slowprint(
-        "Each item will allow you to unlock the next room."
-        + emoji_choices.door_emoji()
+        "Each item will allow you to unlock the next room." +
+        emoji_choices.door_emoji()
     )
 
     slowprint(
-        "Here you will find the next item."
-        + emoji_choices.magicball_emoji()
+        "Here you will find the next item." +
+        emoji_choices.magicball_emoji()
     )
 
     slowprint(
-        "In the final room you will discover who is behind the malevolence."
-        + emoji_choices.evil_emoji()
+        "In the final room you will discover who is behind the malevolence." +
+        emoji_choices.evil_emoji()
     )
 
     slowprint(
-        "You must beat them by casting 3 spells in the correct order..."
-        + emoji_choices.spell_emoji()
+        "You must beat them by casting 3 spells in the correct order..." +
+        emoji_choices.spell_emoji()
     )
 
     slowprint(
-        "Good luck, we're counting on you!"
-        + emoji_choices.luck_emoji()
+        "Good luck, we're counting on you!" +
+        emoji_choices.luck_emoji()
     )
 
     main_two()
@@ -185,8 +185,8 @@ def choose_player_name():
     print("\n")
 
     slowprint(
-        f"Welcome, {player_name_input}!"
-        + emoji_choices.wizard_emoji()
+        f"Welcome, {player_name_input}!" +
+        emoji_choices.wizard_emoji()
     )
 
 
@@ -197,18 +197,18 @@ def wand_backstory():
     new_line()
 
     slowprint(
-        "Now, let's see."
-        + emoji_choices.thinking_emoji()
+        "Now, let's see." +
+        emoji_choices.thinking_emoji()
     )
 
     slowprint(
-        "In order to save Hogwarts, you're going to need a wand!"
-        + emoji_choices.spell_emoji()
+        "In order to save Hogwarts, you're going to need a wand!" +
+        emoji_choices.spell_emoji()
     )
 
     slowprint(
-        "Let's go and see our favourite wandmaker, Garrick Ollivander!"
-        + emoji_choices.oldman_emoji()
+        "Let's go and see our favourite wandmaker, Garrick Ollivander!" +
+        emoji_choices.oldman_emoji()
     )
 
 
@@ -224,8 +224,8 @@ def wand_request():
         )
 
     slowprint(
-        "'Welcome to my shop, you've come to the right place!'"
-        + emoji_choices.shop_emoji()
+        "'Welcome to my shop, you've come to the right place!'" +
+        emoji_choices.shop_emoji()
     )
 
     wand_request_input = input(
@@ -236,19 +236,19 @@ def wand_request():
 
     if wand_request_input == "y":
         slowprint(
-            wand_request_responses.yes_response()
-            + emoji_choices.happy_emoji()
+            wand_request_responses.yes_response() +
+            emoji_choices.happy_emoji()
             )
     elif wand_request_input == "n":
         slowprint(
-            wand_request_responses.no_response()
-            + emoji_choices.sad_emoji()
+            wand_request_responses.no_response() +
+            emoji_choices.sad_emoji()
             )
         exit_game()
     else:
         slowprint(
-            wand_request_responses.other_response()
-            + emoji_choices.neutral_emoji())
+            wand_request_responses.other_response() +
+            emoji_choices.neutral_emoji())
         wand_request()
 
 
@@ -260,8 +260,8 @@ def assign_wand():
     new_line()
 
     slowprint(
-        "Ollivander looks you up and down, studying you carefully..."
-        + emoji_choices.monocle_emoji()
+        "Ollivander looks you up and down, studying you carefully..." +
+        emoji_choices.monocle_emoji()
     )
 
     wand_options = [
@@ -272,8 +272,8 @@ def assign_wand():
     random_wand_options = random.choice(wand_options)
 
     slowprint(
-        f"'{random_wand_options} will suit you nicely!'"
-        + emoji_choices.spell_emoji()
+        f"'{random_wand_options} will suit you nicely!'" +
+        emoji_choices.spell_emoji()
     )
 
     harry = Wand(
@@ -299,30 +299,30 @@ def assign_wand():
 
     if "Harry Potter's wand" in random_wand_options:
         slowprint(
-            harry.description()
-            + emoji_choices.harrywand_emoji()
+            harry.description() +
+            emoji_choices.harrywand_emoji()
         )
         slowprint(
-            harry.add_wand_to_inventory()
-            + emoji_choices.backpack_emoji()
+            harry.add_wand_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     elif "Albus Dumbledore's wand" in random_wand_options:
         slowprint(
-            albus.description()
-            + emoji_choices.albuswand_emoji()
+            albus.description() +
+            emoji_choices.albuswand_emoji()
         )
         slowprint(
-            albus.add_wand_to_inventory()
-            + emoji_choices.backpack_emoji()
+            albus.add_wand_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     elif "Rubeus Hagrid's wand" in random_wand_options:
         slowprint(
-            rubeus.description()
-            + emoji_choices.rubeuswand_emoji()
+            rubeus.description() +
+            emoji_choices.rubeuswand_emoji()
         )
         slowprint(
-            rubeus.add_wand_to_inventory()
-            + emoji_choices.backpack_emoji()
+            rubeus.add_wand_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
 
 
@@ -333,18 +333,18 @@ def pet_backstory():
     new_line()
 
     slowprint(
-        "Right, what's next?"
-        + emoji_choices.thinking_emoji()
+        "Right, what's next?" +
+        emoji_choices.thinking_emoji()
     )
 
     slowprint(
-        "An animal companion to help you on your quest!"
-        + emoji_choices.animal_emoji()
+        "An animal companion to help you on your quest!" +
+        emoji_choices.animal_emoji()
     )
 
     slowprint(
-        "Let's pop into The Magical Menagerie to get one!"
-        + emoji_choices.shop_emoji()
+        "Let's pop into The Magical Menagerie to get one!" +
+        emoji_choices.shop_emoji()
     )
 
 
@@ -361,8 +361,8 @@ def pet_request():
     owl = Pet("owl", "flying")
 
     slowprint(
-        "'Welcome to my shop, let me show you what lovely pets we've got!'"
-        + emoji_choices.oldlady_emoji()
+        "'Welcome to my shop, let me show you what lovely pets we've got!'" +
+        emoji_choices.oldlady_emoji()
     )
 
     slowprint(
@@ -379,60 +379,60 @@ def pet_request():
 
     if "a" in ask_for_pet:
         slowprint(
-            cat.choice_confirmation()
-            + emoji_choices.cat_emoji()
+            cat.choice_confirmation() +
+            emoji_choices.cat_emoji()
         )
         slowprint(
-            cat.description()
-            + emoji_choices.animal_emoji()
+            cat.description() +
+            emoji_choices.animal_emoji()
         )
         slowprint(
-            cat.add_pet_to_inventory()
-            + emoji_choices.backpack_emoji()
+            cat.add_pet_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     elif "b" in ask_for_pet:
         slowprint(
-            rat.choice_confirmation()
-            + emoji_choices.rat_emoji()
+            rat.choice_confirmation() +
+            emoji_choices.rat_emoji()
         )
         slowprint(
-            rat.description()
-            + emoji_choices.animal_emoji()
+            rat.description() +
+            emoji_choices.animal_emoji()
         )
         slowprint(
-            rat.add_pet_to_inventory()
-            + emoji_choices.backpack_emoji()
+            rat.add_pet_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     elif "c" in ask_for_pet:
         slowprint(
-            toad.choice_confirmation()
-            + emoji_choices.toad_emoji()
+            toad.choice_confirmation() +
+            emoji_choices.toad_emoji()
         )
         slowprint(
-            toad.description()
-            + emoji_choices.animal_emoji()
+            toad.description() +
+            emoji_choices.animal_emoji()
         )
         slowprint(
-            toad.add_pet_to_inventory()
-            + emoji_choices.backpack_emoji()
+            toad.add_pet_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     elif "d" in ask_for_pet:
         slowprint(
-            owl.choice_confirmation()
-            + emoji_choices.owl_emoji()
+            owl.choice_confirmation() +
+            emoji_choices.owl_emoji()
         )
         slowprint(
-            owl.description()
-            + emoji_choices.animal_emoji()
+            owl.description() +
+            emoji_choices.animal_emoji()
         )
         slowprint(
-            owl.add_pet_to_inventory()
-            + emoji_choices.backpack_emoji()
+            owl.add_pet_to_inventory() +
+            emoji_choices.backpack_emoji()
         )
     else:
         slowprint(
-            abcd_other_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         pet_request()
 
@@ -444,33 +444,33 @@ def travel_to_hogwarts_backstory():
     new_line()
 
     slowprint(
-        "So, now that that's done, let's get to it!"
-        + emoji_choices.lightning_emoji()
+        "So, now that that's done, let's get to it!" +
+        emoji_choices.lightning_emoji()
     )
 
     slowprint(
-        "Grab on to this portkey and let's go to Hogwarts!"
-        + emoji_choices.castle_emoji()
+        "Grab on to this portkey and let's go to Hogwarts!" +
+        emoji_choices.castle_emoji()
     )
 
     slowprint(
-        "Here we are, I hope you're ready!"
-        + emoji_choices.luck_emoji()
+        "Here we are, I hope you're ready!" +
+        emoji_choices.luck_emoji()
     )
 
     slowprint(
-        "Let's see now, how do we get inside?"
-        + emoji_choices.thinking_emoji()
+        "Let's see now, how do we get inside?" +
+        emoji_choices.thinking_emoji()
     )
 
     slowprint(
-        "Ah, here's the entrance!"
-        + emoji_choices.door_emoji()
+        "Ah, here's the entrance!" +
+        emoji_choices.door_emoji()
     )
 
     slowprint(
-        "OK, I can see here there are some instructions pinned to the door."
-        + emoji_choices.monocle_emoji()
+        "OK, I can see here there are some instructions pinned to the door." +
+        emoji_choices.monocle_emoji()
     )
 
 
@@ -490,13 +490,13 @@ def first_door_challenge():
     )
 
     slowprint(
-        "The instructions read: 'You will need a key to unlock this door.'"
-        + emoji_choices.key_emoji()
+        "The instructions read: 'You will need a key to unlock this door.'" +
+        emoji_choices.key_emoji()
     )
 
     slowprint(
-        "It's located in a chest in the Forbidden Forest."
-        + emoji_choices.forest_emoji()
+        "It's located in a chest in the Forbidden Forest." +
+        emoji_choices.forest_emoji()
     )
 
     slowprint(
@@ -512,8 +512,8 @@ def first_door_challenge():
     )
 
     slowprint(
-        "Maybe your pet could help you here..."
-        + emoji_choices.animal_emoji()
+        "Maybe your pet could help you here..." +
+        emoji_choices.animal_emoji()
         )
     first_door_input = input("Which option do you pick? \n")
 
@@ -521,60 +521,60 @@ def first_door_challenge():
 
     if "a" in first_door_input and "{'toad'}" in inventory:
         slowprint(
-            first_door_choices.a_response_correct()
-            + emoji_choices.toad_emoji()
+            first_door_choices.a_response_correct() +
+            emoji_choices.toad_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
     elif "b" in first_door_input and "{'cat'}" in inventory:
         slowprint(
-            first_door_choices.b_response_correct()
-            + emoji_choices.cat_emoji()
+            first_door_choices.b_response_correct() +
+            emoji_choices.cat_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
     elif "c" in first_door_input and "{'rat'}" in inventory:
         slowprint(
-            first_door_choices.c_response_correct()
-            + emoji_choices.rat_emoji()
+            first_door_choices.c_response_correct() +
+            emoji_choices.rat_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
     elif "d" in first_door_input and "{'owl'}" in inventory:
         slowprint(
-            first_door_choices.d_response_correct()
-            + emoji_choices.owl_emoji()
+            first_door_choices.d_response_correct() +
+            emoji_choices.owl_emoji()
         )
         collect_key_backstory()
         unlock_door_request()
     elif "a" in first_door_input and "{'toad'}" not in inventory:
         slowprint(
-            first_door_choices.response_incorrect()
-            + emoji_choices.animal_emoji()
+            first_door_choices.response_incorrect() +
+            emoji_choices.animal_emoji()
         )
         exit_game()
     elif "b" in first_door_input and "{'cat'}" not in inventory:
         slowprint(
-            first_door_choices.response_incorrect()
-            + emoji_choices.animal_emoji()
+            first_door_choices.response_incorrect() +
+            emoji_choices.animal_emoji()
         )
         exit_game()
     elif "c" in first_door_input and "{'rat'}" not in inventory:
         slowprint(
-            first_door_choices.response_incorrect()
-            + emoji_choices.animal_emoji()
+            first_door_choices.response_incorrect() +
+            emoji_choices.animal_emoji()
         )
         exit_game()
     elif "d" in first_door_input and "{'owl'}" not in inventory:
         slowprint(
-            first_door_choices.response_incorrect()
-            + emoji_choices.animal_emoji()
+            first_door_choices.response_incorrect() +
+            emoji_choices.animal_emoji()
         )
         exit_game()
     else:
         slowprint(
-            abcd_other_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         first_door_challenge()
 
@@ -586,39 +586,39 @@ def first_room_backstory():
     new_line()
 
     slowprint(
-        "You enter the castle and look around the first room..."
-        + emoji_choices.castle_emoji()
+        "You enter the castle and look around the first room..." +
+        emoji_choices.castle_emoji()
     )
 
     slowprint(
-        "Hang on, is that a pygmy puff?! That can only mean one thing..."
-        + emoji_choices.animal_emoji()
+        "Hang on, is that a pygmy puff?! That can only mean one thing..." +
+        emoji_choices.animal_emoji()
     )
 
     slowprint(
-        "Fred and George Weasley are here!"
-        + emoji_choices.hug_emoji()
+        "Fred and George Weasley are here!" +
+        emoji_choices.hug_emoji()
     )
 
     slowprint(
-        "Let's see if they can help us."
-        + emoji_choices.wizard_emoji()
-        + emoji_choices.wizard_emoji()
+        "Let's see if they can help us." +
+        emoji_choices.wizard_emoji() +
+        emoji_choices.wizard_emoji()
     )
 
     slowprint(
-        "'Look who we have here!'"
-        + emoji_choices.monocle_emoji()
+        "'Look who we have here!'" +
+        emoji_choices.monocle_emoji()
     )
 
     slowprint(
-        "'We have something that could help you on your quest...'"
-        + emoji_choices.magicball_emoji()
+        "'We have something that could help you on your quest...'" +
+        emoji_choices.magicball_emoji()
     )
 
     slowprint(
-        "'But first you have to answer our question correctly!'"
-        + emoji_choices.question_emoji()
+        "'But first you have to answer our question correctly!'" +
+        emoji_choices.question_emoji()
     )
 
 
@@ -655,20 +655,20 @@ def first_room_question():
 
     if "c" in first_room_input:
         slowprint(
-            first_room_choices.response_correct()
-            + emoji_choices.map_emoji()
+            first_room_choices.response_correct() +
+            emoji_choices.map_emoji()
         )
         add_to_inventory("Marauder's Map")
     elif "a" or "b" or "d" in first_room_input:
         slowprint(
-            first_room_choices.response_incorrect()
-            + emoji_choices.sad_emoji()
+            first_room_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
         )
         exit_game()
     else:
         slowprint(
-            abcd_other_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         first_room_question()
 
@@ -701,8 +701,8 @@ def add_to_inventory(item):
     inventory.append(str({item}))
 
     slowprint(
-        f"The {item} was added to your inventory."
-        + emoji_choices.backpack_emoji()
+        f"The {item} was added to your inventory." +
+        emoji_choices.backpack_emoji()
     )
 
 
@@ -711,8 +711,8 @@ def collect_key_backstory():
     Runs backstory on player collecting key from chest
     """
     slowprint(
-        "Nice work, now you can reach the chest and get the key!"
-        + emoji_choices.key_emoji()
+        "Nice work, now you can reach the chest and get the key!" +
+        emoji_choices.key_emoji()
     )
 
     add_to_inventory("key")
@@ -735,19 +735,19 @@ def unlock_door_request():
 
     if use_key_input == "y":
         slowprint(
-            unlock_door_responses.yes_response()
-            + emoji_choices.happy_emoji()
+            unlock_door_responses.yes_response() +
+            emoji_choices.happy_emoji()
         )
     elif use_key_input == "n":
         slowprint(
-            unlock_door_responses.no_response()
-            + emoji_choices.neutral_emoji()
+            unlock_door_responses.no_response() +
+            emoji_choices.neutral_emoji()
         )
         exit_game()
     else:
         slowprint(
-            unlock_door_responses.other_response()
-            + emoji_choices.neutral_emoji()
+            unlock_door_responses.other_response() +
+            emoji_choices.neutral_emoji()
         )
         unlock_door_request()
 
@@ -757,8 +757,8 @@ def exit_game():
     Exits the game
     """
     slowprint(
-        "Game Over!"
-        + emoji_choices.gameover_emoji()
+        "Game Over!" +
+        emoji_choices.gameover_emoji()
     )
     sys.exit()
 
