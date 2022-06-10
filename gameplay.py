@@ -1,5 +1,5 @@
 """
-Contains classes for all the collectibles in the game
+Contains classes and functions for the gameplay in the game
 """
 import sys
 import time
@@ -37,3 +37,64 @@ def exit_game():
         emoji_choices.gameover_emoji()
     )
     sys.exit()
+
+
+class Room():
+    """
+    Room class
+    """
+    def __init__(self, number, animal, person, pronoun_one, pronoun_two):
+        """
+        Creates an instance of Room
+        """
+        self.number = number
+        self.animal = animal
+        self.person = person
+        self.pronoun_one = pronoun_one
+        self.pronoun_two = pronoun_two
+
+    def room_backstory(self):
+        """
+        Runs backstory on each room
+        """
+        new_line()
+
+        slowprint(
+            f"You enter the {self.number} room and look around..." +
+            emoji_choices.door_emoji()
+        )
+
+        slowprint(
+            f"Hang on, is that a {self.animal}?!" +
+            emoji_choices.animal_emoji()
+        )
+
+        slowprint(
+            "That can only mean one thing..." +
+            emoji_choices.lightbulb_emoji()
+        )
+
+        slowprint(
+            f"It's {self.person}!" +
+            emoji_choices.hug_emoji()
+        )
+
+        slowprint(
+            f"Let's see if {self.pronoun_one} can help us." +
+            emoji_choices.wizard_emoji()
+        )
+
+        slowprint(
+            "'Look who we have here!'" +
+            emoji_choices.monocle_emoji()
+        )
+
+        slowprint(
+            f"'{self.pronoun_two} have something that could help you...'" +
+            emoji_choices.magicball_emoji()
+        )
+
+        slowprint(
+            "'But first you have to answer our question correctly!'" +
+            emoji_choices.question_emoji()
+        )

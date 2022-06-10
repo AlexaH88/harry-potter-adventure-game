@@ -45,6 +45,7 @@ class Emoji:
         self.key = " \U0001F511"
         self.forest = " \U0001F342"
         self.map = " \U0001F4DC"
+        self.lightbulb = " \U0001F4A1"
         self.gameover = " \U0001F47E"
 
     def lightning_emoji(self):
@@ -250,6 +251,12 @@ class Emoji:
         Runs map emoji
         """
         return f"{self.map}"
+
+    def lightbulb_emoji(self):
+        """
+        Runs lightbulb emoji
+        """
+        return f"{self.lightbulb}"
 
     def gameover_emoji(self):
         """
