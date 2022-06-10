@@ -473,9 +473,9 @@ def travel_to_hogwarts_backstory():
     )
 
 
-def first_door_challenge():
+def first_key_challenge():
     """
-    Prompts the player to solve the first challenge,
+    Prompts the player to solve the first key challenge,
     in order to open the first door
     """
     new_line()
@@ -571,12 +571,12 @@ def first_door_challenge():
             abcd_other_responses.other_response() +
             emoji_choices.neutral_emoji()
         )
-        first_door_challenge()
+        first_key_challenge()
 
 
-def first_room_actions():
+def first_room_backstory():
     """
-    Runs first room actions
+    Runs first room backstory
     """
     new_line()
 
@@ -591,7 +591,7 @@ def first_room_actions():
     slowprint(first_room.room_backstory())
 
 
-def first_room_question():
+def first_item_question():
     """
     Prompts the player to solve the first room question,
     in order to obtain an item required to open the
@@ -639,7 +639,7 @@ def first_room_question():
             abcd_other_responses.other_response() +
             emoji_choices.neutral_emoji()
         )
-        first_room_question()
+        first_item_question()
 
 
 # Call the functions from game story to allow it to run
@@ -663,9 +663,9 @@ def main_two():
     pet_backstory()
     pet_request()
     travel_to_hogwarts_backstory()
-    first_door_challenge()
-    first_room_actions()
-    first_room_question()
+    first_key_challenge()
+    first_room_backstory()
+    first_item_question()
 
 
 main_one()

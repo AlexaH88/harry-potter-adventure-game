@@ -3,6 +3,13 @@ Contains classes for the questions in the game
 """
 
 
+from emojis import Emoji
+
+
+emoji_choices = Emoji()
+
+
+# classes related to yes no answers
 class YesNo:
     """
     YesNo class
@@ -34,6 +41,7 @@ class YesNo:
         return f"{self.answer_other}"
 
 
+# classes related to abcd questions
 class AbcdOther:
     """
     AbcdOther class
@@ -49,6 +57,9 @@ class AbcdOther:
         Runs response to player answering with any other key
         """
         return f"{self.answer_other}"
+
+
+abcd_other_responses = AbcdOther()
 
 
 class AbcdChallenge:
