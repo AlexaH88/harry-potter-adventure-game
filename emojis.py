@@ -43,7 +43,7 @@ class Emoji:
         self.owl = " \U0001F989"
         self.note = " \U0001F4DD"
         self.key = " \U0001F511"
-        self.forest = " \U0001F342"
+        self.location = " \U0001F4CD"
         self.map = " \U0001F4DC"
         self.lightbulb = " \U0001F4A1"
         self.gameover = " \U0001F47E"
@@ -240,11 +240,11 @@ class Emoji:
         """
         return f"{self.key}"
 
-    def forest_emoji(self):
+    def location_emoji(self):
         """
-        Runs forest emoji
+        Runs location emoji
         """
-        return f"{self.forest}"
+        return f"{self.location}"
 
     def map_emoji(self):
         """

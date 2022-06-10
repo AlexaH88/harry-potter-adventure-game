@@ -9,6 +9,7 @@ from emojis import Emoji
 emoji_choices = Emoji()
 
 
+# general gameplay
 # code taken from codegrepper.com and adapted - see README for details
 def slowprint(all_strings):
     """
@@ -39,6 +40,7 @@ def exit_game():
     sys.exit()
 
 
+# everything related to the rooms in the game
 class Room():
     """
     Room class
@@ -57,8 +59,6 @@ class Room():
         """
         Runs backstory on each room
         """
-        new_line()
-
         slowprint(
             f"You enter the {self.number} room and look around..." +
             emoji_choices.door_emoji()
@@ -98,3 +98,29 @@ class Room():
             "'But first you have to answer our question correctly!'" +
             emoji_choices.question_emoji()
         )
+
+
+# everything related to the doors in the game
+def door_backstory(number, location):
+    """
+    Runs backstory on each door
+    """
+    slowprint(
+        f"Ah, here's the {number} door!" +
+        emoji_choices.door_emoji()
+    )
+
+    slowprint(
+        "I can see here there are some instructions pinned to the door." +
+        emoji_choices.monocle_emoji()
+    )
+
+    slowprint(
+        "They read: 'You will need a key to unlock this door.'" +
+        emoji_choices.key_emoji()
+    )
+
+    slowprint(
+        f"It's located in a chest in {location}." +
+        emoji_choices.location_emoji()
+    )

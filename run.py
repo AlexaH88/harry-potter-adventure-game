@@ -6,7 +6,7 @@ Runs the game
 import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
 from questions import YesNo, AbcdOther, AbcdChallenge, AbcdQuestion
-from gameplay import slowprint, new_line, exit_game, Room
+from gameplay import slowprint, new_line, exit_game, Room, door_backstory
 from emojis import Emoji
 
 
@@ -462,15 +462,9 @@ def travel_to_hogwarts_backstory():
         emoji_choices.thinking_emoji()
     )
 
-    slowprint(
-        "Ah, here's the entrance!" +
-        emoji_choices.door_emoji()
-    )
+    new_line()
 
-    slowprint(
-        "OK, I can see here there are some instructions pinned to the door." +
-        emoji_choices.monocle_emoji()
-    )
+    door_backstory("first", "the Forbidden Forest")
 
 
 def first_key_challenge():
@@ -489,16 +483,6 @@ def first_key_challenge():
     )
 
     slowprint(
-        "The instructions read: 'You will need a key to unlock this door.'" +
-        emoji_choices.key_emoji()
-    )
-
-    slowprint(
-        "It's located in a chest in the Forbidden Forest." +
-        emoji_choices.forest_emoji()
-    )
-
-    slowprint(
         "But there are several obstacles in the way: \n"
         "(a) A pond, perfect for swimming across... "
         "\U0001F4A7 \n"
@@ -514,6 +498,7 @@ def first_key_challenge():
         "Maybe your pet could help you here..." +
         emoji_choices.animal_emoji()
         )
+
     first_door_input = input("Which option do you pick? \n")
 
     print("\n")
@@ -640,6 +625,8 @@ def first_item_question():
             emoji_choices.neutral_emoji()
         )
         first_item_question()
+
+    door_backstory("second", "a secret passage")
 
 
 # Call the functions from game story to allow it to run
