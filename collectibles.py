@@ -1,8 +1,14 @@
 """
-Contains classes for all the collectibles in the game
+Contains classes and functions for all the collectibles in the game
 """
 
 
+from gameplay import slowprint, exit_game
+from questions import YesNo
+from emojis import Emoji
+
+
+emoji_choices = Emoji()
 inventory = []
 
 
@@ -73,3 +79,69 @@ class Pet:
         """
         inventory.append(str({self.kind}))
         return f"Your {self.kind} was added to your inventory."
+
+
+def collect_key_backstory():
+    """
+    Runs backstory on player collecting key from chest
+    """
+    slowprint(
+        "Nice work, now you can reach the chest and get the key!" +
+        emoji_choices.key_emoji()
+    )
+    add_to_inventory("key")
+
+
+def unlock_door_request():
+    """
+    Asks the player if they want to unlock the door or not
+    """
+    unlock_door_responses = YesNo(
+        "Of course you do! Here we go...",
+        "Unusual choice, but it's your decision..."
+        )
+
+    use_key_input = input(
+        "Do you want to use the key to unlock the door? (y/n) \n"
+        )
+
+    print("\n")
+
+    if use_key_input == "y":
+        slowprint(
+            unlock_door_responses.yes_response() +
+            emoji_choices.happy_emoji()
+        )
+    elif use_key_input == "n":
+        slowprint(
+            unlock_door_responses.no_response() +
+            emoji_choices.neutral_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            unlock_door_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        unlock_door_request()
+
+
+def add_to_inventory(item):
+    """
+    Adds the collectible found by the player to their inventory
+    """
+    inventory.append(str({item}))
+
+    slowprint(
+        f"The {item} was added to your inventory." +
+        emoji_choices.backpack_emoji()
+    )
+
+
+def key_main():
+    """
+    Runs the key backstory, adds it to the player's inventory,
+    and asks the player if they want to unlock the door
+    """
+    collect_key_backstory()
+    unlock_door_request()

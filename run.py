@@ -3,11 +3,10 @@ Runs the game
 """
 
 
-import time
-import sys
 import random
-from collectibles import inventory, Wand, Pet
+from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
 from questions import YesNo, AbcdOther, AbcdChallenge, AbcdQuestion
+from gameplay import slowprint, new_line, exit_game
 from emojis import Emoji
 
 
@@ -524,29 +523,25 @@ def first_door_challenge():
             first_door_choices.a_response_correct() +
             emoji_choices.toad_emoji()
         )
-        collect_key_backstory()
-        unlock_door_request()
+        key_main()
     elif "b" in first_door_input and "{'cat'}" in inventory:
         slowprint(
             first_door_choices.b_response_correct() +
             emoji_choices.cat_emoji()
         )
-        collect_key_backstory()
-        unlock_door_request()
+        key_main()
     elif "c" in first_door_input and "{'rat'}" in inventory:
         slowprint(
             first_door_choices.c_response_correct() +
             emoji_choices.rat_emoji()
         )
-        collect_key_backstory()
-        unlock_door_request()
+        key_main()
     elif "d" in first_door_input and "{'owl'}" in inventory:
         slowprint(
             first_door_choices.d_response_correct() +
             emoji_choices.owl_emoji()
         )
-        collect_key_backstory()
-        unlock_door_request()
+        key_main()
     elif "a" in first_door_input and "{'toad'}" not in inventory:
         slowprint(
             first_door_choices.response_incorrect() +
@@ -673,98 +668,7 @@ def first_room_question():
         first_room_question()
 
 
-# Functions that are repeatedly called in the game story above
-
-# code taken from codegrepper.com and adapted - see README for details
-def slowprint(all_strings):
-    """
-    Runs all text in the game on slow
-    """
-    for each_character in all_strings + "\n \n":
-        sys.stdout.write(each_character)
-        sys.stdout.flush()
-        time.sleep(1./15)
-
-
-def new_line():
-    """
-    Creates one new line, allowing for two new lines
-    in between slowprint functions
-    """
-    print()
-
-
-def add_to_inventory(item):
-    """
-    Adds the collectible found by the player to their inventory
-    """
-    inventory.append(str({item}))
-
-    slowprint(
-        f"The {item} was added to your inventory." +
-        emoji_choices.backpack_emoji()
-    )
-
-
-def collect_key_backstory():
-    """
-    Runs backstory on player collecting key from chest
-    """
-    slowprint(
-        "Nice work, now you can reach the chest and get the key!" +
-        emoji_choices.key_emoji()
-    )
-
-    add_to_inventory("key")
-
-
-def unlock_door_request():
-    """
-    Asks the player if they want to unlock the door or not
-    """
-    unlock_door_responses = YesNo(
-        "Of course you do! Here we go...",
-        "Unusual choice, but it's your decision..."
-        )
-
-    use_key_input = input(
-        "Do you want to use the key to unlock the door? (y/n) \n"
-        )
-
-    print("\n")
-
-    if use_key_input == "y":
-        slowprint(
-            unlock_door_responses.yes_response() +
-            emoji_choices.happy_emoji()
-        )
-    elif use_key_input == "n":
-        slowprint(
-            unlock_door_responses.no_response() +
-            emoji_choices.neutral_emoji()
-        )
-        exit_game()
-    else:
-        slowprint(
-            unlock_door_responses.other_response() +
-            emoji_choices.neutral_emoji()
-        )
-        unlock_door_request()
-
-
-def exit_game():
-    """
-    Exits the game
-    """
-    slowprint(
-        "Game Over!" +
-        emoji_choices.gameover_emoji()
-    )
-    sys.exit()
-
-
 # Call the functions from game story to allow it to run
-
 def main_one():
     """
     Runs first set of programme functions

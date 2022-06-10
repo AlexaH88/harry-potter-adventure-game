@@ -5,7 +5,7 @@ Contains classes for the questions in the game
 
 class YesNo:
     """
-    YesNo questions class
+    YesNo class
     """
     def __init__(self, answer_yes, answer_no):
         """
@@ -36,7 +36,7 @@ class YesNo:
 
 class AbcdOther:
     """
-    AbcdOther questions class
+    AbcdOther class
     """
     def __init__(self):
         """
@@ -53,7 +53,7 @@ class AbcdOther:
 
 class AbcdChallenge:
     """
-    AbcdChallenge questions class
+    AbcdChallenge class
     """
     def __init__(
         self,
@@ -105,7 +105,7 @@ class AbcdChallenge:
 
 class AbcdQuestion:
     """
-    AbcdQuestion questions class
+    AbcdQuestion class
     """
     def __init__(
         self,
