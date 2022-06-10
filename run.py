@@ -573,7 +573,7 @@ def first_room_backstory():
         "We"
         )
 
-    slowprint(first_room.room_backstory())
+    first_room.room_backstory()
 
 
 def first_item_question():

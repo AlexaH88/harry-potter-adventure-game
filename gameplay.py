@@ -111,7 +111,7 @@ def door_backstory(number, location):
     )
 
     slowprint(
-        "I can see here there are some instructions pinned to the door." +
+        "I can see here there are some instructions pinned to it." +
         emoji_choices.monocle_emoji()
     )
 
