@@ -59,9 +59,6 @@ class AbcdOther:
         return f"{self.answer_other}"
 
 
-abcd_other_responses = AbcdOther()
-
-
 class AbcdChallenge:
     """
     AbcdChallenge class
