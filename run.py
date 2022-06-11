@@ -5,7 +5,7 @@ Runs the game
 
 import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
-from questions import YesNo, AbcdOther, AbcdChallenge, AbcdQuestion
+from questions import YesNo, Abcd, AbcdOther
 from gameplay import slowprint, new_line, exit_game, Room, door_backstory
 from emojis import Emoji
 
@@ -474,11 +474,8 @@ def first_key_challenge():
     """
     new_line()
 
-    first_key_choices = AbcdChallenge(
-        "Yes, well done! Your toad will tackle that no problem!",
-        "Yes, well done! Your cat will tackle that no problem!",
-        "Yes, well done! Your rat will tackle that no problem!",
-        "Yes, well done! Your owl will tackle that no problem!",
+    first_key_choices = Abcd(
+        "Yes, well done! Your pet will tackle that no problem!",
         "Hmm no, your pet can't do that!"
     )
 
@@ -505,25 +502,25 @@ def first_key_challenge():
 
     if "a" in first_key_input and "{'toad'}" in inventory:
         slowprint(
-            first_key_choices.a_response_correct() +
+            first_key_choices.response_correct() +
             emoji_choices.toad_emoji()
         )
         key_main()
     elif "b" in first_key_input and "{'cat'}" in inventory:
         slowprint(
-            first_key_choices.b_response_correct() +
+            first_key_choices.response_correct() +
             emoji_choices.cat_emoji()
         )
         key_main()
     elif "c" in first_key_input and "{'rat'}" in inventory:
         slowprint(
-            first_key_choices.c_response_correct() +
+            first_key_choices.response_correct() +
             emoji_choices.rat_emoji()
         )
         key_main()
     elif "d" in first_key_input and "{'owl'}" in inventory:
         slowprint(
-            first_key_choices.d_response_correct() +
+            first_key_choices.response_correct() +
             emoji_choices.owl_emoji()
         )
         key_main()
@@ -584,7 +581,7 @@ def first_item_question():
     """
     new_line()
 
-    first_item_choices = AbcdQuestion(
+    first_item_choices = Abcd(
         "'I see you're a fan! I think you'll like this item...'",
         "'Nope, that's from a different shop in Diagon Alley!'"
     )
@@ -613,7 +610,19 @@ def first_item_question():
             emoji_choices.map_emoji()
         )
         add_to_inventory("Marauder's Map")
-    elif "a" or "b" or "d" in first_item_input:
+    elif "a" in first_item_input:
+        slowprint(
+            first_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "b" in first_item_input:
+        slowprint(
+            first_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in first_item_input:
         slowprint(
             first_item_choices.response_incorrect() +
             emoji_choices.sad_emoji()
@@ -641,7 +650,7 @@ def second_key_challenge():
     """
     new_line()
 
-    second_key_choices = AbcdQuestion(
+    second_key_choices = Abcd(
         "Yes, well done! Now you can get to the secret passage!",
         "Hmm no, that's not the right phrase!"
     )
@@ -670,7 +679,19 @@ def second_key_challenge():
             emoji_choices.happy_emoji()
         )
         key_main()
-    elif "a" or "c" or "d" in second_key_input:
+    elif "a" in second_key_input:
+        slowprint(
+            second_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in second_key_input:
+        slowprint(
+            second_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in second_key_input:
         slowprint(
             second_key_choices.response_incorrect() +
             emoji_choices.sad_emoji()
