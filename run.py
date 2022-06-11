@@ -635,6 +635,8 @@ def first_item_question():
         )
         first_item_question()
 
+    new_line()
+
     door_backstory("second", "a secret passage")
 
     slowprint(
@@ -784,7 +786,9 @@ def second_item_question():
         )
         second_item_question()
 
-    door_backstory("second", "the staffroom")
+    new_line()
+
+    door_backstory("third", "the staffroom")
 
     slowprint(
         "Maybe your potion could help you here..." +
