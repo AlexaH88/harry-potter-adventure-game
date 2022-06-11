@@ -46,6 +46,7 @@ class Emoji:
         self.location = " \U0001F4CD"
         self.map = " \U0001F4DC"
         self.lightbulb = " \U0001F4A1"
+        self.potion = " \U0001F36F"
         self.gameover = " \U0001F47E"
 
     def lightning_emoji(self):
@@ -257,6 +258,12 @@ class Emoji:
         Runs lightbulb emoji
         """
         return f"{self.lightbulb}"
+
+    def potion_emoji(self):
+        """
+        Runs potion emoji
+        """
+        return f"{self.potion}"
 
     def gameover_emoji(self):
         """

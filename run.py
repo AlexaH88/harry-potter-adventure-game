@@ -722,6 +722,76 @@ def second_room_backstory():
     second_room.room_backstory()
 
 
+def second_item_question():
+    """
+    Prompts the player to solve the second room question,
+    in order to obtain an item required to open the
+    next door
+    """
+    new_line()
+
+    second_item_choices = Abcd(
+        "'I see you've done your reading! I think you'll like this item...'",
+        "'Nope, that represents a different Hogwarts House!'"
+    )
+
+    slowprint(
+        "Out of the following animals: \n"
+        "(a) Eagle. "
+        "\U0001F985 \n"
+        "(b) Snake. "
+        "\U0001F40D \n"
+        "(c) Badger. "
+        "\U0001F9A1 \n"
+        "(d) Lion. "
+        "\U0001F981"
+    )
+
+    second_item_input = input(
+        "'Which one represents Gryffindor?' \n"
+        )
+
+    print("\n")
+
+    if "d" in second_item_input:
+        slowprint(
+            second_item_choices.response_correct() +
+            emoji_choices.potion_emoji()
+        )
+        add_to_inventory("Polyjuice Potion")
+    elif "a" in second_item_input:
+        slowprint(
+            second_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "b" in second_item_input:
+        slowprint(
+            second_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in second_item_input:
+        slowprint(
+            second_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        second_item_question()
+
+    door_backstory("second", "the staffroom")
+
+    slowprint(
+        "Maybe your potion could help you here..." +
+        emoji_choices.potion_emoji()
+    )
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -748,6 +818,7 @@ def main_two():
     first_item_question()
     second_key_challenge()
     second_room_backstory()
+    second_item_question()
 
 
 main_one()
