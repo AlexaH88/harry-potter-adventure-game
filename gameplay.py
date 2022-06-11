@@ -40,7 +40,33 @@ def exit_game():
     sys.exit()
 
 
-# everything related to the rooms in the game
+# code related to all doors in the game
+def door_backstory(number, location):
+    """
+    Runs backstory on each door
+    """
+    slowprint(
+        f"Ah, here's the {number} door!" +
+        emoji_choices.door_emoji()
+    )
+
+    slowprint(
+        "I can see here there are some instructions pinned to it." +
+        emoji_choices.monocle_emoji()
+    )
+
+    slowprint(
+        "They read: 'You will need a key to unlock this door.'" +
+        emoji_choices.key_emoji()
+    )
+
+    slowprint(
+        f"It's located in a chest in {location}." +
+        emoji_choices.location_emoji()
+    )
+
+
+# code related to all rooms in the game
 class Room():
     """
     Room class
@@ -65,7 +91,7 @@ class Room():
         )
 
         slowprint(
-            f"Hang on, is that a {self.animal}?!" +
+            f"Hang on, is that {self.animal}?!" +
             emoji_choices.animal_emoji()
         )
 
@@ -95,32 +121,6 @@ class Room():
         )
 
         slowprint(
-            "'But first you have to answer our question correctly!'" +
+            "'But first you have to answer this question correctly!'" +
             emoji_choices.question_emoji()
         )
-
-
-# everything related to the doors in the game
-def door_backstory(number, location):
-    """
-    Runs backstory on each door
-    """
-    slowprint(
-        f"Ah, here's the {number} door!" +
-        emoji_choices.door_emoji()
-    )
-
-    slowprint(
-        "I can see here there are some instructions pinned to it." +
-        emoji_choices.monocle_emoji()
-    )
-
-    slowprint(
-        "They read: 'You will need a key to unlock this door.'" +
-        emoji_choices.key_emoji()
-    )
-
-    slowprint(
-        f"It's located in a chest in {location}." +
-        emoji_choices.location_emoji()
-    )

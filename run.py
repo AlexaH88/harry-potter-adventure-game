@@ -564,7 +564,7 @@ def first_room_backstory():
 
     first_room = Room(
         "first",
-        "pygmy puff",
+        "a pygmy puff",
         "Fred and George Weasley",
         "they",
         "We"
@@ -705,6 +705,23 @@ def second_key_challenge():
         second_key_challenge()
 
 
+def second_room_backstory():
+    """
+    Runs second room backstory
+    """
+    new_line()
+
+    second_room = Room(
+        "second",
+        "Crookshanks",
+        "Hermione Granger",
+        "she",
+        "I"
+        )
+
+    second_room.room_backstory()
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -730,6 +747,8 @@ def main_two():
     first_room_backstory()
     first_item_question()
     second_key_challenge()
+    second_room_backstory()
 
 
 main_one()
+
