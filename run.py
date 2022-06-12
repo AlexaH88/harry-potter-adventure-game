@@ -20,8 +20,6 @@ def game_intro():
     """
     Runs game intro text
     """
-    new_line()
-
     slowprint(
         "Welcome to the Harry Potter Adventure Game!" +
         emoji_choices.lightning_emoji()
