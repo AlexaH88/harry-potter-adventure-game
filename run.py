@@ -646,7 +646,7 @@ def first_item_question():
 def second_key_challenge():
     """
     Prompts the player to solve the second key challenge,
-    in order to second the first door
+    in order to open the second door
     """
     new_line()
 
@@ -794,6 +794,68 @@ def second_item_question():
     )
 
 
+def third_key_challenge():
+    """
+    Prompts the player to solve the third key challenge,
+    in order to open the third door
+    """
+    new_line()
+
+    third_key_choices = Abcd(
+        "Yes, well done! Now you can get to the staffroom!",
+        "Hmm no, that's from a different potion!"
+    )
+
+    slowprint(
+        "Out of the following ingredients: \n"
+        "(a) DNA of the person you want to become. "
+        "\U0001F487 \n"
+        "(b) Asian dragon hair. "
+        "\U0001F432 \n"
+        "(c) Eyeball. "
+        "\U0001F440 \n"
+        "(d) Peacock feather. "
+        "\U0001F99A"
+    )
+
+    third_key_input = input(
+        "'Which one is needed to complete the Polyjuice Potion?' \n"
+        )
+
+    print("\n")
+
+    if "a" in third_key_input:
+        slowprint(
+            third_key_choices.response_correct() +
+            emoji_choices.happy_emoji()
+        )
+        key_main()
+    elif "b" in third_key_input:
+        slowprint(
+            third_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in third_key_input:
+        slowprint(
+            third_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in third_key_input:
+        slowprint(
+            third_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        third_key_challenge()
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -821,6 +883,7 @@ def main_two():
     second_key_challenge()
     second_room_backstory()
     second_item_question()
+    third_key_challenge()
 
 
 main_one()
