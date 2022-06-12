@@ -873,6 +873,78 @@ def third_room_backstory():
     third_room.room_backstory()
 
 
+def third_item_question():
+    """
+    Prompts the player to solve the third room question,
+    in order to obtain an item required to open the
+    next door
+    """
+    new_line()
+
+    third_item_choices = Abcd(
+        "'I see you know me well! I think you'll like this item...'",
+        "'No, I really don't care for those!'"
+    )
+
+    slowprint(
+        "Out of the following sweets: \n"
+        "(a) Blood-Flavoured Lollipops. "
+        "\U0001F36D \n"
+        "(b) Chocolate Frogs. "
+        "\U0001F36B \n"
+        "(c) Bertie Bott's Every-Flavour Beans. "
+        "\U0001F36C \n"
+        "(d) Sherbet Lemons. "
+        "\U0001F34B"
+    )
+
+    third_item_input = input(
+        "'Which one is my favourite?' \n"
+        )
+
+    print("\n")
+
+    if "d" in third_item_input:
+        slowprint(
+            third_item_choices.response_correct() +
+            emoji_choices.cloak_emoji()
+        )
+        add_to_inventory("Invisibility Cloak")
+    elif "a" in third_item_input:
+        slowprint(
+            third_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "b" in third_item_input:
+        slowprint(
+            third_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in third_item_input:
+        slowprint(
+            third_item_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        third_item_question()
+
+    new_line()
+
+    door_backstory("fourth", "the dungeon with the troll")
+
+    slowprint(
+        "Maybe your cloak could help you here..." +
+        emoji_choices.cloak_emoji()
+    )
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -902,6 +974,8 @@ def main_two():
     second_item_question()
     third_key_challenge()
     third_room_backstory()
+    third_item_question()
 
 
 main_one()
+

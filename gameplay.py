@@ -61,7 +61,7 @@ def door_backstory(number, location):
     )
 
     slowprint(
-        f"It's located in a chest in {location}." +
+        f"It's located in a chest in {location}!" +
         emoji_choices.location_emoji()
     )
 
