@@ -802,7 +802,7 @@ def third_key_challenge():
     new_line()
 
     third_key_choices = Abcd(
-        "Yes, well done! Now you can get to the staffroom!",
+        "Yes, well done! Now you can get into the staffroom as a teacher!",
         "Hmm no, that's from a different potion!"
     )
 
@@ -856,6 +856,23 @@ def third_key_challenge():
         third_key_challenge()
 
 
+def third_room_backstory():
+    """
+    Runs third room backstory
+    """
+    new_line()
+
+    third_room = Room(
+        "third",
+        "Fawkes",
+        "Albus Dumbledore",
+        "he",
+        "I"
+        )
+
+    third_room.room_backstory()
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -884,6 +901,7 @@ def main_two():
     second_room_backstory()
     second_item_question()
     third_key_challenge()
+    third_room_backstory()
 
 
 main_one()
