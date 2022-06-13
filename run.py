@@ -668,7 +668,7 @@ def second_key_challenge():
     )
 
     second_key_input = input(
-        "'Which one reveals the map?' \n"
+        "Which one reveals the map? \n"
         )
 
     print("\n")
@@ -819,7 +819,7 @@ def third_key_challenge():
     )
 
     third_key_input = input(
-        "'Which one is needed to complete the Polyjuice Potion?' \n"
+        "Which one is needed to complete the Polyjuice Potion? \n"
         )
 
     print("\n")
@@ -909,7 +909,7 @@ def third_item_question():
             third_item_choices.response_correct() +
             emoji_choices.cloak_emoji()
         )
-        add_to_inventory("Invisibility Cloak")
+        add_to_inventory("Cloak of Invisibility")
     elif "a" in third_item_input:
         slowprint(
             third_item_choices.response_incorrect() +
@@ -945,6 +945,68 @@ def third_item_question():
     )
 
 
+def fourth_key_challenge():
+    """
+    Prompts the player to solve the fourth key challenge,
+    in order to open the fourth door
+    """
+    new_line()
+
+    fourth_key_choices = Abcd(
+        "Yes, well done! Now you can sneak past the troll in the dungeon!",
+        "Hmm no, this one can reveal the cloak wearer!"
+    )
+
+    slowprint(
+        "Out of the following: \n"
+        "(a) Marauder's Map. "
+        "\U0001F4DC \n"
+        "(b) Death. "
+        "\U0001F480 \n"
+        "(c) Magical Eyes. "
+        "\U0001F440 \n"
+        "(d) Dementors. "
+        "\U0001F311"
+    )
+
+    fourth_key_input = input(
+        "Which one can not see past the Cloak of Invisibility? \n"
+        )
+
+    print("\n")
+
+    if "b" in fourth_key_input:
+        slowprint(
+            fourth_key_choices.response_correct() +
+            emoji_choices.happy_emoji()
+        )
+        key_main()
+    elif "a" in fourth_key_input:
+        slowprint(
+            fourth_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in fourth_key_input:
+        slowprint(
+            fourth_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in fourth_key_input:
+        slowprint(
+            fourth_key_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        fourth_key_challenge()
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -975,6 +1037,7 @@ def main_two():
     third_key_challenge()
     third_room_backstory()
     third_item_question()
+    fourth_key_challenge()
 
 
 main_one()

@@ -47,7 +47,7 @@ class Emoji:
         self.map = " \U0001F4DC"
         self.lightbulb = " \U0001F4A1"
         self.potion = " \U0001F36F"
-        self.cloak = " \u2728"
+        self.cloak = " \U0001F92B"
         self.gameover = " \U0001F47E"
 
     def lightning_emoji(self):
