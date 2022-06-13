@@ -48,6 +48,7 @@ class Emoji:
         self.lightbulb = " \U0001F4A1"
         self.potion = " \U0001F36F"
         self.cloak = " \U0001F92B"
+        self.snake = "\U0001F40D"
         self.gameover = " \U0001F47E"
 
     def lightning_emoji(self):
@@ -271,6 +272,12 @@ class Emoji:
         Runs cloak emoji
         """
         return f"{self.cloak}"
+
+    def snake_emoji(self):
+        """
+        Runs snake emoji
+        """
+        return f"{self.snake}"
 
     def gameover_emoji(self):
         """

@@ -1007,6 +1007,33 @@ def fourth_key_challenge():
         fourth_key_challenge()
 
 
+def fourth_room_backstory():
+    """
+    Runs fourth room backstory
+    """
+    new_line()
+
+    slowprint(
+        "You enter the fourth room and look around..." +
+        emoji_choices.door_emoji()
+    )
+
+    slowprint(
+        "Hang on, is that Nagini?! " +
+        emoji_choices.snake_emoji()
+    )
+
+    slowprint(
+        "That can only mean one thing..." +
+        emoji_choices.darkmoon_emoji()
+    )
+
+    slowprint(
+        "It's Lord Voldemort!" +
+        emoji_choices.evil_emoji()
+    )
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -1038,6 +1065,7 @@ def main_two():
     third_room_backstory()
     third_item_question()
     fourth_key_challenge()
+    fourth_room_backstory()
 
 
 main_one()
