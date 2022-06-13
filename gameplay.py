@@ -110,6 +110,8 @@ class Room():
             emoji_choices.wizard_emoji()
         )
 
+        new_line()
+
         slowprint(
             "'Look who we have here!'" +
             emoji_choices.monocle_emoji()
