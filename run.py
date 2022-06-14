@@ -1086,7 +1086,6 @@ def first_spell_challenge():
             first_spell_choices.response_correct() +
             emoji_choices.happy_emoji()
         )
-        key_main()
     elif "a" in first_spell_input:
         slowprint(
             first_spell_choices.response_incorrect() +
@@ -1111,6 +1110,67 @@ def first_spell_challenge():
             emoji_choices.neutral_emoji()
         )
         first_spell_challenge()
+
+
+def second_spell_challenge():
+    """
+    Prompts the player to choose the correct second spell
+    in order to beat Voldemort
+    """
+    new_line()
+
+    second_spell_choices = Abcd(
+        "Yes, well done! That will defeat him!",
+        "Bad luck, that spell won't harm him!"
+    )
+
+    slowprint(
+        "Out of the following spells: \n"
+        "(a) Avada Kedavra! "
+        "\U0001F480 \n"
+        "(b) Wingardium Leviosa! "
+        "\U0001F9F9 \n"
+        "(c) Reparo! "
+        "\U0001FA79 \n"
+        "(d) Riddikulus! "
+        "\U0001F921"
+    )
+
+    second_spell_input = input(
+        "Which do you cast second? \n"
+        )
+
+    print("\n")
+
+    if "a" in second_spell_input:
+        slowprint(
+            second_spell_choices.response_correct() +
+            emoji_choices.happy_emoji()
+        )
+    elif "b" in second_spell_input:
+        slowprint(
+            second_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in second_spell_input:
+        slowprint(
+            second_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in second_spell_input:
+        slowprint(
+            second_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        second_spell_challenge()
 
 
 # Call the functions from game story to allow it to run
@@ -1146,6 +1206,7 @@ def main_two():
     fourth_key_challenge()
     fourth_room_backstory()
     first_spell_challenge()
+    second_spell_challenge()
 
 
 main_one()
