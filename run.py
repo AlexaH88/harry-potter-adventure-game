@@ -6,7 +6,9 @@ Runs the game
 import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
 from questions import YesNo, Abcd, AbcdOther
-from gameplay import slowprint, new_line, exit_game, Room, door_backstory
+from gameplay import (
+    slowprint, new_line, exit_game, win_game, Room, door_backstory
+    )
 from emojis import Emoji
 
 
@@ -1147,6 +1149,7 @@ def second_spell_challenge():
             second_spell_choices.response_correct() +
             emoji_choices.happy_emoji()
         )
+        win_game()
     elif "b" in second_spell_input:
         slowprint(
             second_spell_choices.response_incorrect() +

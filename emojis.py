@@ -50,6 +50,7 @@ class Emoji:
         self.cloak = " \U0001F92B"
         self.snake = "\U0001F40D"
         self.gameover = " \U0001F47E"
+        self.gamewin = " \U0001F3C6"
 
     def lightning_emoji(self):
         """
@@ -284,3 +285,9 @@ class Emoji:
         Runs gameover emoji
         """
         return f"{self.gameover}"
+
+    def gamewin_emoji(self):
+        """
+        Runs gamewin emoji
+        """
+        return f"{self.gamewin}"

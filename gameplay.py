@@ -40,6 +40,17 @@ def exit_game():
     sys.exit()
 
 
+def win_game():
+    """
+    Exits the game
+    """
+    slowprint(
+        "Congratulations! You Win!" +
+        emoji_choices.gamewin_emoji()
+    )
+    sys.exit()
+
+
 # code related to all doors in the game
 def door_backstory(number, location):
     """
