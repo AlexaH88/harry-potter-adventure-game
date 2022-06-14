@@ -1033,6 +1033,18 @@ def fourth_room_backstory():
         emoji_choices.evil_emoji()
     )
 
+    new_line()
+
+    slowprint(
+        "'Who dares challenge me?!'" +
+        emoji_choices.wizard_emoji()
+    )
+
+    slowprint(
+        "'Show me what you've got, I dare you...'" +
+        emoji_choices.spell_emoji()
+    )
+
 
 # Call the functions from game story to allow it to run
 def main_one():
