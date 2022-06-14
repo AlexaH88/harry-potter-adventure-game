@@ -1042,8 +1042,75 @@ def fourth_room_backstory():
 
     slowprint(
         "'Show me what you've got, I dare you...'" +
+        emoji_choices.lightning_emoji()
+    )
+
+    slowprint(
+        "You'll need to choose the correct spells in order to beat him!" +
         emoji_choices.spell_emoji()
     )
+
+
+def first_spell_challenge():
+    """
+    Prompts the player to choose the correct first spell
+    in order to beat Voldemort
+    """
+    new_line()
+
+    first_spell_choices = Abcd(
+        "Yes, well done! That will remove his wand!",
+        "Bad luck, that spell won't harm him!"
+    )
+
+    slowprint(
+        "Out of the following spells: \n"
+        "(a) Alohomora! "
+        "\U0001F511 \n"
+        "(b) Lumos! "
+        "\U0001F4A1 \n"
+        "(c) Expelliarmus! "
+        "\U0001F320 \n"
+        "(d) Expecto Patronum! "
+        "\U0001F43E"
+    )
+
+    first_spell_input = input(
+        "Which do you cast first? \n"
+        )
+
+    print("\n")
+
+    if "c" in first_spell_input:
+        slowprint(
+            first_spell_choices.response_correct() +
+            emoji_choices.happy_emoji()
+        )
+        key_main()
+    elif "a" in first_spell_input:
+        slowprint(
+            first_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "b" in first_spell_input:
+        slowprint(
+            first_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in first_spell_input:
+        slowprint(
+            first_spell_choices.response_incorrect() +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            abcd_other_responses.other_response() +
+            emoji_choices.neutral_emoji()
+        )
+        first_spell_challenge()
 
 
 # Call the functions from game story to allow it to run
@@ -1078,6 +1145,7 @@ def main_two():
     third_item_question()
     fourth_key_challenge()
     fourth_room_backstory()
+    first_spell_challenge()
 
 
 main_one()
