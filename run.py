@@ -1046,6 +1046,16 @@ def fourth_room_backstory():
     )
 
 
+def enemy_battle():
+    """
+    Prompts the player to choose the correct spell
+    order, to beat Voldemort
+    """
+    new_line()
+
+    
+
+
 # Call the functions from game story to allow it to run
 def main_one():
     """
@@ -1078,6 +1088,7 @@ def main_two():
     third_item_question()
     fourth_key_challenge()
     fourth_room_backstory()
+    enemy_battle()
 
 
 main_one()
