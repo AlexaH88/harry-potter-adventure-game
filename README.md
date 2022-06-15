@@ -203,11 +203,8 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 ### ***Accessibility Testing***
 
-  - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
-  ![Colour Palette Contrast Grid](assets/images/color-palette-contrast-grid.png)
-  
-  - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
-  ![Font Awesome Accessiblity Page](assets/images/font-awesome-accessibility.png)  
+  - [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
+  ![Colour Palette Contrast Grid](assets/testing/testing-accessibility.png)
 
 ### ***Testing User Stories from User Experience (UX) Section***
 
