@@ -1,8 +1,8 @@
 <h1 align="center">Harry Potter Adventure Game</h1>
 
-[Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.com/) has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.
+The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.com/) has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.
 
-<h2 align="center"><img src="assets/images/mockup-pianotes.png"></h2>
+<h2 align="center"><img src="assets/images/final-project.png"></h2>
 
 ## __User Experience (UX)__
 
@@ -64,80 +64,42 @@
 
 ### ***Existing Features***
 
-- #### Navigation Bar
+![Final Project](assets/images/final-project.png)
 
-  ![Nav Bar](assets/images/nav-bar.png)
+- #### Header
 
-  - The navigation bar includes four clickable links, allowing the user to easily access the three pages on the site: 
-    - PiaNotes site name (links to the Play home page)
-    - Play page
-    - Sheet Music page
-    - Instructions page
+  ![Header](assets/images/header.png)
 
-  - In order to make navigation easier for the user, the navigation bar is in a fixed position, meaning that it remains at the top of the page as the user scrolls down.
-
-  - The navigation bar follows the same style as the footer, and appears in the same format on all three pages - this allows for consistency throughout the site.
-
-  - A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
-
-  - The navigation bar was created with HTML, CSS and JavaScript and is fully responsive across devices.
-    ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
-
-- #### Play Page
-
-  ![Play Page](assets/images/page-play.png)
-
-  - The Play page is the landing page of the website and as the user's first port of call serves as the main purpose of the site, namely to be able to play a virtual piano - on Freestyle mode, or on Challenge mode. 
+  - The header includes an h1 title "Harry Potter Adventure Game" to make it immediately clear to the user what the site is about.  
   
-  - The page is split into two sections:
-    - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!". A hover effect of the buttons inversing colours, and the cursor becoming a pointer is included, allowing the user to understand that the button is clickable.
-    - The virtual piano, including computer keyboard keys to be used on Freestyle mode on non-touchscreen devices.
+- #### Background Image
 
-- #### Sheet Music Page
+  ![Background Image](assets/images/background-image.png)
 
-  ![Sheet Music Page](assets/images/page-sheet-music.png)
+  - The background image provides an immediate visual cue to the user:
+    - The characters of Harry Potter and Albus Dumbledore are instantly recognisable to fans of the books and films.
+    - If the user isn't familiar with the franchise, they will still be able to recognise that the theme of the site is magic and wizardry.
 
-  - The Sheet Music page allows the user to view a selection of sheet music that they can play along to on the piano, by opening the page in a separate tab. 
+- #### Button
 
-  - Each piece of sheet music includes the corresponding audio file that users can listen to in order to familiarise themselves with the song. 
+  ![Button](assets/images/button.png)
 
-  - The page has a choice of seven songs:
-    - The Entertainer - Scott Joplin
-    - Für Elise - Ludwig van Beethoven
-    - Clair de Lune - Claude Debussy
-    - Canon in D - Johann Pachelbel
-    - Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky
-    - Greensleeves - Unknown Composer
-    - Happy Birthday - Patty & Mildred J. Hill
+  - The pre-existing button from the CI template was restyled to fit the theme of the page, and the words changed to "Run Game" to be more coherent regarding the activity of the page. 
 
-- #### Instructions Page
+- #### Terminal
 
-  ![Instructions Page](assets/images/page-instructions.png)
+  ![Terminal](assets/images/terminal.png)
 
-  - The Intructions page serves to inform the user on how to play and how to use the virtual piano. 
-
-  - The page is split into two sections:
-    - How to Play - explaining to the user the difference between the two play modes and how to access them, and the use of the sheet music. 
-    - Using the Virtual Piano - explaining to the user in which ways the piano can be played on various devices. 
-
-  - The user can access a popup window in the How to Play section, detailing the rules of the challenge. A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the word 'here' is clickable. A popup was used to avoid overloading the page with text, and thus discouraging the user from reading the information. 
-
-  - A piano and computer mouse graphic were used for each of the sections, to break up the text-heavy page and instantly make clear to the user what the secions are about. The graphics use the same colours and style of the site in order to keep things coherent.  
+  - The pre-existing terminal from the CI template was re-positioned to sit in the middle of the page and between the two characters in the background image.   
 
 - #### Footer
 
   ![Footer](assets/images/footer.png)
 
-  - The footer follows the same style as the navigation bar, and appears in the same format on all three pages - this allows for consistency throughout the site.
-
-  - The footer contains three elements:
+  - The footer follows the same font style as the header and  contains three elements:
     - The copyrighted site name on the left hand side. 
     - Information about the site and how it was created. 
-    - Social media links, allowing the user to visit the site creator's LinkedIn and GitHub pages. Hovering over the link icons turns them purple to signal to the user that there is an interaction possible. All links are opened in separate tabs so that the user remains on the site. 
-
-  - The footer was created with HTML and CSS only and is fully responsive across devices.
-
-    ![Responsive Footer](assets/images/footer-responsive.png)
+    - Social media links, allowing the user to visit the site creator's LinkedIn and GitHub pages. Hovering over the link icons turns them yellow to signal to the user that there is an interaction possible. All links are opened in separate tabs so that the user remains on the site. 
 
 ### ***Future Implementations***
 

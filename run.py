@@ -18,7 +18,7 @@ emoji_choices = Emoji()
 abcd_other_responses = AbcdOther()
 
 
-# Prints game art
+# Prints game art, taken from textart.io - see README for details
 print(r"""
                                           _ __
          ___                             | '  \
