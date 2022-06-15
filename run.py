@@ -3,6 +3,7 @@ Runs the game
 """
 
 
+# Imports modules
 import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
 from questions import YesNo, Abcd, AbcdOther
@@ -12,8 +13,27 @@ from gameplay import (
 from emojis import Emoji
 
 
+# Declares variables
 emoji_choices = Emoji()
 abcd_other_responses = AbcdOther()
+
+
+# Prints game art
+print(r"""
+                                          _ __
+         ___                             | '  \
+    ___  \ /  ___         ,'\_           | .-. \        /|
+    \ /  | |,'__ \  ,'\_  |   \          | | | |      ,' |_   /|
+  _ | |  | |\/  \ \ |   \ | |\_|    _    | |_| |   _ '-. .-',' |_   _
+ // | |  | |____| | | |\_|| |__    //    |     | ,'_`. | | '-. .-',' `. ,'\_
+ \\_| |_,' .-, _  | | |   | |\ \  //    .| |\_/ | / \ || |   | | / |\  \|   \
+  `-. .-'| |/ / | | | |   | | \ \//     |  |    | | | || |   | | | |_\ || |\_|
+    | |  | || \_| | | |   /_\  \ /      | |`    | | | || |   | | | .---'| |
+    | |  | |\___,_\ /_\ _      //       | |     | \_/ || |   | | | |  /\| |
+    /_\  | |           //_____//       .||`      `._,' | |   | | \ `-' /| |
+         /_\           `------'        \ |              `.\  | |  `._,' /_\
+                                        \|                    `.\
+""")
 
 
 # Functions that run the game story, in order
@@ -1212,4 +1232,5 @@ def main_two():
     second_spell_challenge()
 
 
+# Calls main game functions
 main_one()
