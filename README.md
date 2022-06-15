@@ -179,6 +179,9 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 1. [Python Tutor:](https://pythontutor.com/)
     - Python Tutor was used to step through non-functioning code to find the problem and resolve it. 
 
+1. [Lucidchart:](https://www.lucidchart.com/)
+    - Lucidchart was used to create the flowchart at the design stage. 
+
 ## __Testing__
 
 ### ***Python, HTML and CSS Testing***
@@ -190,13 +193,13 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
     - [Results questions.py](assets/testing/testing-py-questions.png)
     - [Results emojis.py](assets/testing/testing-py-emojis.png)
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate the project to ensure there were no HTML syntax errors in the project.
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no HTML syntax errors in the project.
     - [Results index.html](assets/testing/testing-html-index.pdf)
     - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
     - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate the project to ensure there were no CSS syntax errors in the project.
-    - [Results style.css](assets/testing/testing-style-css.pdf)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no CSS syntax errors in the project.
+    - [Results css](assets/testing/testing-css.png)
 
 ### ***Accessibility Testing***
 
