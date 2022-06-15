@@ -164,28 +164,39 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 1. [GitHub:](https://github.com/)
     - GitHub was used to store the projects code after being pushed from Git.
 
+1. [Heroku:](https://heroku.com/)
+    - Heroku was used for the deployed application.
+
 1. [Canva:](https://www.canva.com/)
-    - Canva was used to create the wireframes during the design process.
+    - Canva was used to create the wireframes during the design process, and the background image of the site.
 
 1. [Font Awesome Favicon Generator:](https://gauger.io/fonticon/)
     - Font Awesome Favicon Generator was used to produce the favicon version of the [Font Awesome Lightning Bolt Icon](https://fontawesome.com/icons/bolt-lightning?s=solid).
+
+1. [Chrome DevTools:](https://developer.chrome.com/docs/devtools/):
+    - Chrome DevTools was used to consistently check the site in terms of design output (html, css).
+
+1. [Python Tutor:](https://pythontutor.com/)
+    - Python Tutor was used to step through non-functioning code to find the problem and resolve it. 
 
 ## __Testing__
 
 ### ***Python, HTML and CSS Testing***
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
+-   [PEP8 Online](http://pep8online.com/) was used to validate the project to ensure there were no Pyhton errors present.
+    - [Results run.py](assets/testing/testing-py-run.png)
+    - [Results gameplay.py](assets/testing/testing-py-gameplay.png)
+    - [Results collectibles.py](assets/testing/testing-py-collectibles.png)
+    - [Results questions.py](assets/testing/testing-py-questions.png)
+    - [Results emojis.py](assets/testing/testing-py-emojis.png)
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate the project to ensure there were no HTML syntax errors in the project.
     - [Results index.html](assets/testing/testing-html-index.pdf)
     - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
     - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate the project to ensure there were no CSS syntax errors in the project.
     - [Results style.css](assets/testing/testing-style-css.pdf)
-
--   [JS Hint](https://jshint.com/) was used to validate every page of the project to ensure there were no JavScript errors in the project.
-    - [Results script.js](assets/testing/testing-js-script.pdf)
-    - [Results play.js](assets/testing/testing-js-play.pdf)
-    - [Results instructions.js](assets/testing/testing-js-instructions.pdf)
 
 ### ***Accessibility Testing***
 
