@@ -31,22 +31,27 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
     -   #### Colour Palette
 
         - The colour palette is made up of four colours: 
-          - Yellow #FFDE59
-          - Purple #5E17EB
-          - Black #000000
+          - Blue #02084B
+          - Yellow #F5C116
           - White #FFFFFF
+          - Black #000000
 
-        - The yellow #FFDE59 and purple #5E17EB were chosen for their playfulness and retro feel, fitting with the theme of the site, all the while taking into account their compatibility with each other and the site as a whole. Black #000000 and white #FFFFFF are used as the third and fourth colours on the site as neutral tones.
+        - The blue #02084B and yellow #F5C116 were chosen for their representation of magic and mystery, found in dark blue skies and yellow stars, and thus fitting with the theme of the site. They are also compatible with each other and complement each other through light and dark.
+
+        - White #FFFFFF and black #000000 are used as the third and fourth colours on the site as neutral tones.
 
     -   #### Typography
 
-        - The [Orelega One](https://fonts.google.com/specimen/Orelega+One?query=orelega) and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) fonts are used across the site, with 'Orelega One' used for the headings and 'Poppins' used for the remaining text. 
+        - The [Gentium Plus](https://fonts.google.com/specimen/Gentium+Plus?preview.text=The%20Boy%20who%20Lived&preview.text_type=custom) font is used across the site, in the header and footer specifically. 
 
-        - The fonts were chosen for their playful and retro feel, taking into account the theme of the site. 
+        - It was chosen for it's similarity to the Harry Potter books' typeface:
+        ![Harry Potter Book Typeface](assets/images/harry-potter-book-typeface.jpg)
     
     -   #### Imagery
 
-        - The piano and computer mouse icons on the Instructions Page were added to avoid having a text-heavy page and to create a playful and fun look and feel. The graphics use the same colours and style of the site in order to keep things coherent.  
+        - The background image was added to render the site more visually appealing and to immediately convey the game's theme. 
+
+        - The ASCII Harry Potter text art and the emojis used throughout the game were added to render the Command Line Interface more visual than the typical text-heavy options allow for.  
 
 -   ### ***Wireframe***
 
