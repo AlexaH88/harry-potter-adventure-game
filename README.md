@@ -170,6 +170,9 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 1. [Canva:](https://www.canva.com/)
     - Canva was used to create the wireframes during the design process, and the background image of the site.
 
+1. [Font Awesome](https://fontawesome.com/):
+    - Font Awesome was used on the footer of the site to add icons for the social media links, for aesthetic and UX purposes.
+
 1. [Font Awesome Favicon Generator:](https://gauger.io/fonticon/)
     - Font Awesome Favicon Generator was used to produce the favicon version of the [Font Awesome Lightning Bolt Icon](https://fontawesome.com/icons/bolt-lightning?s=solid).
 
@@ -309,48 +312,39 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 
 ### ***Code***
 
-- The following were used as references to help with writing the HTML, CSS and JavaScript code:
-  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [CI Love Maths Walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/78f3c10a937c4fe09640c7c0098d16bd/)
+- The following were used as references to help with writing the HTML, CSS and Python code:
+  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [Love Sandwiches Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/58d3e90f9a2043908c62f31e51c15deb/)
   - [W3Schools](https://www.w3schools.com/) 
   - [Stack Overflow](https://stackoverflow.com/)
   - [MDN Web Docs](https://developer.mozilla.org/en-US/)
+  - [Geeks for Geeks](https://www.geeksforgeeks.org/)
+  - [Delft Stack](https://www.delftstack.com/)
 
-- The virtual piano code was taken from [Web Dev Simplified's](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) [Build A Piano With JavaScript Tutorial](https://www.youtube.com/watch?v=vjco5yKZpU8) and adapted. 
+- The slowprint code was taken from [Code Grepper](https://www.codegrepper.com/), in particular from [this thread](https://www.codegrepper.com/code-examples/python/python+slow+print) posted by [Robin R](https://www.codegrepper.com/profile/robin). 
 
-- The game challenge code was taken from [Free Code Camp Org's](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) [Simon Game JavaScript Tutorial for Beginners](https://www.youtube.com/watch?v=n_ec3eowFLQ) and adapted. 
+- The emoji unicodes were taken from [Unicode Plus](https://unicodeplus.com/).
+
+- The ASCII art at the beginning of the game was taken from [TextArt.io](https://textart.io/), specifically from [this thread](https://textart.io/art/TDZHnZH_mLKO1bHKCpKP9QeF/harry-potter-and-the-chamber-of-secrets) by an uncredited artist, and adapted. 
 
 - The CSS flexbox code was taken from [Stack Overflow](https://stackoverflow.com/), specifically from [this thread](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b).
 
-- The code to use icons as list bullet points on the Instructions page was taken from [Font Awesome](https://fontawesome.com/), specifically [this page](https://fontawesome.com/docs/web/style/lists).
-
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
-
-- The JavaScript media queries were taken from [CSS Tricks](https://css-tricks.com/), specifically [this article](https://css-tricks.com/working-with-javascript-media-queries/), and adapted. 
-
-- The code for the hamburger menu on 800px width screens and smaller was taken from [W3 Schools](https://www.w3schools.com/), specifically [this section](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar), and adapted. 
-
-- The code for the Simon game rules popup on the instructions page was taken from [W3 Schools](https://www.w3schools.com/), specifically [this aticle](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup), and adapted. 
 
 ### ***Content***
 
-- All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88). 
+- All game text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88), but is obviously based on [JK Rowling's](https://en.wikipedia.org/wiki/J._K._Rowling) [Harry Potter](https://en.wikipedia.org/wiki/Harry_Potter) books. 
+
+- The following sites were used as references to write the game story:
+  - [Wizarding World](https://www.wizardingworld.com/)
+  - [Harry Potter Fandom](https://harrypotter.fandom.com/wiki/Main_Page)
 
 ### ***Media***
 
-- The [piano graphic](https://www.canva.com/media/MAEYJcyVjO8) on the Instructions page was taken from graphic designer [vectortradition](https://www.canva.com/p/vectortradition/) via [Canva](https://www.canva.com/).
+- The [Harry Potter](https://www.canva.com/photos/MAEzYWkXDIw-harry-potter/) and [Albus Dumbledore](https://www.canva.com/photos/MAE4nVVdqR8-harry-potter/) graphics on the background image were taken from graphic designer [Iqzaulia Project](https://www.canva.com/p/gambar-iqzaulia/) via [Canva](https://www.canva.com/).
 
-- The [mouse graphic](https://www.canva.com/media/MADHSKVmqUU) on the Instructions page was taken from graphic designer [BellafishPh](https://www.canva.cn/p/hnh-nh-ca-bellafish-ph/) via [Canva](https://www.canva.com/).
+- The [yellow star](https://www.canva.com/icons/MAC2qaSI20A-star/) graphic on the background image was taken from graphic designer [djvstock](https://www.canva.com/p/djvstock/) via [Canva](https://www.canva.com/). 
 
-- The sheet music and corresponding audio on the Sheet Music page was taken from [Musescore](https://musescore.com/) with the individual songs credited as follows:
-  - [The Entertainer - Scott Joplin](https://musescore.com/user/167019/scores/162108) by [rui.c.sousa.3](https://musescore.com/user/167019)
-  - [Für Elise - Ludwig van Beethoven](https://musescore.com/user/19710/scores/33816) by [ClassicMan](https://musescore.com/classicman)
-  - [Clair de Lune - Claude Debussy](https://musescore.com/user/19710/scores/58553) by [ClassicMan](https://musescore.com/classicman)
-  - [Canon in D - Johann Pachelbel](https://musescore.com/user/1809056/scores/1019991) by [lemontart](https://musescore.com/user/1809056)
-  - [Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky](https://musescore.com/user/3435661/scores/2899321) by [Nohpets](https://musescore.com/user/3435661)
-  - [Greensleeves - Unknown Composer](https://musescore.com/user/35704259/scores/6340178) by [DominiqueMakowski](https://musescore.com/dominiquemakowski
-  - [Happy Birthday - Patty & Mildred J. Hill](https://musescore.com/user/173585/scores/166951) by [wildpig](https://musescore.com/user/173585)
-
-- The piano notes audio was recorded by the site creator [Alexa Hendry](https://github.com/AlexaH88) on [Ableton Live](https://www.ableton.com/en/live/) with the [Grand Piano](https://www.ableton.com/en/packs/grand-piano/) sound. 
+- The background image was put together by the site creator [Alexa Hendry](https://github.com/AlexaH88) using [Canva](https://www.canva.com/).
 
 ### ***Acknowledgements***
 
