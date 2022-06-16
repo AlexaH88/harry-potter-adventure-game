@@ -60,42 +60,18 @@ def choose_play_game():
     """
     Asks the user if they want to play the game or not
     """
-    new_line()
-
-    play_game_responses = YesNo(
+    yes_no_response(
+        "Ready to face up to the challenge? (y/n) \n",
         "Great choice, let the adventure begin!",
-        "That's a shame, maybe next time!"
-        )
-
-    play_game_input = input("Ready to face up to the challenge? (y/n) \n")
-
-    print("\n")
-
-    if play_game_input == "y":
-        slowprint(
-            play_game_responses.yes_response() +
-            emoji_choices.happy_emoji()
-        )
-    elif play_game_input == "n":
-        slowprint(
-            play_game_responses.no_response() +
-            emoji_choices.sad_emoji()
-        )
-        exit_game()
-    else:
-        slowprint(
-            play_game_responses.other_response() +
-            emoji_choices.neutral_emoji()
-        )
-        choose_play_game()
+        "That's a shame, maybe next time!",
+        "Please enter y or n."
+    )
 
 
 def choose_game_instructions():
     """
     Asks the player if they want to read the game instructions or not
     """
-    new_line()
-
     game_instructions_responses = YesNo(
         "Right, let me explain the game to you!",
         "Ok, let's carry on with the quest!"
