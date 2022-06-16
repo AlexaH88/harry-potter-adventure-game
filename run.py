@@ -897,14 +897,14 @@ def fourth_key_challenge():
 
     slowprint(
         "Out of the following: \n"
-        "(a) Marauder's Map. "
-        "\U0001F4DC \n"
-        "(b) Death. "
-        "\U0001F480 \n"
-        "(c) Magical Eyes. "
-        "\U0001F440 \n"
-        "(d) Dementors. "
-        "\U0001F311"
+        "(a) Marauder's Map." +
+        emoji_choices.map_emoji() +
+        "(b) Death." +
+        emoji_choices.skull_emoji() +
+        "(c) Magical Eyes." +
+        emoji_choices.eye_emoji() +
+        "(d) Dementors." +
+        emoji_choices.darkmoon_emoji()
     )
 
     fourth_key_input = input(

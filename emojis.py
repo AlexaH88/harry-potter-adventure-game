@@ -61,6 +61,7 @@ class Emoji:
         self.chocolate = " \U0001F36B \n"
         self.sweetie = " \U0001F36C \n"
         self.lemon = " \U0001F34B \n"
+        self.skull = " \U0001F480 \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -372,6 +373,12 @@ class Emoji:
         Runs lemon emoji
         """
         return f"{self.lemon}"
+
+    def skull_emoji(self):
+        """
+        Runs skull emoji
+        """
+        return f"{self.skull}"
 
     def note_emoji(self):
         """
