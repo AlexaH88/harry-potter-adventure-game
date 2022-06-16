@@ -53,6 +53,10 @@ class Emoji:
         self.snake = " \U0001F40D \n"
         self.badger = " \U0001F9A1 \n"
         self.lion = " \U0001F981 \n"
+        self.hair = " \U0001F487 \n"
+        self.dragon = " \U0001F432 \n"
+        self.eye = " \U0001F440 \n"
+        self.peacock = " \U0001F99A \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -316,6 +320,30 @@ class Emoji:
         Runs lion emoji
         """
         return f"{self.lion}"
+
+    def hair_emoji(self):
+        """
+        Runs hair emoji
+        """
+        return f"{self.hair}"
+
+    def dragon_emoji(self):
+        """
+        Runs dragon emoji
+        """
+        return f"{self.dragon}"
+
+    def eye_emoji(self):
+        """
+        Runs eye emoji
+        """
+        return f"{self.eye}"
+
+    def peacock_emoji(self):
+        """
+        Runs peacock emoji
+        """
+        return f"{self.peacock}"
 
     def note_emoji(self):
         """

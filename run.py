@@ -746,14 +746,14 @@ def third_key_challenge():
 
     slowprint(
         "Out of the following ingredients: \n"
-        "(a) DNA of the person you want to become. "
-        "\U0001F487 \n"
-        "(b) Asian dragon hair. "
-        "\U0001F432 \n"
-        "(c) Eyeball. "
-        "\U0001F440 \n"
-        "(d) Peacock feather. "
-        "\U0001F99A"
+        "(a) DNA of the person you want to become." +
+        emoji_choices.hair_emoji() +
+        "(b) Asian dragon hair." +
+        emoji_choices.dragon_emoji() +
+        "(c) Eyeball." +
+        emoji_choices.eye_emoji() +
+        "(d) Peacock feather." +
+        emoji_choices.peacock_emoji()
     )
 
     third_key_input = input(
