@@ -43,26 +43,14 @@ def game_intro():
     Runs game intro text
     """
     slowprint(
-        "Welcome to the Harry Potter Adventure Game! " +
-        emoji_choices.lightning_emoji()
-    )
-
-    slowprint(
+        "Welcome to the Harry Potter Adventure Game!" +
+        emoji_choices.lightning_emoji() +
         "Strange things have been happening at Hogwarts lately..." +
-        emoji_choices.castle_emoji()
-    )
-
-    slowprint(
+        emoji_choices.castle_emoji() +
         "And no one seems to be able to work out how to stop them..." +
-        emoji_choices.surprised_emoji()
-    )
-
-    slowprint(
+        emoji_choices.surprised_emoji() +
         "Could you be the witch or wizard we've been looking for?" +
-        emoji_choices.wizard_emoji()
-    )
-
-    slowprint(
+        emoji_choices.wizard_emoji() +
         "Please help, the Wizarding World needs you!" +
         emoji_choices.world_emoji()
     )
