@@ -981,14 +981,14 @@ def first_spell_challenge():
 
     slowprint(
         "Out of the following spells: \n"
-        "(a) Alohomora! "
-        "\U0001F511 \n"
-        "(b) Lumos! "
-        "\U0001F4A1 \n"
-        "(c) Expelliarmus! "
-        "\U0001F320 \n"
-        "(d) Expecto Patronum! "
-        "\U0001F43E"
+        "(a) Alohomora!" +
+        emoji_choices.key_emoji() +
+        "(b) Lumos!" +
+        emoji_choices.lightbulb_emoji() +
+        "(c) Expelliarmus!" +
+        emoji_choices.spell_emoji() +
+        "(d) Expecto Patronum!" +
+        emoji_choices.animal_emoji()
     )
 
     first_spell_input = input(
