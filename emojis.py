@@ -45,6 +45,10 @@ class Emoji:
         self.tree = " \U0001F332 \n"
         self.ivy = " \U0001F33F \n"
         self.mountain = " \U0001F5FB \n"
+        self.book = " \U0001F4D6 \n"
+        self.bomb = " \U0001F4A3 \n"
+        self.ear = " \U0001F442 \n"
+        self.beer = " \U0001F37A \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -259,6 +263,30 @@ class Emoji:
         Runs mountain emoji
         """
         return f"{self.mountain}"
+
+    def book_emoji(self):
+        """
+        Runs book emoji
+        """
+        return f"{self.book}"
+
+    def bomb_emoji(self):
+        """
+        Runs bomb emoji
+        """
+        return f"{self.bomb}"
+
+    def ear_emoji(self):
+        """
+        Runs ear emoji
+        """
+        return f"{self.ear}"
+
+    def beer_emoji(self):
+        """
+        Runs beer emoji
+        """
+        return f"{self.beer}"
 
     def note_emoji(self):
         """

@@ -417,13 +417,13 @@ def first_key_challenge():
 
     slowprint(
         "But there are several obstacles in the way: \n"
-        "(a) A pond, perfect for swimming across... " +
+        "(a) A pond, perfect for swimming across..." +
         emoji_choices.pond_emoji() +
-        "(b) A big tree, perfect for climbing up... " +
+        "(b) A big tree, perfect for climbing up..." +
         emoji_choices.tree_emoji() +
-        "(c) An ivy plant, perfect for chewing through... " +
+        "(c) An ivy plant, perfect for chewing through..." +
         emoji_choices.ivy_emoji() +
-        "(d) A small mountain, perfect for flying over... " +
+        "(d) A small mountain, perfect for flying over..." +
         emoji_choices.mountain_emoji()
     )
 
@@ -524,14 +524,14 @@ def first_item_question():
 
     slowprint(
         "Out of the following items: \n"
-        "(a) The Monster Book of Monsters. "
-        "\U0001F4D6 \n"
-        "(b) Dungbombs. "
-        "\U0001F4A3 \n"
-        "(c) Extendable Ears. "
-        "\U0001F442 \n"
-        "(d) Butterbeer. "
-        "\U0001F37A"
+        "(a) The Monster Book of Monsters." +
+        emoji_choices.book_emoji() +
+        "(b) Dungbombs." +
+        emoji_choices.bomb_emoji() +
+        "(c) Extendable Ears." +
+        emoji_choices.ear_emoji() +
+        "(d) Butterbeer." +
+        emoji_choices.beer_emoji()
     )
 
     first_item_input = input(
