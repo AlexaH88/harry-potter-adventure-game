@@ -3,8 +3,8 @@ Contains classes and functions for all the collectibles in the game
 """
 
 
-from gameplay import slowprint, exit_game
-from questions import YesNo
+from gameplay import slowprint
+from questions import yes_no_response
 from emojis import Emoji
 
 
@@ -99,34 +99,12 @@ def unlock_door_request():
     """
     Asks the player if they want to unlock the door or not
     """
-    unlock_door_responses = YesNo(
+    yes_no_response(
+        "Do you want to use the key to unlock the door? (y/n) \n",
         "Of course you do! Here we go...",
-        "Unusual choice, but it's your decision..."
-        )
-
-    use_key_input = input(
-        "Do you want to use the key to unlock the door? (y/n) \n"
-        )
-
-    print("\n")
-
-    if use_key_input == "y":
-        slowprint(
-            unlock_door_responses.yes_response() +
-            emoji_choices.happy_emoji()
-        )
-    elif use_key_input == "n":
-        slowprint(
-            unlock_door_responses.no_response() +
-            emoji_choices.neutral_emoji()
-        )
-        exit_game()
-    else:
-        slowprint(
-            unlock_door_responses.other_response() +
-            emoji_choices.neutral_emoji()
-        )
-        unlock_door_request()
+        "Unusual choice, but it's your decision...",
+        "Please enter y or n."
+    )
 
 
 def key_main():

@@ -69,7 +69,7 @@ class Emoji:
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
         self.map = " \U0001F4DC \n"
-        self.angel = " \U0001F4DC \n"
+        self.angel = " \U0001F607 \n"
         self.lightbulb = " \U0001F4A1 \n"
         self.potion = " \U0001F36F \n"
         self.cloak = " \U0001F92B \n"
