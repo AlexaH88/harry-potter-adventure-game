@@ -232,21 +232,21 @@ def assign_wand():
         "Harry Potter's wand",
         "11 inches",
         "holly",
-        "Phoenix feather",
+        "a Phoenix feather",
         "nice and supple")
 
     albus = Wand(
         "Albus Dumbledore's wand",
         "15 inches",
         "elder",
-        "Thestral tail hair",
+        "a Thestral tail hair",
         "the most powerful wand ever to exist")
 
     rubeus = Wand(
         "Rubeus Hagrid's wand",
         "16 inches",
         "oak",
-        "unknown",
+        "an unknown",
         "rather bendy")
 
     if "Harry Potter's wand" in random_wand_options:
