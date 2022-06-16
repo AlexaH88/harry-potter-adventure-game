@@ -58,20 +58,11 @@ def door_backstory(number, location):
     """
     slowprint(
         f"Ah, here's the {number} door!" +
-        emoji_choices.door_emoji()
-    )
-
-    slowprint(
+        emoji_choices.door_emoji() +
         "I can see here there are some instructions pinned to it." +
-        emoji_choices.monocle_emoji()
-    )
-
-    slowprint(
+        emoji_choices.monocle_emoji() +
         "They read: 'You will need a key to unlock this door.'" +
-        emoji_choices.key_emoji()
-    )
-
-    slowprint(
+        emoji_choices.key_emoji() +
         f"It's located in a chest in {location}!" +
         emoji_choices.location_emoji()
     )

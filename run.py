@@ -81,8 +81,6 @@ def choose_game_instructions():
         "Would you like to read the game instructions first? (y/n) \n"
         )
 
-    print("\n")
-
     if game_instructions_input == "y":
         slowprint(
             game_instructions_responses.yes_response() +
@@ -135,11 +133,7 @@ def choose_player_name():
     """
     Asks the player to choose their witch or wizard name
     """
-    new_line()
-
     player_name_input = input("Choose your witch or wizard name: \n")
-
-    print("\n")
 
     slowprint(
         f"Welcome, {player_name_input}!" +
@@ -185,8 +179,6 @@ def assign_wand():
     Randomly assigns the player one of three wand options,
     and adds it to the player's inventory
     """
-    new_line()
-
     slowprint(
         "Ollivander looks you up and down, studying you carefully..." +
         emoji_choices.monocle_emoji()

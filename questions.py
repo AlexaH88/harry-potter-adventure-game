@@ -93,7 +93,6 @@ def yes_no_response(input_question, answer_yes, answer_no, answer_other):
     Runs if statement on yes no responses
     """
     user_input = input(input_question)
-    print("\n")
 
     if user_input == "y":
         slowprint(
