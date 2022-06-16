@@ -595,14 +595,14 @@ def second_key_challenge():
 
     slowprint(
         "Out of the following phrases: \n"
-        "(a) OK Marauder's Map... "
-        "\U0001F4DC \n"
-        "(b) I solemnly swear that I am up to no good. "
-        "\U0001F607 \n"
-        "(c) Show yourself! "
-        "\U0001F9D0 \n"
-        "(d) Mischief managed. "
-        "\U0001F608"
+        "(a) OK Marauder's Map..." +
+        emoji_choices.map_emoji() +
+        "(b) I solemnly swear that I am up to no good." +
+        emoji_choices.angel_emoji() +
+        "(c) Show yourself!" +
+        emoji_choices.monocle_emoji() +
+        "(d) Mischief managed." +
+        emoji_choices.evil_emoji()
     )
 
     second_key_input = input(

@@ -53,6 +53,7 @@ class Emoji:
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
         self.map = " \U0001F4DC \n"
+        self.angel = " \U0001F4DC \n"
         self.lightbulb = " \U0001F4A1 \n"
         self.potion = " \U0001F36F \n"
         self.cloak = " \U0001F92B \n"
@@ -311,6 +312,12 @@ class Emoji:
         Runs map emoji
         """
         return f"{self.map}"
+
+    def angel_emoji(self):
+        """
+        Runs angel emoji
+        """
+        return f"{self.angel}"
 
     def lightbulb_emoji(self):
         """
