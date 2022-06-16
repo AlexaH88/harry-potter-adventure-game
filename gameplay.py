@@ -69,6 +69,30 @@ def door_backstory(number, location):
 
 
 # code related to all rooms in the game
+def room_backstory(number, animal, person, pronoun_one, pronoun_two):
+    """
+    Runs backstory on each room
+    """
+    slowprint(
+            f"You enter the {number} room and look around..." +
+            emoji_choices.door_emoji() +
+            f"Hang on, is that {animal}?!" +
+            emoji_choices.animal_emoji() +
+            "That can only mean one thing..." +
+            emoji_choices.lightbulb_emoji() +
+            f"It's {person}!" +
+            emoji_choices.hug_emoji() +
+            f"Let's see if {pronoun_one} can help us." +
+            emoji_choices.wizard_emoji() +
+            "'Look who we have here!'" +
+            emoji_choices.monocle_emoji() +
+            f"'{pronoun_two} have something that could help you...'" +
+            emoji_choices.magicball_emoji() +
+            "'But first you have to answer this question correctly!'" +
+            emoji_choices.question_emoji()
+        )
+
+
 class Room():
     """
     Room class

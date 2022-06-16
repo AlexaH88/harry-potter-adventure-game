@@ -8,7 +8,7 @@ import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
 from questions import YesNo, Abcd, AbcdOther, yes_no_response
 from gameplay import (
-    slowprint, new_line, exit_game, win_game, Room, door_backstory
+    slowprint, new_line, exit_game, win_game, room_backstory, door_backstory
     )
 from emojis import Emoji
 
@@ -464,17 +464,13 @@ def first_room_backstory():
     """
     Runs first room backstory
     """
-    new_line()
-
-    first_room = Room(
+    room_backstory(
         "first",
         "a pygmy puff",
         "Fred and George Weasley",
         "they",
         "We"
-        )
-
-    first_room.room_backstory()
+    )
 
 
 def first_item_question():
@@ -615,17 +611,13 @@ def second_room_backstory():
     """
     Runs second room backstory
     """
-    new_line()
-
-    second_room = Room(
+    room_backstory(
         "second",
         "Crookshanks",
         "Hermione Granger",
         "she",
         "I"
-        )
-
-    second_room.room_backstory()
+    )
 
 
 def second_item_question():
@@ -766,17 +758,13 @@ def third_room_backstory():
     """
     Runs third room backstory
     """
-    new_line()
-
-    third_room = Room(
+    room_backstory(
         "third",
         "Fawkes",
         "Albus Dumbledore",
         "he",
         "I"
-        )
-
-    third_room.room_backstory()
+    )
 
 
 def third_item_question():
