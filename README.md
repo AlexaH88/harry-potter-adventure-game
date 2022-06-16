@@ -326,6 +326,8 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 
 - The ASCII art at the beginning of the game was taken from [TextArt.io](https://textart.io/), specifically from [this thread](https://textart.io/art/TDZHnZH_mLKO1bHKCpKP9QeF/harry-potter-and-the-chamber-of-secrets) by an uncredited artist, and adapted. 
 
+- The code to center the button and terminal elements on the page was taken from [Stack Overflow](https://stackoverflow.com/), specifically [this thread](https://stackoverflow.com/questions/8508275/how-to-center-a-position-absolute-element)
+
 - The CSS flexbox code was taken from [Stack Overflow](https://stackoverflow.com/), specifically from [this thread](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b).
 
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
