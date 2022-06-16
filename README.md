@@ -266,13 +266,11 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 ### ***Further Testing***
 
--   The Website was tested on Google Chrome, Firefox, and Microsoft Edge browsers.
+-   The site was tested on Google Chrome, Firefox, Safari and Microsoft Edge browsers.
 
--   The website was viewed on a variety of devices such as Desktop up to 28 inch screen with 4k resolution, Laptop, Pixel 3a, Pixel 4, Samsung Galaxy Tab S5e.
+-   A large amount of testing was done to ensure that all user inputs were validated and returned a response.
 
--   A large amount of testing was done to ensure that all pages were linking correctly.
-
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site and game to point out any bugs and/or user experience issues.
 
 ### ***Fixed Bugs***
 
@@ -287,17 +285,11 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 ### ***Known Bugs***
 
-- The iframe containing the sheet music on the Sheet Music Page doesn't always load, requiring a hard refresh (ctrl + shift + R) - see example below. Chrome DevTools revealed the issue being that `<!DOCTYPE html>` hadn't been called and the site was therefore being loaded in Quirks Mode - see example below. However, `<!DOCTYPE html>` is present on all html pages, and this issue could therefore not be resolved. 
-  
-  - iframe Bug:
-    ![iframe Bug](assets/images/bug-iframe.png)
-  
-  - iframe Bug Quirks Mode:
-    ![iframe Bug Quirks Mode](assets/images/bug-iframe-quirks-mode.png)
-
-- The iframe is also incompatible with most smaller devices as they are unable to display pdfs within the iframe. The user is required to open them in a separate viewer. Given that users are unlikely to play along to the sheet music on a mobile device this bug was accepted and noted for future improvements. 
-
-- Occasionally the virtual piano has played several notes at once without explanation on the Challenge mode. This bug appears to be resolved but is noted nonetheless in case some users experience this.  
+- The emojis in the game don't always render properly for Mac and Firefox users. No solution was found to fix this. 
+  - Firefox Bug:
+![Firefox Bug](assets/testing/bug-firefox.png)
+  - Mac Bug:
+![Mac Bug](assets/testing/bug-mac.jpeg)
 
 ## __Deployment__
 
