@@ -6,7 +6,7 @@ Runs the game
 # Imports modules
 import random
 from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
-from questions import YesNo, Abcd, AbcdOther
+from questions import YesNo, Abcd, AbcdOther, yes_no_response
 from gameplay import (
     slowprint, new_line, exit_game, win_game, Room, door_backstory
     )
@@ -43,7 +43,7 @@ def game_intro():
     Runs game intro text
     """
     slowprint(
-        "Welcome to the Harry Potter Adventure Game!" +
+        "Welcome to the Harry Potter Adventure Game! " +
         emoji_choices.lightning_emoji()
     )
 
@@ -114,7 +114,7 @@ def choose_game_instructions():
         )
 
     game_instructions_input = input(
-        "Would you like to hear the game instructions first? (y/n) \n"
+        "Would you like to read the game instructions first? (y/n) \n"
         )
 
     print("\n")
@@ -237,38 +237,17 @@ def wand_request():
     """
     new_line()
 
-    wand_request_responses = YesNo(
-        "'Lovely, let's see what we can find for you!'",
-        "'Fine, but you won't get far without one!'"
-        )
-
     slowprint(
         "'Welcome to my shop, you've come to the right place!'" +
         emoji_choices.shop_emoji()
     )
 
-    wand_request_input = input(
-        "'So, tell me, are you in need of a wand?' (y/n) \n"
-        )
-
-    print("\n")
-
-    if wand_request_input == "y":
-        slowprint(
-            wand_request_responses.yes_response() +
-            emoji_choices.happy_emoji()
-            )
-    elif wand_request_input == "n":
-        slowprint(
-            wand_request_responses.no_response() +
-            emoji_choices.sad_emoji()
-            )
-        exit_game()
-    else:
-        slowprint(
-            wand_request_responses.other_response() +
-            emoji_choices.neutral_emoji())
-        wand_request()
+    yes_no_response(
+        "'So, tell me, are you in need of a wand?' (y/n) \n",
+        "'Lovely, let's see what we can find for you!'",
+        "'Fine, but you won't get far without one!'",
+        "Please enter y or n."
+    )
 
 
 def assign_wand():

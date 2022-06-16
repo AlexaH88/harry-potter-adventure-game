@@ -3,6 +3,13 @@ Contains classes for the questions in the game
 """
 
 
+from emojis import Emoji
+from gameplay import slowprint, exit_game
+
+
+emoji_choices = Emoji()
+
+
 # code related to all yes no answers in the game
 class YesNo:
     """
@@ -79,3 +86,29 @@ class AbcdOther:
         Runs response to player answering with any other key
         """
         return f"{self.answer_other}"
+
+
+def yes_no_response(input_question, answer_yes, answer_no, answer_other):
+    """
+    Runs if statement on yes no responses
+    """
+    user_input = input(input_question)
+    print("\n")
+
+    if user_input == "y":
+        slowprint(
+            answer_yes +
+            emoji_choices.happy_emoji()
+        )
+    elif user_input == "n":
+        slowprint(
+            answer_no +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            answer_other +
+            emoji_choices.neutral_emoji()
+        )
+        yes_no_response(input_question, answer_yes, answer_no, answer_other)
