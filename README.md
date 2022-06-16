@@ -361,6 +361,8 @@ Massive thanks to:
 
 - [David Bowers](https://www.linkedin.com/in/dnlbowers/) for inspiring me with his 3rd Portfolio Project: [Battleships](https://dnlbowers-battleship.herokuapp.com/) 
 
+- [Dave Horrocks](https://github.com/DaveyJH) for inspiring me with his 3rd Portfolio Project: [Computer Literate Investigator](https://computer-literate-investigator.herokuapp.com/)
+
 - Tutor Support, Student Care and the Slack Community at [Code Institute](https://codeinstitute.net/global/) for their support.
 
 - And last but not least, my fiancé [Antoine Masson](https://www.linkedin.com/in/antoine-masson-55b65094/) for helping me through the stressful moments and for supporting us financially while I make this big career change. 
