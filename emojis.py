@@ -57,6 +57,10 @@ class Emoji:
         self.dragon = " \U0001F432 \n"
         self.eye = " \U0001F440 \n"
         self.peacock = " \U0001F99A \n"
+        self.lollipop = " \U0001F36D \n"
+        self.chocolate = " \U0001F36B \n"
+        self.sweetie = " \U0001F36C \n"
+        self.lemon = " \U0001F34B \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -344,6 +348,30 @@ class Emoji:
         Runs peacock emoji
         """
         return f"{self.peacock}"
+
+    def lollipop_emoji(self):
+        """
+        Runs lollipop emoji
+        """
+        return f"{self.lollipop}"
+
+    def chocolate_emoji(self):
+        """
+        Runs chocolate emoji
+        """
+        return f"{self.chocolate}"
+
+    def sweetie_emoji(self):
+        """
+        Runs sweetie emoji
+        """
+        return f"{self.sweetie}"
+
+    def lemon_emoji(self):
+        """
+        Runs lemon emoji
+        """
+        return f"{self.lemon}"
 
     def note_emoji(self):
         """

@@ -826,14 +826,14 @@ def third_item_question():
 
     slowprint(
         "Out of the following sweets: \n"
-        "(a) Blood-Flavoured Lollipops. "
-        "\U0001F36D \n"
-        "(b) Chocolate Frogs. "
-        "\U0001F36B \n"
-        "(c) Bertie Bott's Every-Flavour Beans. "
-        "\U0001F36C \n"
-        "(d) Sherbet Lemons. "
-        "\U0001F34B"
+        "(a) Blood-Flavoured Lollipops." +
+        emoji_choices.lollipop_emoji() +
+        "(b) Chocolate Frogs." +
+        emoji_choices.chocolate_emoji() +
+        "(c) Bertie Bott's Every-Flavour Beans." +
+        emoji_choices.sweetie_emoji() +
+        "(d) Sherbet Lemons." +
+        emoji_choices.lemon_emoji()
     )
 
     third_item_input = input(
