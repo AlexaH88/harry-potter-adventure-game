@@ -1042,14 +1042,14 @@ def second_spell_challenge():
 
     slowprint(
         "Out of the following spells: \n"
-        "(a) Avada Kedavra! "
-        "\U0001F480 \n"
-        "(b) Wingardium Leviosa! "
-        "\U0001F9F9 \n"
-        "(c) Reparo! "
-        "\U0001FA79 \n"
-        "(d) Riddikulus! "
-        "\U0001F921"
+        "(a) Avada Kedavra!" +
+        emoji_choices.skull_emoji() +
+        "(b) Wingardium Leviosa!" +
+        emoji_choices.broom_emoji() +
+        "(c) Reparo!" +
+        emoji_choices.plaster_emoji() +
+        "(d) Riddikulus!" +
+        emoji_choices.clown_emoji()
     )
 
     second_spell_input = input(

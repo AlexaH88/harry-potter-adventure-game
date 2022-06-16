@@ -62,6 +62,9 @@ class Emoji:
         self.sweetie = " \U0001F36C \n"
         self.lemon = " \U0001F34B \n"
         self.skull = " \U0001F480 \n"
+        self.broom = " \U0001F9F9 \n"
+        self.plaster = " \U0001FA79 \n"
+        self.clown = " \U0001F921 \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -379,6 +382,24 @@ class Emoji:
         Runs skull emoji
         """
         return f"{self.skull}"
+
+    def broom_emoji(self):
+        """
+        Runs broom emoji
+        """
+        return f"{self.broom}"
+
+    def plaster_emoji(self):
+        """
+        Runs plaster emoji
+        """
+        return f"{self.plaster}"
+
+    def clown_emoji(self):
+        """
+        Runs clown emoji
+        """
+        return f"{self.clown}"
 
     def note_emoji(self):
         """
