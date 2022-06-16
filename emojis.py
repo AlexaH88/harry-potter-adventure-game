@@ -41,6 +41,10 @@ class Emoji:
         self.rat = " \U0001F42D \n"
         self.toad = " \U0001F438 \n"
         self.owl = " \U0001F989 \n"
+        self.pond = " \U0001F4A7 \n"
+        self.tree = " \U0001F332 \n"
+        self.ivy = " \U0001F33F \n"
+        self.mountain = " \U0001F5FB \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -231,6 +235,30 @@ class Emoji:
         Runs owl emoji
         """
         return f"{self.owl}"
+
+    def pond_emoji(self):
+        """
+        Runs pond emoji
+        """
+        return f"{self.pond}"
+
+    def tree_emoji(self):
+        """
+        Runs tree emoji
+        """
+        return f"{self.tree}"
+
+    def ivy_emoji(self):
+        """
+        Runs ivy emoji
+        """
+        return f"{self.ivy}"
+
+    def mountain_emoji(self):
+        """
+        Runs mountain emoji
+        """
+        return f"{self.mountain}"
 
     def note_emoji(self):
         """

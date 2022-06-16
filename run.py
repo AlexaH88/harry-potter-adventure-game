@@ -417,14 +417,14 @@ def first_key_challenge():
 
     slowprint(
         "But there are several obstacles in the way: \n"
-        "(a) A pond, perfect for swimming across... "
-        "\U0001F4A7 \n"
-        "(b) A big tree, perfect for climbing up... "
-        "\U0001F332 \n"
-        "(c) An ivy plant, perfect for chewing through... "
-        "\U0001F33F \n"
-        "(d) A small mountain, perfect for flying over... "
-        "\U0001F5FB"
+        "(a) A pond, perfect for swimming across... " +
+        emoji_choices.pond_emoji() +
+        "(b) A big tree, perfect for climbing up... " +
+        emoji_choices.tree_emoji() +
+        "(c) An ivy plant, perfect for chewing through... " +
+        emoji_choices.ivy_emoji() +
+        "(d) A small mountain, perfect for flying over... " +
+        emoji_choices.mountain_emoji()
     )
 
     slowprint(
