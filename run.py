@@ -131,49 +131,23 @@ def game_instructions():
     """
     Runs game instructions
     """
-    new_line()
-
     slowprint(
         "The aim of the game is to find your way through Hogwarts." +
-        emoji_choices.castle_emoji()
-    )
-
-    slowprint(
+        emoji_choices.castle_emoji() +
         "And to stop the dark magic that has been happening here recently..." +
-        emoji_choices.darkmoon_emoji()
-    )
-
-    slowprint(
-        "You must collect 5 items, by answering 5 questions correctly." +
-        emoji_choices.question_emoji()
-    )
-
-    slowprint(
+        emoji_choices.darkmoon_emoji() +
+        "You must collect 3 items, by answering 3 questions correctly." +
+        emoji_choices.question_emoji() +
         "These will be asked by friendly faces that you encounter as you go." +
-        emoji_choices.hug_emoji()
-    )
-
-    slowprint(
-        "Each item will allow you to unlock the next room." +
-        emoji_choices.door_emoji()
-    )
-
-    slowprint(
+        emoji_choices.hug_emoji() +
+        "Each item will allow you to find a key to unlock the next room." +
+        emoji_choices.door_emoji() +
         "Here you will find the next item." +
-        emoji_choices.magicball_emoji()
-    )
-
-    slowprint(
+        emoji_choices.magicball_emoji() +
         "In the final room you will discover who is behind the malevolence." +
-        emoji_choices.evil_emoji()
-    )
-
-    slowprint(
-        "You must beat them by casting 3 spells in the correct order..." +
-        emoji_choices.spell_emoji()
-    )
-
-    slowprint(
+        emoji_choices.evil_emoji() +
+        "You must beat them by choosing 2 spells correctly..." +
+        emoji_choices.spell_emoji() +
         "Good luck, we're counting on you!" +
         emoji_choices.luck_emoji()
     )
