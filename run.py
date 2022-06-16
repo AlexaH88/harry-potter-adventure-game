@@ -387,29 +387,16 @@ def travel_to_hogwarts_backstory():
     """
     Runs backstory on travelling to Hogwarts
     """
-    new_line()
-
     slowprint(
         "So, now that that's done, let's get to it!" +
-        emoji_choices.lightning_emoji()
-    )
-
-    slowprint(
+        emoji_choices.lightning_emoji() +
         "Grab on to this portkey and let's go to Hogwarts!" +
-        emoji_choices.castle_emoji()
-    )
-
-    slowprint(
+        emoji_choices.castle_emoji() +
         "Here we are, I hope you're ready!" +
-        emoji_choices.luck_emoji()
-    )
-
-    slowprint(
+        emoji_choices.luck_emoji() +
         "Let's see now, how do we get inside?" +
         emoji_choices.thinking_emoji()
     )
-
-    new_line()
 
     door_backstory("first", "the Forbidden Forest")
 
@@ -960,41 +947,19 @@ def fourth_room_backstory():
     """
     Runs fourth room backstory
     """
-    new_line()
-
     slowprint(
         "You enter the fourth room and look around..." +
-        emoji_choices.door_emoji()
-    )
-
-    slowprint(
+        emoji_choices.door_emoji() +
         "Hang on, is that Nagini?! " +
-        emoji_choices.snake_emoji()
-    )
-
-    slowprint(
+        emoji_choices.snake_emoji() +
         "That can only mean one thing..." +
-        emoji_choices.darkmoon_emoji()
-    )
-
-    slowprint(
+        emoji_choices.darkmoon_emoji() +
         "It's Lord Voldemort!" +
-        emoji_choices.evil_emoji()
-    )
-
-    new_line()
-
-    slowprint(
+        emoji_choices.evil_emoji() +
         "'Who dares challenge me?!'" +
-        emoji_choices.wizard_emoji()
-    )
-
-    slowprint(
+        emoji_choices.wizard_emoji() +
         "'Show me what you've got, I dare you...'" +
-        emoji_choices.lightning_emoji()
-    )
-
-    slowprint(
+        emoji_choices.lightning_emoji() +
         "You'll need to choose the correct spells in order to beat him!" +
         emoji_choices.spell_emoji()
     )
