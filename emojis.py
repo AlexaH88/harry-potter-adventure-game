@@ -49,6 +49,10 @@ class Emoji:
         self.bomb = " \U0001F4A3 \n"
         self.ear = " \U0001F442 \n"
         self.beer = " \U0001F37A \n"
+        self.eagle = " \U0001F985 \n"
+        self.snake = " \U0001F40D \n"
+        self.badger = " \U0001F9A1 \n"
+        self.lion = " \U0001F981 \n"
         self.note = " \U0001F4DD \n"
         self.key = " \U0001F511 \n"
         self.location = " \U0001F4CD \n"
@@ -289,6 +293,30 @@ class Emoji:
         """
         return f"{self.beer}"
 
+    def eagle_emoji(self):
+        """
+        Runs eagle emoji
+        """
+        return f"{self.eagle}"
+
+    def snake_emoji(self):
+        """
+        Runs snake emoji
+        """
+        return f"{self.snake}"
+
+    def badger_emoji(self):
+        """
+        Runs badger emoji
+        """
+        return f"{self.badger}"
+
+    def lion_emoji(self):
+        """
+        Runs lion emoji
+        """
+        return f"{self.lion}"
+
     def note_emoji(self):
         """
         Runs note emoji
@@ -336,12 +364,6 @@ class Emoji:
         Runs cloak emoji
         """
         return f"{self.cloak}"
-
-    def snake_emoji(self):
-        """
-        Runs snake emoji
-        """
-        return f"{self.snake}"
 
     def gameover_emoji(self):
         """

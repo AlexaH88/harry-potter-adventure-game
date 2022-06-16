@@ -675,14 +675,14 @@ def second_item_question():
 
     slowprint(
         "Out of the following animals: \n"
-        "(a) Eagle. "
-        "\U0001F985 \n"
-        "(b) Snake. "
-        "\U0001F40D \n"
-        "(c) Badger. "
-        "\U0001F9A1 \n"
-        "(d) Lion. "
-        "\U0001F981"
+        "(a) Eagle." +
+        emoji_choices.eagle_emoji() +
+        "(b) Snake." +
+        emoji_choices.snake_emoji() +
+        "(c) Badger." +
+        emoji_choices.badger_emoji() +
+        "(d) Lion." +
+        emoji_choices.lion_emoji()
     )
 
     second_item_input = input(
