@@ -175,19 +175,11 @@ def wand_backstory():
     """
     Runs backstory on Ollivander and player wand selection
     """
-    new_line()
-
     slowprint(
         "Now, let's see." +
-        emoji_choices.thinking_emoji()
-    )
-
-    slowprint(
+        emoji_choices.thinking_emoji() +
         "In order to save Hogwarts, you're going to need a wand!" +
-        emoji_choices.spell_emoji()
-    )
-
-    slowprint(
+        emoji_choices.spell_emoji() +
         "Let's go and see our favourite wandmaker, Garrick Ollivander!" +
         emoji_choices.oldman_emoji()
     )
@@ -294,15 +286,9 @@ def pet_backstory():
 
     slowprint(
         "Right, what's next?" +
-        emoji_choices.thinking_emoji()
-    )
-
-    slowprint(
+        emoji_choices.thinking_emoji() +
         "An animal companion to help you on your quest!" +
-        emoji_choices.animal_emoji()
-    )
-
-    slowprint(
+        emoji_choices.animal_emoji() +
         "Let's pop into The Magical Menagerie to get one!" +
         emoji_choices.shop_emoji()
     )
