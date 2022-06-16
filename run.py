@@ -299,8 +299,6 @@ def pet_request():
     Asks the player to choose one of four pet types,
     and adds it to the player's inventory
     """
-    new_line()
-
     cat = Pet("cat", "climbing")
     rat = Pet("rat", "chewing")
     toad = Pet("toad", "swimming")
@@ -313,10 +311,14 @@ def pet_request():
 
     slowprint(
         "You can choose from the following: \n"
-        "(a) cat \U0001F431 \n"
-        "(b) rat \U0001F42D \n"
-        "(c) toad \U0001F438 \n"
-        "(d) owl \U0001F989"
+        "(a) cat" +
+        emoji_choices.cat_emoji() +
+        "(b) rat" +
+        emoji_choices.rat_emoji() +
+        "(c) toad" +
+        emoji_choices.toad_emoji() +
+        "(d) owl" +
+        emoji_choices.owl_emoji()
     )
 
     ask_for_pet = input("'Which pet would you like?' \n")
