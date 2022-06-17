@@ -109,7 +109,91 @@ Each input is validated by a response from the terminal, allowing the user to co
 
   ![Terminal](assets/images/terminal.png)
 
-  - The pre-existing terminal from the CI template was re-positioned to sit in the middle of the page and between the two characters in the background image.   
+  The pre-existing terminal from the CI template was re-positioned to sit in the middle of the page and between the two characters in the background image.
+
+- #### Welcome Screen
+
+  ![Welcome Screen](assets/images/welcome-screen.png)
+
+  The game begins with a welcome screen, showing ASCII art and introducing the game synopsis. 
+
+- #### Play Game Question
+
+    The first y/n question the user is asked is whether they would like to play the game or not. This allows for good UX from the beginning, making it the user's choice whether they would like to engage or not. 
+    ![Play Game Question](assets/images/play-game-question.png)
+
+- #### Game Instructions
+
+    The second y/n question the user is asked is whether they would like to read the game instructions or not. The user is free to decide whether they require more information in order to play the game or not. Some users prefer an intuitive approach, whereas others prefer guidance before diving in.
+    ![Game Instructions Question](assets/images/game-instructions-question.png)
+
+- #### Player Name
+
+    The third input is a free field that can take any inputs, and prompts the user to choose a player name. This was added to make the game more personalised and engage the user further. 
+    ![Player Name Question](assets/images/player-name-question.png)
+
+- #### Wand
+
+    The next part of the game is about the user acquiring a wand in order to beat the enemy in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
+    ![Wand Backstory](assets/images/wand-backstory.png)
+    ![Wand Question](assets/images/wand-question.png)
+
+- #### Pet
+
+    The next part of the game is about the user acquiring a pet in order to advance in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
+    ![Pet Backstory](assets/images/pet-backstory.png)
+    ![Pet Question](assets/images/pet-question.png)
+
+- #### Hogwarts
+
+    The next part of the game is about the user travelling to Hogwarts to start the quest. This entails a backstory, providing embellishment to the story.  
+    ![Hogwarts Backstory](assets/images/hogwarts-backstory.png)
+
+- #### First Room
+
+    The next part of the game is about the user gaining access to the first room and solving the puzzles inside. This entails a backstory and question on the first key, first room and first item.   
+    ![First Key Backstory](assets/images/first-key-backstory.png)
+    ![First Key Question](assets/images/first-key-question.png)
+    ![First Room Backstory](assets/images/first-room-backstory.png)
+    ![First Item Question](assets/images/first-item-question.png)
+
+- #### Second Room
+
+    The next part of the game is about the user gaining access to the second room and solving the puzzles inside. This entails a backstory and question on the second key, second room and second item.   
+    ![Second Key Backstory](assets/images/second-key-backstory.png)
+    ![Second Key Question](assets/images/second-key-question.png)
+    ![Second Room Backstory](assets/images/second-room-backstory.png)
+    ![Second Item Question](assets/images/second-item-question.png)
+
+- #### Third Room
+
+    The next part of the game is about the user gaining access to the third room and solving the puzzles inside. This entails a backstory and question on the third key, third room and third item.   
+    ![Third Key Backstory](assets/images/third-key-backstory.png)
+    ![Third Key Question](assets/images/third-key-question.png)
+    ![Third Room Backstory](assets/images/third-room-backstory.png)
+    ![Third Item Question](assets/images/third-item-question.png)
+
+- #### Fourth Room
+
+    The final part of the game is about the user gaining access to the fourth and final room and beating the enemy inside. This entails a backstory and question on the fourth key, fourth room and two spell questions to beat the boss.   
+    ![Fourth Key Backstory](assets/images/fourth-key-backstory.png)
+    ![Fourth Key Question](assets/images/fourth-key-question.png)
+    ![Fourth Room Backstory](assets/images/fourth-room-backstory.png)
+    ![First Spell Question](assets/images/first-spell-question.png)
+    ![First Spell Question](assets/images/second-spell-question.png)
+
+- #### Win Game
+
+    If the user manages to beat the boss, the win game function will run, giving the user a well-earned virtual pat on the back!   
+    ![Win Game](assets/images/win-game.png)
+
+- #### Game Over
+
+    If the user answers any questions incorrectly along the way, the game over function will run and the player will have to start over!   
+    ![Game Over](assets/images/game-over.png)
+
+- #### Emojis
+    Emojis are used throughout the game to make it more visual than just the plain text, and to add to the video game theme of the site.
 
 - #### Footer
 
