@@ -9,7 +9,6 @@ from emojis import Emoji
 emoji_choices = Emoji()
 
 
-# general gameplay
 # code taken from codegrepper.com and adapted - see README for details
 def slowprint(all_strings):
     """
@@ -51,7 +50,6 @@ def win_game():
     sys.exit()
 
 
-# code related to all doors in the game
 def door_backstory(number, location):
     """
     Runs backstory on each door
@@ -68,7 +66,6 @@ def door_backstory(number, location):
     )
 
 
-# code related to all rooms in the game
 def room_backstory(number, animal, person, pronoun_one, pronoun_two):
     """
     Runs backstory on each room

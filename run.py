@@ -13,11 +13,11 @@ from collectibles import (
                         add_to_inventory
 )
 from questions import (
-                    YesNo,
-                    Abcd,
-                    AbcdOther,
+                    YesNoResponse,
+                    AbcdResponse,
+                    AbcdOtherResponse,
                     yes_no_response,
-                    abcd_response
+                    abcd_response,
 )
 from gameplay import (
                     slowprint,
@@ -31,7 +31,7 @@ from emojis import Emoji
 
 # Declares variables
 emoji_choices = Emoji()
-abcd_other_responses = AbcdOther()
+abcd_other_responses = AbcdOtherResponse()
 
 
 # Prints game art, taken from textart.io - see README for details
@@ -88,7 +88,7 @@ def choose_game_instructions():
     """
     Asks the player if they want to read the game instructions or not
     """
-    game_instructions_responses = YesNo(
+    game_instructions_responses = YesNoResponse(
         "Right, let me explain the game to you!",
         "Ok, let's carry on with the quest!"
         )
@@ -358,7 +358,7 @@ def first_key_challenge():
     Prompts the player to solve the first key challenge,
     in order to open the first door
     """
-    first_key_choices = Abcd(
+    first_key_choices = AbcdResponse(
         "Yes, well done! Your pet will tackle that no problem!",
         "Hmm no, your pet can't do that!"
     )
@@ -457,7 +457,7 @@ def first_item_question():
     in order to obtain an item required to open the
     next door
     """
-    first_item_choices = Abcd(
+    first_item_choices = AbcdResponse(
         "'I see you're a fan! I think you'll like this item...'",
         "'Nope, that's from a different shop in Diagon Alley!'"
     )
@@ -522,11 +522,10 @@ def second_key_challenge():
     Prompts the player to solve the second key challenge,
     in order to open the second door
     """
-    second_key_choices = Abcd(
+    second_key_choices = AbcdResponse(
         "Yes, well done! Now you can get to the secret passage!",
         "Hmm no, that's not the right phrase!"
     )
-
     slowprint(
         "Out of the following phrases: \n"
         "(a) OK Marauder's Map..." +
@@ -538,11 +537,9 @@ def second_key_challenge():
         "(d) Mischief managed." +
         emoji_choices.evil_emoji()
     )
-
     second_key_input = input(
         "Which one reveals the map? \n"
         )
-
     if "b" in second_key_input:
         slowprint(
             second_key_choices.response_correct() +
@@ -594,7 +591,7 @@ def second_item_question():
     in order to obtain an item required to open the
     next door
     """
-    second_item_choices = Abcd(
+    second_item_choices = AbcdResponse(
         "'I see you've done your reading! I think you'll like this item...'",
         "'Nope, that represents a different Hogwarts House!'"
     )
@@ -659,7 +656,7 @@ def third_key_challenge():
     Prompts the player to solve the third key challenge,
     in order to open the third door
     """
-    third_key_choices = Abcd(
+    third_key_choices = AbcdResponse(
         "Yes, well done! Now you can get into the staffroom as a teacher!",
         "Hmm no, that's from a different potion!"
     )
@@ -731,7 +728,7 @@ def third_item_question():
     in order to obtain an item required to open the
     next door
     """
-    third_item_choices = Abcd(
+    third_item_choices = AbcdResponse(
         "'I see you know me well! I think you'll like this item...'",
         "'No, I really don't care for those!'"
     )
@@ -796,7 +793,7 @@ def fourth_key_challenge():
     Prompts the player to solve the fourth key challenge,
     in order to open the fourth door
     """
-    fourth_key_choices = Abcd(
+    fourth_key_choices = AbcdResponse(
         "Yes, well done! Now you can sneak past the troll in the dungeon!",
         "Hmm no, this one can reveal the cloak wearer!"
     )
@@ -902,7 +899,7 @@ def second_spell_challenge():
     Prompts the player to choose the correct second spell
     in order to beat Voldemort
     """
-    second_spell_choices = Abcd(
+    second_spell_choices = AbcdResponse(
         "Yes, well done! That will defeat him!",
         "Bad luck, that spell won't harm him!"
     )
@@ -993,4 +990,3 @@ def main_two():
 
 # Calls main game functions
 main_one()
-

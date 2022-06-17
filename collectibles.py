@@ -12,7 +12,6 @@ emoji_choices = Emoji()
 inventory = []
 
 
-# classes related to the wands in the game
 class Wand:
     """
     Wand class
@@ -48,7 +47,6 @@ class Wand:
         )
 
 
-# classes related to the pets in the game
 class Pet:
     """
     Pet class
@@ -83,7 +81,6 @@ class Pet:
         return f"Your {self.kind} was added to your inventory."
 
 
-# functions related to the keys in the game
 def collect_key_backstory():
     """
     Runs backstory on player collecting key from chest
@@ -116,7 +113,6 @@ def key_main():
     unlock_door_request()
 
 
-# functions related to the inventory
 def add_to_inventory(item):
     """
     Adds the collectible found by the player to their inventory

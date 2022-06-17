@@ -1,5 +1,5 @@
 """
-Contains functions for the questions in the game
+Contains functions and classes for the questions in the game
 """
 
 
@@ -10,14 +10,13 @@ from gameplay import slowprint, exit_game
 emoji_choices = Emoji()
 
 
-# code related to all yes no answers in the game
-class YesNo:
+class YesNoResponse:
     """
-    YesNo class
+    YesNoResponse class
     """
     def __init__(self, answer_yes, answer_no):
         """
-        Creates an instance of YesNo
+        Creates an instance of YesNoResponse
         """
         self.answer_yes = answer_yes
         self.answer_no = answer_no
@@ -42,10 +41,9 @@ class YesNo:
         return f"{self.answer_other}"
 
 
-# code related to all abcd answers in the game
-class Abcd:
+class AbcdResponse:
     """
-    Abcd class
+    AbcdResponse class
     """
     def __init__(
         self,
@@ -53,7 +51,7 @@ class Abcd:
         answer_incorrect,
     ):
         """
-        Creates an instance of AbcdQuestion
+        Creates an instance of AbcdResponse
         """
         self.answer_correct = answer_correct
         self.answer_incorrect = answer_incorrect
@@ -71,13 +69,13 @@ class Abcd:
         return f"{self.answer_incorrect}"
 
 
-class AbcdOther:
+class AbcdOtherResponse:
     """
-    AbcdOther class
+    AbcdOtherResponse class
     """
     def __init__(self):
         """
-        Creates an instance of AbcdOther
+        Creates an instance of AbcdOtherResponse
         """
         self.answer_other = "Please enter a, b, c, or d."
 
