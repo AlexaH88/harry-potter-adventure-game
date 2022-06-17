@@ -76,6 +76,8 @@ class Emoji:
         self.snake = "\U0001F40D \n"
         self.gameover = " \U0001F47E \n"
         self.gamewin = " \U0001F3C6 \n"
+        self.wave = " \U0001F44B \n"
+        self.videogame = " \U0001F3AE \n"
 
     def lightning_emoji(self):
         """
@@ -460,3 +462,15 @@ class Emoji:
         Runs gamewin emoji
         """
         return f"{self.gamewin}"
+
+    def wave_emoji(self):
+        """
+        Runs wave emoji
+        """
+        return f"{self.wave}"
+
+    def videogame_emoji(self):
+        """
+        Runs videogame emoji
+        """
+        return f"{self.videogame}"

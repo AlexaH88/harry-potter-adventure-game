@@ -35,7 +35,11 @@ def exit_game():
     """
     slowprint(
         "Game Over!" +
-        emoji_choices.gameover_emoji()
+        emoji_choices.gameover_emoji() +
+        "Exiting game..." +
+        emoji_choices.wave_emoji() +
+        "To play again, click on the 'Run Game' button" +
+        emoji_choices.videogame_emoji()
     )
     sys.exit()
 
@@ -46,7 +50,11 @@ def win_game():
     """
     slowprint(
         "Congratulations! You Win!" +
-        emoji_choices.gamewin_emoji()
+        emoji_choices.gamewin_emoji() +
+        "Exiting game..." +
+        emoji_choices.wave_emoji() +
+        "To play again, click on the 'Run Game' button" +
+        emoji_choices.videogame_emoji()
     )
     sys.exit()
 
