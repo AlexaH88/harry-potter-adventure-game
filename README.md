@@ -109,91 +109,91 @@ Each input is validated by a response from the terminal, allowing the user to co
 
   ![Terminal](assets/images/terminal.png)
 
-  The pre-existing terminal from the CI template was re-positioned to sit in the middle of the page and between the two characters in the background image.
+  - The pre-existing terminal from the CI template was re-positioned to sit in the middle of the page and between the two characters in the background image.
 
 - #### Welcome Screen
 
   ![Welcome Screen](assets/images/welcome-screen.png)
 
-  The game begins with a welcome screen, showing ASCII art and introducing the game synopsis. 
+  - The game begins with a welcome screen, showing ASCII art and introducing the game synopsis. 
 
 - #### Play Game Question
 
-    The first y/n question the user is asked is whether they would like to play the game or not. This allows for good UX from the beginning, making it the user's choice whether they would like to engage or not. 
-    ![Play Game Question](assets/images/play-game-question.png)
+  - The first y/n question the user is asked is whether they would like to play the game or not. This allows for good UX from the beginning, making it the user's choice whether they would like to engage or not. 
+  ![Play Game Question](assets/images/play-game-question.png)
 
 - #### Game Instructions
 
-    The second y/n question the user is asked is whether they would like to read the game instructions or not. The user is free to decide whether they require more information in order to play the game or not. Some users prefer an intuitive approach, whereas others prefer guidance before diving in.
-    ![Game Instructions Question](assets/images/game-instructions-question.png)
+  - The second y/n question the user is asked is whether they would like to read the game instructions or not. The user is free to decide whether they require more information in order to play the game or not. Some users prefer an intuitive approach, whereas others prefer guidance before diving in.
+  ![Game Instructions Question](assets/images/game-instructions-question.png)
 
 - #### Player Name
 
-    The third input is a free field that can take any inputs, and prompts the user to choose a player name. This was added to make the game more personalised and engage the user further. 
-    ![Player Name Question](assets/images/player-name-question.png)
+  - The third input is a free field that can take any inputs, and prompts the user to choose a player name. This was added to make the game more personalised and engage the user further. 
+  ![Player Name Question](assets/images/player-name-question.png)
 
 - #### Wand
 
-    The next part of the game is about the user acquiring a wand in order to beat the enemy in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
-    ![Wand Backstory](assets/images/wand-backstory.png)
-    ![Wand Question](assets/images/wand-question.png)
+  - The next part of the game is about the user acquiring a wand in order to beat the enemy in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
+  ![Wand Backstory](assets/images/wand-backstory.png)
+  ![Wand Question](assets/images/wand-question.png)
 
 - #### Pet
 
-    The next part of the game is about the user acquiring a pet in order to advance in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
-    ![Pet Backstory](assets/images/pet-backstory.png)
-    ![Pet Question](assets/images/pet-question.png)
+  - The next part of the game is about the user acquiring a pet in order to advance in the game. This entails a backstory and question to be answered, providing embellishment to the story and user interaction so as to keep the user entertained.  
+  ![Pet Backstory](assets/images/pet-backstory.png)
+  ![Pet Question](assets/images/pet-question.png)
 
 - #### Hogwarts
 
-    The next part of the game is about the user travelling to Hogwarts to start the quest. This entails a backstory, providing embellishment to the story.  
-    ![Hogwarts Backstory](assets/images/hogwarts-backstory.png)
+  - The next part of the game is about the user travelling to Hogwarts to start the quest. This entails a backstory, providing embellishment to the story.  
+  ![Hogwarts Backstory](assets/images/hogwarts-backstory.png)
 
 - #### First Room
 
-    The next part of the game is about the user gaining access to the first room and solving the puzzles inside. This entails a backstory and question on the first key, first room and first item.   
-    ![First Key Backstory](assets/images/first-key-backstory.png)
-    ![First Key Question](assets/images/first-key-question.png)
-    ![First Room Backstory](assets/images/first-room-backstory.png)
-    ![First Item Question](assets/images/first-item-question.png)
+  - The next part of the game is about the user gaining access to the first room and solving the puzzles inside. This entails a backstory and question on the first key, first room and first item.   
+  ![First Key Backstory](assets/images/first-key-backstory.png)
+  ![First Key Question](assets/images/first-key-question.png)
+  ![First Room Backstory](assets/images/first-room-backstory.png)
+  ![First Item Question](assets/images/first-item-question.png)
 
 - #### Second Room
 
-    The next part of the game is about the user gaining access to the second room and solving the puzzles inside. This entails a backstory and question on the second key, second room and second item.   
-    ![Second Key Backstory](assets/images/second-key-backstory.png)
-    ![Second Key Question](assets/images/second-key-question.png)
-    ![Second Room Backstory](assets/images/second-room-backstory.png)
-    ![Second Item Question](assets/images/second-item-question.png)
+  - The next part of the game is about the user gaining access to the second room and solving the puzzles inside. This entails a backstory and question on the second key, second room and second item.   
+  ![Second Key Backstory](assets/images/second-key-backstory.png)
+  ![Second Key Question](assets/images/second-key-question.png)
+  ![Second Room Backstory](assets/images/second-room-backstory.png)
+  ![Second Item Question](assets/images/second-item-question.png)
 
 - #### Third Room
 
-    The next part of the game is about the user gaining access to the third room and solving the puzzles inside. This entails a backstory and question on the third key, third room and third item.   
-    ![Third Key Backstory](assets/images/third-key-backstory.png)
-    ![Third Key Question](assets/images/third-key-question.png)
-    ![Third Room Backstory](assets/images/third-room-backstory.png)
-    ![Third Item Question](assets/images/third-item-question.png)
+  - The next part of the game is about the user gaining access to the third room and solving the puzzles inside. This entails a backstory and question on the third key, third room and third item.   
+  ![Third Key Backstory](assets/images/third-key-backstory.png)
+  ![Third Key Question](assets/images/third-key-question.png)
+  ![Third Room Backstory](assets/images/third-room-backstory.png)
+  ![Third Item Question](assets/images/third-item-question.png)
 
 - #### Fourth Room
 
-    The final part of the game is about the user gaining access to the fourth and final room and beating the enemy inside. This entails a backstory and question on the fourth key, fourth room and two spell questions to beat the boss.   
-    ![Fourth Key Backstory](assets/images/fourth-key-backstory.png)
-    ![Fourth Key Question](assets/images/fourth-key-question.png)
-    ![Fourth Room Backstory](assets/images/fourth-room-backstory.png)
-    ![First Spell Question](assets/images/first-spell-question.png)
-    ![First Spell Question](assets/images/second-spell-question.png)
+  - The final part of the game is about the user gaining access to the fourth and final room and beating the enemy inside. This entails a backstory and question on the fourth key, fourth room and two spell questions to beat the boss.   
+  ![Fourth Key Backstory](assets/images/fourth-key-backstory.png)
+  ![Fourth Key Question](assets/images/fourth-key-question.png)
+  ![Fourth Room Backstory](assets/images/fourth-room-backstory.png)
+  ![First Spell Question](assets/images/first-spell-question.png)
+  ![First Spell Question](assets/images/second-spell-question.png)
 
 - #### Win Game
 
-    If the user manages to beat the boss, the win game function will run, giving the user a well-earned virtual pat on the back!   
-    ![Win Game](assets/images/win-game.png)
+  - If the user manages to beat the boss, the win game function will run, giving the user a well-earned virtual pat on the back!   
+  ![Win Game](assets/images/win-game.png)
 
 - #### Game Over
 
-    If the user answers any questions incorrectly along the way, the game over function will run and the player will have to start over!   
-    ![Game Over](assets/images/game-over.png)
+  - If the user answers any questions incorrectly along the way, the game over function will run and the player will have to start over!   
+  ![Game Over](assets/images/game-over.png)
 
 - #### Emojis
-    Emojis are used throughout the game to make it more visual than just the plain text, and to add to the video game theme of the site.
+  - Emojis are used throughout the game to make it more visual than just the plain text, and to add to the video game theme of the site.
 
 - #### Footer
 
@@ -208,41 +208,57 @@ Each input is validated by a response from the terminal, allowing the user to co
 
 - #### General
 
-  - Improve Lighthouse SEO score on Play and Sheet Music pages.
+  - Refactor and simplify Python code, to make it easier to read and avoid any possible repetition. 
 
-  - Refactor and simplify JavaScript code, to make it easier to read and avoid any possible repetition. 
+  - Allow for the user to slow down or speed up text speed, or choose not to have slowprint at all. 
 
-  - Improve accessibility across the site, including on audio files for the sheet music and the piano, the piano keys, and the sheet music. 
+  - Have the option to run the game in other languages to make it more accessible to non English-speakers. 
 
-  - Include an alert to users on small devices that landscape mode is the preferred mode to play the piano on. 
+  - Have the option to run the game with audio reading out the text, to make it more accessible. 
 
-- #### Navigation Bar
+- #### Game Instructions
 
-  - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear.  
+  - Add any new game instructions as and when the game is developed further. 
 
-- #### Play Page
+- #### Player Name
 
-  - Include the option to play the piano with the keyboard on Challenge mode. 
+  - Add the possibility of re-using the player name throughout the game, in a global variable. Allowing for a more personalised UX. 
 
-  - Include a cursor pointer hover effect for the piano keys to make it clearer to the user that they are clickable.
+- #### Wand
 
-  - Include a larger version of the virtual piano, with more notes, for very large screens.  
+  - Add more wand options from more characters in the books. 
 
-  - Include several versions of the Challenge to make it more interesting, such as the piano playing an actual, recognisable song, and hard and easy modes. 
+  - Or create personalised wand choices instead, consisting of a random assortment of wand "ingredients" (wood, core, size, characteristic), rather than wands that already belong to other characters. 
 
-  - Include audio sounds for correct and incorrect guesses on the Challenge, to further clarify what has occured to the user. 
+- #### Pet
 
-- #### Sheet Music Page
+  - Create more interaction with the chosen pet, allowing for a stronger connection with and use of the animals in the game. 
 
-  - Improve visuals on the iframes, such as colours fitting with the site. 
+- #### Hogwarts
 
-  - Find another option instead of the iframes altogether as they create bugs when loading and do not work on mobile devices. 
+  - Add more description of Hogwarts and the surroundings in general to immerse the user eve more into the story. 
 
-  - Include the sheet music on the Play page above the piano so that users can read and follow it more easily. Make it interactive also, scrolling down the page as you play, and highlighting the notes played on the screen.
+- #### Rooms and Items
 
-- #### The Footer
+  - Create a more complex room structure, with the possibility of choosing several doors in each room. Add additional items to be collected, each allowing access to a specific door that the player needs to figure out. 
 
-  - Add a back to top arrow or button to allow the user to get back to the top of the screen easily. 
+  - Enable viewing of the player's inventory at any time to allow the user to see what they have collected, helping them to figure out which item can open which door. 
+
+- #### Game Over
+
+  - Allow for the player to exit the game at any time, enabling better UX. 
+
+- #### House Selection and Scoreboard
+
+  - Add Hogwarts House selection at the beginning of the game, randomly selected by the sorting hat. 
+
+  - According to the House you are sorted into, the House ghost will guide you through the game - instead of the generic narration that currently exists. 
+
+  - Allow for two attempts at the questions, and award House points if:
+    - Correct answer on the first try: 10 points
+    - Correct answer on the second try: 5 points
+
+  - Store the House points in a Google Sheets document, viewable by the player at any point during the game. The House with the highest score is the leader for the House Cup. 
 
 ## __Technologies Used__
 
