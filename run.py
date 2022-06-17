@@ -290,52 +290,36 @@ def pet_request():
     if "a" in ask_for_pet:
         slowprint(
             cat.choice_confirmation() +
-            emoji_choices.cat_emoji()
-        )
-        slowprint(
+            emoji_choices.cat_emoji() +
             cat.description() +
-            emoji_choices.animal_emoji()
-        )
-        slowprint(
+            emoji_choices.animal_emoji() +
             cat.add_pet_to_inventory() +
             emoji_choices.backpack_emoji()
         )
     elif "b" in ask_for_pet:
         slowprint(
             rat.choice_confirmation() +
-            emoji_choices.rat_emoji()
-        )
-        slowprint(
+            emoji_choices.rat_emoji() +
             rat.description() +
-            emoji_choices.animal_emoji()
-        )
-        slowprint(
+            emoji_choices.animal_emoji() +
             rat.add_pet_to_inventory() +
             emoji_choices.backpack_emoji()
         )
     elif "c" in ask_for_pet:
         slowprint(
             toad.choice_confirmation() +
-            emoji_choices.toad_emoji()
-        )
-        slowprint(
+            emoji_choices.toad_emoji() +
             toad.description() +
-            emoji_choices.animal_emoji()
-        )
-        slowprint(
+            emoji_choices.animal_emoji() +
             toad.add_pet_to_inventory() +
             emoji_choices.backpack_emoji()
         )
     elif "d" in ask_for_pet:
         slowprint(
             owl.choice_confirmation() +
-            emoji_choices.owl_emoji()
-        )
-        slowprint(
+            emoji_choices.owl_emoji() +
             owl.description() +
-            emoji_choices.animal_emoji()
-        )
-        slowprint(
+            emoji_choices.animal_emoji() +
             owl.add_pet_to_inventory() +
             emoji_choices.backpack_emoji()
         )
