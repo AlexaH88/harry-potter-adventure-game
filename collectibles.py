@@ -32,9 +32,9 @@ class Wand:
         Describes the wand
         """
         return (
-            f"'This wand is {self.length} long, \n"
+            f"'This wand is {self.length} long, "
             f"is made with {self.wood} wood, \n"
-            f"has {self.core} core, \n"
+            f"has {self.core} core, "
             f"and is {self.characteristic}!'"
         )
 
