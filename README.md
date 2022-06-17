@@ -382,6 +382,26 @@ Each input is validated by a response from the terminal, allowing the user to co
         1. The user would already be comfortable with the website layout and could easily find the Sheet Music page in the navigation bar.
         2. Here they would quickly see if any new sheet music had been added to the list.  
 
+### ***Manual Testing***
+
+- The game was tested extensively, with particular attention being paid to input validation and error checking to ensure the user always received appropriate feedback.
+
+  1. Yes / No Inputs:
+      - Yes Responses:
+      ![Yes Responses](assets/testing/manual-testing-yn-yes-response.png)
+      - No Responses:
+      ![No Responses](assets/testing/manual-testing-yn-no-response.png)
+      - Other Responses:
+      ![Other Responses](assets/testing/manual-testing-yn-other-response.png)
+
+  2. Abcd Inputs:
+      - Correct Responses:
+      ![Correct Responses](assets/testing/manual-testing-abcd-correct-response.png)
+      - Incorrect Responses:
+      ![Incorrect Responses](assets/testing/manual-testing-abcd-incorrect_response.png)
+      - Other Responses:
+      ![Other Responses](assets/testing/manual-testing-abcd-other-response.png)
+
 ### ***Further Testing***
 
 -   The site was tested on Google Chrome, Firefox, Safari and Microsoft Edge browsers.
