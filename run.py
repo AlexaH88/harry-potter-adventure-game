@@ -290,8 +290,6 @@ def pet_request():
 
     ask_for_pet = input("'Which pet would you like?' \n")
 
-    print("\n")
-
     if "a" in ask_for_pet:
         slowprint(
             cat.choice_confirmation() +
@@ -382,8 +380,6 @@ def first_key_challenge():
         )
 
     first_key_input = input("Which option do you pick? \n")
-
-    print("\n")
 
     if "a" in first_key_input and "{'toad'}" in inventory:
         slowprint(
@@ -481,8 +477,6 @@ def first_item_question():
         "'Which item is available for sale at Weasleys' Wizard Wheezes?' \n"
         )
 
-    print("\n")
-
     if "c" in first_item_input:
         slowprint(
             first_item_choices.response_correct() +
@@ -547,8 +541,6 @@ def second_key_challenge():
     second_key_input = input(
         "Which one reveals the map? \n"
         )
-
-    print("\n")
 
     if "b" in second_key_input:
         slowprint(
@@ -622,8 +614,6 @@ def second_item_question():
         "'Which one represents Gryffindor?' \n"
         )
 
-    print("\n")
-
     if "d" in second_item_input:
         slowprint(
             second_item_choices.response_correct() +
@@ -688,8 +678,6 @@ def third_key_challenge():
     third_key_input = input(
         "Which one is needed to complete the Polyjuice Potion? \n"
         )
-
-    print("\n")
 
     if "a" in third_key_input:
         slowprint(
@@ -763,8 +751,6 @@ def third_item_question():
         "'Which one is my favourite?' \n"
         )
 
-    print("\n")
-
     if "d" in third_item_input:
         slowprint(
             third_item_choices.response_correct() +
@@ -829,8 +815,6 @@ def fourth_key_challenge():
     fourth_key_input = input(
         "Which one can not see past the Cloak of Invisibility? \n"
         )
-
-    print("\n")
 
     if "b" in fourth_key_input:
         slowprint(
@@ -912,8 +896,6 @@ def first_spell_challenge():
         "Which do you cast first? \n"
         )
 
-    print("\n")
-
     if "c" in first_spell_input:
         slowprint(
             first_spell_choices.response_correct() +
@@ -970,8 +952,6 @@ def second_spell_challenge():
     second_spell_input = input(
         "Which do you cast second? \n"
         )
-
-    print("\n")
 
     if "a" in second_spell_input:
         slowprint(
