@@ -189,20 +189,27 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 ### ***Python, HTML and CSS Testing***
 
--   [PEP8 Online](http://pep8online.com/) was used to validate the project to ensure there were no Pyhton errors present.
-    - [Results run.py](assets/testing/testing-py-run.png)
-    - [Results gameplay.py](assets/testing/testing-py-gameplay.png)
-    - [Results collectibles.py](assets/testing/testing-py-collectibles.png)
-    - [Results questions.py](assets/testing/testing-py-questions.png)
-    - [Results emojis.py](assets/testing/testing-py-emojis.png)
+-   [PEP8 Online](http://pep8online.com/) was used to validate the project to ensure there were no Python errors present.
+    - Results run.py:
+    ![Results run.py](assets/testing/testing-py-run.png)
+    - Results gameplay.py:
+    ![Results gameplay.py](assets/testing/testing-py-gameplay.png)
+    - Results collectibles.py:
+    ![Results collectibles.py](assets/testing/testing-py-collectibles.png)
+    - Results questions.py:
+    ![Results questions.py](assets/testing/testing-py-questions.png)
+    - Results emojis.py:
+    ![Results emojis.py](assets/testing/testing-py-emojis.png)
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no HTML syntax errors in the project.
-    - [Results index.html](assets/testing/testing-html-index.pdf)
-    - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
-    - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no HTML syntax errors present.
+    - Results index.html:
+    ![Results index.html](assets/testing/testing-html-index.png)
+    - Results layout.html:
+    ![Results layout.html](assets/testing/testing-html-layout.png)
 
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no CSS syntax errors in the project.
-    - [Results css](assets/testing/testing-css.png)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the project to ensure there were no CSS syntax errors present.
+    - Results css:
+    ![Results css](assets/testing/testing-css.png)
 
 ### ***Accessibility Testing***
 
