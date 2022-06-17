@@ -284,14 +284,8 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 ### ***Fixed Bugs***
 
-- Initially `style.backgroundColor` was used on the Challenge mode of the piano to achieve a purple coloured piano key as it was played - see example `function twenty()` below. This was followed by a `clearKeyLights function`, resetting the `style.backgroundColor` to white and black respectively - see `function clearKeyLights` below. This however caused a bug when switching to Freestyle mode after having played Challenge mode: the purple colour no longer appeared when playing the notes. This was due to the `style.backgroundColor` taking precedence over the `.active` class used on Freestyle mode. The bug was fixed by applying an `.active` class on the Challenge as well - see `function nineteen()` example below. 
-  - Key Colour Bug Add Colours:
-  
-    ![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
-  
-  - Key Colour Bug Clear Colours:
-  
-    ![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
+- Initially the background image was not showing due to the file path not being recognised in `assets/images/background-image.png`. A fix was found thanks to a search on the Slack Community and [Dave Horrocks'](https://github.com/DaveyJH) great advice to another student. This sparked the idea to use a link to imgur instead. 
+![Slack Image Advice](assets/testing/slack-image-advice.png) 
 
 ### ***Known Bugs***
 
@@ -300,6 +294,10 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 ![Firefox Bug](assets/testing/bug-firefox.png)
   - Mac Bug:
 ![Mac Bug](assets/testing/bug-mac.jpeg)
+
+- Users are able to input while the game text is running, causing the input key to be taken into account on the upcoming question, and potentially causing a Game Over. This is not great UX and will be improved upon in a future update of the project. 
+  - User Input Bug:
+![User Input Bug](assets/testing/bug-user-input.png)
 
 ## __Deployment__
 
