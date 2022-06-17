@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-    <!-- header -->
-    <header>
-        <h1>Harry Potter Adventure Game</h1>
-    </header>
+    <body>
+        <!-- header -->
+        <header>
+            <h1>Harry Potter Adventure Game</h1>
+        </header>
 
-    <!-- main -->
-    <main>
-        <!-- background image -->
-        <div>
-            <a><img id="background-image" src="https://i.imgur.com/kJyO0Yt.png"
-                    alt="Albus Dumbledore and Harry Potter graphic icons on a dark blue background scattered with yellow stars." /></a>
-        </div>
-        <!-- button -->
-        <button onclick="window.location.reload()">Run Game</button>
-        <!-- terminal -->
-        <div id="terminal"></div>
-        <script>
-            var term = new Terminal({
-                cols: 80,
-                rows: 24
-            });
-            term.open(document.getElementById('terminal'));
-            term.writeln('');
+        <!-- main -->
+        <main>
+            <!-- background image -->
+            <div>
+                <a><img id="background-image" src="https://i.imgur.com/kJyO0Yt.png"
+                        alt="Albus Dumbledore and Harry Potter graphic icons on a dark blue background scattered with yellow stars." /></a>
+            </div>
+            <!-- button -->
+            <button onclick="window.location.reload()">Run Game</button>
+            <!-- terminal -->
+            <div id="terminal"></div>
+            <script>
+                var term = new Terminal({
+                    cols: 80,
+                    rows: 24
+                });
+                term.open(document.getElementById('terminal'));
+                term.writeln('');
 
-            var ws = new WebSocket(location.protocol.replace('http', 'ws') + '//' + location.hostname + (location.port ?
-                (
-                    ':' + location.port) : '') + '/');
+                var ws = new WebSocket(location.protocol.replace('http', 'ws') + '//' + location.hostname + (location.port ?
+                    (
+                        ':' + location.port) : '') + '/');
 
-            ws.onopen = function () {
-                new attach.attach(term, ws);
-            };
+                ws.onopen = function () {
+                    new attach.attach(term, ws);
+                };
 
-            ws.onerror = function (e) {
-                console.log(e);
-            };
-            // Set focus in the terminal
-            document.getElementsByClassName("xterm-helper-textarea")[0].focus();
-        </script>
-    </main>
+                ws.onerror = function (e) {
+                    console.log(e);
+                };
+                // Set focus in the terminal
+                document.getElementsByClassName("xterm-helper-textarea")[0].focus();
+            </script>
+        </main>
 
-    <!-- footer -->
-    <footer>
-        <ul>
-            <!-- site name -->
-            <li>Harry Potter Adventure Game &copy;</li>
-            <!-- about site -->
-            <li>This website was created by Alexa Hendry as a portfolio project and has no commercial purpose.</li>
-            <!-- site creator social media links -->
-            <li>
-                <a href="https://github.com/AlexaH88" target="_blank"
-                    aria-label="Link to Alexa Hendry's GitHub profile (opens in a new tab)"><i
-                        class="fa-brands fa-github-alt"></i></a>
-                <a href="https://www.linkedin.com/in/alexa-hendry/" target="_blank"
-                    aria-label="Link to Alexa Hendry's LinkedIn profile (opens in a new tab)"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </li>
-        </ul>
-    </footer>
-</body>
+        <!-- footer -->
+        <footer>
+            <ul>
+                <!-- site name -->
+                <li>Harry Potter Adventure Game &copy;</li>
+                <!-- about site -->
+                <li>This website was created by Alexa Hendry as a portfolio project and has no commercial purpose.</li>
+                <!-- site creator social media links -->
+                <li>
+                    <a href="https://github.com/AlexaH88" target="_blank"
+                        aria-label="Link to Alexa Hendry's GitHub profile (opens in a new tab)"><i
+                            class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/alexa-hendry/" target="_blank"
+                        aria-label="Link to Alexa Hendry's LinkedIn profile (opens in a new tab)"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 
 </html>

@@ -1,295 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- meta elements -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="The Harry Potter Adventure Game has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.">
-    <meta name="keywords"
-        content="Harry Potter, Adventure Game, RPG, CLI, Command Line Interface, Text-Based Game, Magic, Spells, JK Rowling">
-    <meta name="author" content="Alexa Hendry">
+    <head>
+        <!-- meta elements -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="The Harry Potter Adventure Game has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.">
+        <meta name="keywords"
+            content="Harry Potter, Adventure Game, RPG, CLI, Command Line Interface, Text-Based Game, Magic, Spells, JK Rowling">
+        <meta name="author" content="Alexa Hendry">
 
-    <!-- script elements -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
+        <!-- script elements -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/addons/attach/attach.js"></script>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
 
-    <!-- site title and favicon -->
-    <title>Harry Potter Adventure Game</title>
-    <link rel="icon" type="image/png" href="https://i.imgur.com/nM6YJRs.png">
+        <!-- site title and favicon -->
+        <title>Harry Potter Adventure Game</title>
+        <link rel="icon" type="image/png" href="https://i.imgur.com/nM6YJRs.png">
 
-    <!-- font awesome kit -->
-    <script src="https://kit.fontawesome.com/5366bdfdf4.js" crossorigin="anonymous"></script>
+        <!-- font awesome kit -->
+        <script src="https://kit.fontawesome.com/5366bdfdf4.js" crossorigin="anonymous"></script>
 
-    <style>
-        /* general page styling */
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
+        <style>
+            /* general page styling */
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
-        body {
-            font-family: 'Gentium Plus', sans-serif;
-            color: #FFFFFF;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: auto;
-            height: 100vh;
-            background-color: #02084B;
-        }
+            body {
+                font-family: 'Gentium Plus', sans-serif;
+                color: #FFFFFF;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+                height: 100vh;
+                background-color: #02084B;
+            }
 
-        main {
-            clear: both;
-        }
+            main {
+                clear: both;
+            }
 
-        /* header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: +1;
-            top: 10px;
-        }
+            /* header */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: +1;
+                top: 10px;
+            }
 
-        h1 {
-            display: flex;
-            justify-content: center;
-            font-size: 70px;
-            width: 100%;
-            align-items: center;
-        }
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 70px;
+                width: 100%;
+                align-items: center;
+            }
 
-        /* background image */
-        a {
-            width: 100%;
-            height: auto;
-            margin: 0;
-        }
+            /* background image */
+            a {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
 
-        #background-image {
-            margin: 0;
-            z-index: -1;
-            width: 100%;
-            height: auto;
-        }
+            #background-image {
+                margin: 0;
+                z-index: -1;
+                width: 100%;
+                height: auto;
+            }
 
-        /* code to center the button and terminal elements taken from Stack Overflow - more details in README */
-        /* button */
-        button {
-            width: 200px;
-            height: 40px;
-            background-color: #02084B;
-            border: 3px solid #F5C116;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            margin: 20px;
-            border-radius: 8px;
-            z-index: +1;
-            position: absolute;
-            top: 150px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+            /* code to center the button and terminal elements taken from Stack Overflow - more details in README */
+            /* button */
+            button {
+                width: 200px;
+                height: 40px;
+                background-color: #02084B;
+                border: 3px solid #F5C116;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                margin: 20px;
+                border-radius: 8px;
+                z-index: +1;
+                position: absolute;
+                top: 150px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
-        /* terminal */
-        #terminal {
-            z-index: +1;
-            position: absolute;
-            top: 450px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+            /* terminal */
+            #terminal {
+                z-index: +1;
+                position: absolute;
+                top: 450px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 
-        /**
-        * Default styles for xterm.js
-        */
-
-        .xterm {
-            font-feature-settings: "liga"0;
-            position: relative;
-            user-select: none;
-            -ms-user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .xterm.focus,
-        .xterm:focus {
-            outline: none;
-        }
-
-        .xterm .xterm-helpers {
-            position: absolute;
-            top: 0;
             /**
-        * The z-index of the helpers must be higher than the canvases in order for
-        * IMEs to appear on top.
-        */
-            z-index: 5;
-        }
+            * Default styles for xterm.js
+            */
 
-        .xterm .xterm-helper-textarea {
-            padding: 0;
-            border: 0;
-            margin: 0;
-            /* Move textarea out of the screen to the far left, so that the cursor is not visible */
-            position: absolute;
-            opacity: 0;
-            left: -9999em;
-            top: 0;
-            width: 0;
-            height: 0;
-            z-index: -5;
-            /** Prevent wrapping so the IME appears against the textarea at the correct position */
-            white-space: nowrap;
-            overflow: hidden;
-            resize: none;
-        }
+            .xterm {
+                font-feature-settings: "liga"0;
+                position: relative;
+                user-select: none;
+                -ms-user-select: none;
+                -webkit-user-select: none;
+            }
 
-        .xterm .composition-view {
-            /* TODO: Composition position got messed up somewhere */
-            background: #000;
-            color: #FFF;
-            display: none;
-            position: absolute;
-            white-space: nowrap;
-            z-index: 1;
-        }
+            .xterm.focus,
+            .xterm:focus {
+                outline: none;
+            }
 
-        .xterm .composition-view.active {
-            display: block;
-        }
+            .xterm .xterm-helpers {
+                position: absolute;
+                top: 0;
+                /**
+            * The z-index of the helpers must be higher than the canvases in order for
+            * IMEs to appear on top.
+            */
+                z-index: 5;
+            }
 
-        .xterm .xterm-viewport {
-            /* On OS X this is required in order for the scroll bar to appear fully opaque */
-            background-color: #000;
-            overflow-y: scroll;
-            cursor: default;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgb(0, 0, 0);
-            width: 730px;
-        }
+            .xterm .xterm-helper-textarea {
+                padding: 0;
+                border: 0;
+                margin: 0;
+                /* Move textarea out of the screen to the far left, so that the cursor is not visible */
+                position: absolute;
+                opacity: 0;
+                left: -9999em;
+                top: 0;
+                width: 0;
+                height: 0;
+                z-index: -5;
+                /** Prevent wrapping so the IME appears against the textarea at the correct position */
+                white-space: nowrap;
+                overflow: hidden;
+                resize: none;
+            }
 
-        .xterm .xterm-screen {
-            position: relative;
-        }
+            .xterm .composition-view {
+                /* TODO: Composition position got messed up somewhere */
+                background: #000;
+                color: #FFF;
+                display: none;
+                position: absolute;
+                white-space: nowrap;
+                z-index: 1;
+            }
 
-        .xterm .xterm-screen canvas {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+            .xterm .composition-view.active {
+                display: block;
+            }
 
-        .xterm .xterm-scroll-area {
-            visibility: hidden;
-        }
+            .xterm .xterm-viewport {
+                /* On OS X this is required in order for the scroll bar to appear fully opaque */
+                background-color: #000;
+                overflow-y: scroll;
+                cursor: default;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgb(0, 0, 0);
+                width: 730px;
+            }
 
-        .xterm-char-measure-element {
-            display: inline-block;
-            visibility: hidden;
-            position: absolute;
-            top: 0;
-            left: -9999em;
-            line-height: normal;
-        }
+            .xterm .xterm-screen {
+                position: relative;
+            }
 
-        .xterm {
-            cursor: text;
-        }
+            .xterm .xterm-screen canvas {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
 
-        .xterm.enable-mouse-events {
-            /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
-            cursor: default;
-        }
+            .xterm .xterm-scroll-area {
+                visibility: hidden;
+            }
 
-        .xterm.xterm-cursor-pointer {
-            cursor: pointer;
-        }
+            .xterm-char-measure-element {
+                display: inline-block;
+                visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: -9999em;
+                line-height: normal;
+            }
 
-        .xterm.column-select.focus {
-            /* Column selection mode */
-            cursor: crosshair;
-        }
+            .xterm {
+                cursor: text;
+            }
 
-        .xterm .xterm-accessibility,
-        .xterm .xterm-message {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 10;
-            color: transparent;
-        }
+            .xterm.enable-mouse-events {
+                /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
+                cursor: default;
+            }
 
-        .xterm .live-region {
-            position: absolute;
-            left: -9999px;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-        }
+            .xterm.xterm-cursor-pointer {
+                cursor: pointer;
+            }
 
-        .xterm-dim {
-            opacity: 0.5;
-        }
+            .xterm.column-select.focus {
+                /* Column selection mode */
+                cursor: crosshair;
+            }
 
-        .xterm-underline {
-            text-decoration: underline;
-        }
+            .xterm .xterm-accessibility,
+            .xterm .xterm-message {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 10;
+                color: transparent;
+            }
 
-        /* footer */
-        footer {
-            background-color: #02084B;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 20px;
-            padding: 0px 20px;
-        }
+            .xterm .live-region {
+                position: absolute;
+                left: -9999px;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
 
-        footer i {
-            color: #FFFFFF;
-            font-size: 20px;
-            padding: 0px 5px;
-        }
+            .xterm-dim {
+                opacity: 0.5;
+            }
 
-        footer i:hover {
-            color: #F5C116;
-        }
+            .xterm-underline {
+                text-decoration: underline;
+            }
 
-        footer ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            padding: 10px;
-            padding-left: 10px;
-        }
-    </style>
-</head>
+            /* footer */
+            footer {
+                background-color: #02084B;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 20px;
+                padding: 0px 20px;
+            }
 
-@{body}
+            footer i {
+                color: #FFFFFF;
+                font-size: 20px;
+                padding: 0px 5px;
+            }
+
+            footer i:hover {
+                color: #F5C116;
+            }
+
+            footer ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                padding: 10px;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+
+    @{body}
 
 </html>
