@@ -4,6 +4,20 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 <h2 align="center"><img src="assets/images/final-project.png"></h2>
 
+## __How To Play__
+
+The Hary Potter Adventure Game is a text-based adventure game, based on the Harry Potter books by J.K. Rowling. 
+
+The storyline was written by the project's creator [Alexa Hendry](https://github.com/AlexaH88) and is played as follows, as outlined in the game instructions:
+![Game Instructions](assets/images/game-instructions.png)
+
+The user is prompted to enter a variety of inputs in order to complete the game, such as:
+  - `y` or `n` on yes no (y/n) type questions.
+  - `a`, `b`, `c`, or `d` on multiple choice (abcd) questions.
+  - A free text field allowing for characters of their choice, for their name selection. 
+
+Each input is validated by a response from the terminal, allowing the user to continue with the game if the response is correct, and to start over if the response is incorrect. 
+
 ## __User Experience (UX)__
 
 -   ### ***User stories***
@@ -349,7 +363,7 @@ The project was deployed using Code Institute's mock terminal for Heroku.
 
 ### ***Content***
 
-- All game text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88), but is obviously based on [JK Rowling's](https://en.wikipedia.org/wiki/J._K._Rowling) [Harry Potter](https://en.wikipedia.org/wiki/Harry_Potter) books. 
+- All game text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88), but is obviously based on [J.K. Rowling's](https://en.wikipedia.org/wiki/J._K._Rowling) [Harry Potter](https://en.wikipedia.org/wiki/Harry_Potter) books. 
 
 - The following sites were used as references to write the game story:
   - [Wizarding World](https://www.wizardingworld.com/)
