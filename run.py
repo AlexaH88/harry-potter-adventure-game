@@ -16,7 +16,8 @@ from questions import (
                     YesNo,
                     Abcd,
                     AbcdOther,
-                    yes_no_response
+                    yes_no_response,
+                    abcd_response
 )
 from gameplay import (
                     slowprint,
@@ -875,11 +876,6 @@ def first_spell_challenge():
     Prompts the player to choose the correct first spell
     in order to beat Voldemort
     """
-    first_spell_choices = Abcd(
-        "Yes, well done! That will remove his wand!",
-        "Bad luck, that spell won't harm him!"
-    )
-
     slowprint(
         "Out of the following spells: \n"
         "(a) Alohomora!" +
@@ -892,39 +888,13 @@ def first_spell_challenge():
         emoji_choices.animal_emoji()
     )
 
-    first_spell_input = input(
-        "Which do you cast first? \n"
-        )
-
-    if "c" in first_spell_input:
-        slowprint(
-            first_spell_choices.response_correct() +
-            emoji_choices.happy_emoji()
-        )
-    elif "a" in first_spell_input:
-        slowprint(
-            first_spell_choices.response_incorrect() +
-            emoji_choices.sad_emoji()
-        )
-        exit_game()
-    elif "b" in first_spell_input:
-        slowprint(
-            first_spell_choices.response_incorrect() +
-            emoji_choices.sad_emoji()
-        )
-        exit_game()
-    elif "d" in first_spell_input:
-        slowprint(
-            first_spell_choices.response_incorrect() +
-            emoji_choices.sad_emoji()
-        )
-        exit_game()
-    else:
-        slowprint(
-            abcd_other_responses.other_response() +
-            emoji_choices.neutral_emoji()
-        )
-        first_spell_challenge()
+    abcd_response(
+        "c",
+        "Which do you cast first? \n",
+        "Yes, well done! That will remove his wand!",
+        "Bad luck, that spell won't harm him!",
+        "Please enter a, b, c, or d."
+    )
 
 
 def second_spell_challenge():
@@ -1023,3 +993,4 @@ def main_two():
 
 # Calls main game functions
 main_one()
+

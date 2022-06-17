@@ -116,3 +116,73 @@ def yes_no_response(
             emoji_choices.neutral_emoji()
         )
         yes_no_response(input_question, answer_yes, answer_no, answer_other)
+
+
+def abcd_response(
+    correct,
+    input_question,
+    answer_correct,
+    answer_incorrect,
+    answer_other
+):
+    """
+    Runs if statement on abcd responses
+    """
+    user_input = input(input_question)
+
+    if "a" in user_input and "a" in correct:
+        slowprint(
+            answer_correct +
+            emoji_choices.happy_emoji()
+        )
+    elif "b" in user_input and "b" in correct:
+        slowprint(
+            answer_correct +
+            emoji_choices.happy_emoji()
+        )
+    elif "c" in user_input and "c" in correct:
+        slowprint(
+            answer_correct +
+            emoji_choices.happy_emoji()
+        )
+    elif "d" in user_input and "d" in correct:
+        slowprint(
+            answer_correct +
+            emoji_choices.happy_emoji()
+        )
+    elif "a" in user_input and "a" not in correct:
+        slowprint(
+            answer_incorrect +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "b" in user_input and "b" not in correct:
+        slowprint(
+            answer_incorrect +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "c" in user_input and "c" not in correct:
+        slowprint(
+            answer_incorrect +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    elif "d" in user_input and "d" not in correct:
+        slowprint(
+            answer_incorrect +
+            emoji_choices.sad_emoji()
+        )
+        exit_game()
+    else:
+        slowprint(
+            answer_other +
+            emoji_choices.neutral_emoji()
+        )
+        abcd_response(
+            correct,
+            input_question,
+            answer_correct,
+            answer_incorrect,
+            answer_other
+        )
