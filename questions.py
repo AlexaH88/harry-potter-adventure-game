@@ -1,5 +1,5 @@
 """
-Contains classes for the questions in the game
+Contains functions for the questions in the game
 """
 
 
@@ -88,7 +88,12 @@ class AbcdOther:
         return f"{self.answer_other}"
 
 
-def yes_no_response(input_question, answer_yes, answer_no, answer_other):
+def yes_no_response(
+    input_question,
+    answer_yes,
+    answer_no,
+    answer_other
+):
     """
     Runs if statement on yes no responses
     """

@@ -173,17 +173,17 @@ def wand_request():
         "Please enter y or n."
     )
 
+    slowprint(
+        "Ollivander looks you up and down, studying you carefully..." +
+        emoji_choices.monocle_emoji()
+    )
+
 
 def assign_wand():
     """
     Randomly assigns the player one of three wand options,
     and adds it to the player's inventory
     """
-    slowprint(
-        "Ollivander looks you up and down, studying you carefully..." +
-        emoji_choices.monocle_emoji()
-    )
-
     wand_options = [
         "Harry Potter's wand",
         "Albus Dumbledore's wand",
@@ -220,27 +220,21 @@ def assign_wand():
     if "Harry Potter's wand" in random_wand_options:
         slowprint(
             harry.description() +
-            emoji_choices.harrywand_emoji()
-        )
-        slowprint(
+            emoji_choices.harrywand_emoji() +
             harry.add_wand_to_inventory() +
             emoji_choices.backpack_emoji()
         )
     elif "Albus Dumbledore's wand" in random_wand_options:
         slowprint(
             albus.description() +
-            emoji_choices.albuswand_emoji()
-        )
-        slowprint(
+            emoji_choices.albuswand_emoji() +
             albus.add_wand_to_inventory() +
             emoji_choices.backpack_emoji()
         )
     elif "Rubeus Hagrid's wand" in random_wand_options:
         slowprint(
             rubeus.description() +
-            emoji_choices.rubeuswand_emoji()
-        )
-        slowprint(
+            emoji_choices.rubeuswand_emoji() +
             rubeus.add_wand_to_inventory() +
             emoji_choices.backpack_emoji()
         )
@@ -1083,4 +1077,6 @@ def main_two():
 
 
 # Calls main game functions
-main_one()
+#main_one()
+wand_request()
+assign_wand()
