@@ -5,11 +5,26 @@ Runs the game
 
 # Imports modules
 import random
-from collectibles import inventory, Wand, Pet, key_main, add_to_inventory
-from questions import YesNo, Abcd, AbcdOther, yes_no_response
+from collectibles import (
+                        inventory,
+                        Wand,
+                        Pet,
+                        key_main,
+                        add_to_inventory
+)
+from questions import (
+                    YesNo,
+                    Abcd,
+                    AbcdOther,
+                    yes_no_response
+)
 from gameplay import (
-    slowprint, new_line, exit_game, win_game, room_backstory, door_backstory
-    )
+                    slowprint,
+                    exit_game,
+                    win_game,
+                    room_backstory,
+                    door_backstory
+)
 from emojis import Emoji
 
 
@@ -151,7 +166,9 @@ def wand_backstory():
         "In order to save Hogwarts, you're going to need a wand!" +
         emoji_choices.spell_emoji() +
         "Let's go and see our favourite wandmaker, Garrick Ollivander!" +
-        emoji_choices.oldman_emoji()
+        emoji_choices.oldman_emoji() +
+        "'Welcome to my shop, you've come to the right place!'" +
+        emoji_choices.shop_emoji()
     )
 
 
@@ -159,13 +176,6 @@ def wand_request():
     """
     Asks the player to request a wand
     """
-    new_line()
-
-    slowprint(
-        "'Welcome to my shop, you've come to the right place!'" +
-        emoji_choices.shop_emoji()
-    )
-
     yes_no_response(
         "'So, tell me, are you in need of a wand?' (y/n) \n",
         "'Lovely, let's see what we can find for you!'",
@@ -244,15 +254,15 @@ def pet_backstory():
     """
     Runs backstory on The Magical Menagerie and player pet selection
     """
-    new_line()
-
     slowprint(
         "Right, what's next?" +
         emoji_choices.thinking_emoji() +
         "An animal companion to help you on your quest!" +
         emoji_choices.animal_emoji() +
         "Let's pop into The Magical Menagerie to get one!" +
-        emoji_choices.shop_emoji()
+        emoji_choices.shop_emoji() +
+        "'Welcome to my shop, let me show you what lovely pets we've got!'" +
+        emoji_choices.oldlady_emoji()
     )
 
 
@@ -265,11 +275,6 @@ def pet_request():
     rat = Pet("rat", "chewing")
     toad = Pet("toad", "swimming")
     owl = Pet("owl", "flying")
-
-    slowprint(
-        "'Welcome to my shop, let me show you what lovely pets we've got!'" +
-        emoji_choices.oldlady_emoji()
-    )
 
     slowprint(
         "You can choose from the following: \n"
@@ -354,8 +359,6 @@ def first_key_challenge():
     Prompts the player to solve the first key challenge,
     in order to open the first door
     """
-    new_line()
-
     first_key_choices = Abcd(
         "Yes, well done! Your pet will tackle that no problem!",
         "Hmm no, your pet can't do that!"
@@ -457,8 +460,6 @@ def first_item_question():
     in order to obtain an item required to open the
     next door
     """
-    new_line()
-
     first_item_choices = Abcd(
         "'I see you're a fan! I think you'll like this item...'",
         "'Nope, that's from a different shop in Diagon Alley!'"
@@ -513,8 +514,6 @@ def first_item_question():
         )
         first_item_question()
 
-    new_line()
-
     door_backstory("second", "a secret passage")
 
     slowprint(
@@ -528,8 +527,6 @@ def second_key_challenge():
     Prompts the player to solve the second key challenge,
     in order to open the second door
     """
-    new_line()
-
     second_key_choices = Abcd(
         "Yes, well done! Now you can get to the secret passage!",
         "Hmm no, that's not the right phrase!"
@@ -604,8 +601,6 @@ def second_item_question():
     in order to obtain an item required to open the
     next door
     """
-    new_line()
-
     second_item_choices = Abcd(
         "'I see you've done your reading! I think you'll like this item...'",
         "'Nope, that represents a different Hogwarts House!'"
@@ -660,8 +655,6 @@ def second_item_question():
         )
         second_item_question()
 
-    new_line()
-
     door_backstory("third", "the staffroom")
 
     slowprint(
@@ -675,8 +668,6 @@ def third_key_challenge():
     Prompts the player to solve the third key challenge,
     in order to open the third door
     """
-    new_line()
-
     third_key_choices = Abcd(
         "Yes, well done! Now you can get into the staffroom as a teacher!",
         "Hmm no, that's from a different potion!"
@@ -751,8 +742,6 @@ def third_item_question():
     in order to obtain an item required to open the
     next door
     """
-    new_line()
-
     third_item_choices = Abcd(
         "'I see you know me well! I think you'll like this item...'",
         "'No, I really don't care for those!'"
@@ -807,8 +796,6 @@ def third_item_question():
         )
         third_item_question()
 
-    new_line()
-
     door_backstory("fourth", "the dungeon with the troll")
 
     slowprint(
@@ -822,8 +809,6 @@ def fourth_key_challenge():
     Prompts the player to solve the fourth key challenge,
     in order to open the fourth door
     """
-    new_line()
-
     fourth_key_choices = Abcd(
         "Yes, well done! Now you can sneak past the troll in the dungeon!",
         "Hmm no, this one can reveal the cloak wearer!"
@@ -906,8 +891,6 @@ def first_spell_challenge():
     Prompts the player to choose the correct first spell
     in order to beat Voldemort
     """
-    new_line()
-
     first_spell_choices = Abcd(
         "Yes, well done! That will remove his wand!",
         "Bad luck, that spell won't harm him!"
@@ -967,8 +950,6 @@ def second_spell_challenge():
     Prompts the player to choose the correct second spell
     in order to beat Voldemort
     """
-    new_line()
-
     second_spell_choices = Abcd(
         "Yes, well done! That will defeat him!",
         "Bad luck, that spell won't harm him!"
@@ -1061,6 +1042,4 @@ def main_two():
 
 
 # Calls main game functions
-#main_one()
-wand_request()
-assign_wand()
+main_one()
