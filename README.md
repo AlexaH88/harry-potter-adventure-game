@@ -76,7 +76,7 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
   ![Header](assets/images/header.png)
 
   - The header includes an h1 title "Harry Potter Adventure Game" to make it immediately clear to the user what the site is about.  
-  
+
 - #### Background Image
 
   ![Background Image](assets/images/background-image.png)
@@ -155,7 +155,6 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
-
 ### ***Frameworks, Libraries & Programs Used***
 
 1. [Git:](https://git-scm.com/)
@@ -184,6 +183,17 @@ The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.
 
 1. [Lucidchart:](https://www.lucidchart.com/)
     - Lucidchart was used to create the flowchart at the design stage. 
+
+1. [random:](https://docs.python.org/3/library/random.html)
+    - The random library was used in order to randomly assign a wand out of a choice of 3 options, on the `assign_wand()` function.
+
+1. [sys:](https://docs.python.org/3/library/sys.html)
+    - The sys library was used:
+      - in order to exit the system, on the `exit_game()` function.
+      - to alter the print functionality on the `slowprint()` function.
+
+1. [time:](https://docs.python.org/3/library/time.html)
+    - The time library was used to adjust the print speed on the `slowprint()` function.
 
 ## __Testing__
 
