@@ -24,21 +24,21 @@ Each input is validated by a response from the terminal, allowing the user to co
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a virtual piano and/or a mini game.
-        2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content, including on how to use the virtual piano and play the game. 
-        3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a text-based adventure game.
+        2. As a First Time Visitor, I want to be able to easily navigate the terminal and understand the gameplay and purpose of the game. 
+        3. As a First Time Visitor, I want to try out the game, and immerse myself in the world of Harry Potter.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
-        2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
-        3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
+        1. As a Returning Visitor, I want to attempt to play the game better than the first, by losing as few times as possible.
+        2. As a Returning Visitor, I want to experience the game differently by choosing different inputs and seeing new outputs.
+        3. As a Returning Visitor, I want to test my knowledge on all things Harry Potter.
 
     -   #### Frequent User Goals
 
-        1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
-        2. As a Frequent User, I want to try and beat my personal best score on the challenge.
-        3. As a Frequent User, I want to see if any new sheet music had been added.
+        1. As a Frequent User, I want to attempt to play the game in its entirety without losing once.
+        2. As a Frequent User, I want to change my experience by choosing a different name, pet, and hoping for a different wand.
+        3. As a Frequent User, I want to see if any new storylines have been added.
 
 -   ### ***Design***
     
