@@ -364,22 +364,22 @@ Each input is validated by a response from the terminal, allowing the user to co
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a virtual piano and/or a mini game.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a text-based adventure game.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath, the user discovers the main content of the page.
-        2. The main point of the site is made immediately clear with an invitation to choose your playing mode, seeing the as yet empty score board, and finally the virtual piano itself.  
-        3. The user has the option to start playing immediately, by intuitively clicking on the Freestyle or Challenge button. If the rules of the challenge are not clear from playing, the user can easily navigate to the Instructions page to find out how to play.    
+        1. Upon entering the site, users are immediately greeted with a clean and easily readable site, with a minimalistic design.
+        2. The main point of the site is made immediately clear with a big self-explanatory heading, graphic icons of Harry Potter and Albus Dumbledore, and the welcome screen of the terminal that introduces the game. 
+        3. The user has the option to start playing immediately, by inputting `y` on the terminal on the first question. 
 
-    2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content, including on how to use the virtual piano and play the game.
+    2. As a First Time Visitor, I want to be able to easily navigate the terminal and understand the gameplay and purpose of the game.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link clearly describes what page they will end up on. There is also a visual aid in the form of colours to help the user understand which page they are on: purple for the current page, black for the other pages they can click on to visit. 
-        2. The navigation bar is in the fixed position and thus stays at the top of the page as the user navigates the site, allowing the user to easily switch between pages and get back to the top of the page again by clicking on the page link they are currently on. 
-        3. On smaller viewports the navigation bar remains fixed, but is reduced in size as to not take up too much space, and includes the site name only, which remains clickable. In order to access the other site pages there is a hamburger bar to the right of the site name, which pops out below the site name and disappears again once the desired page has been selected. 
-        4. The Instructions page greets the user with visual aids in the form of graphics, as well as clear headings, making it immediately clear what each section is about. A popup explains in detail what the challenge rules are, ensuring the user doesn't get frustrated trying to play the game. 
+        1. The second question in the game allows the user to see the game instructions, helping them to understand how the game is played. 
+        2. The game runs at a comfortable speed for the user to follow, thus as not to overwhelm the user with too much information at once, and giving them time to think about their answers.  
+        3. The user can get out of the game at any time by clicking on the 'Run Game' button at the top of the screen and start again from the beginning. 
 
-    3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
+    3. As a First Time Visitor, I want to try out the game, and immerse myself in the world of Harry Potter.
 
-        1. The user can scroll to the bottom of any page on the site to locate social media links in the footer.
+        1. The user is immediately pulled into the world of Harry Potter, both with the design of the site and the storyline which recalls the familiar characters and features of the books. 
+        2. As a Harry Potter fan, the user won't find it too difficult to play the game and get the answers correct. 
 
 -   #### Returning Visitor Goals
 
