@@ -1,5 +1,5 @@
 """
-Contains classes and functions for the gameplay in the game
+Contains functions for the gameplay in the game
 """
 import sys
 import time

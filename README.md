@@ -309,6 +309,26 @@ Each input is validated by a response from the terminal, allowing the user to co
 1. [time:](https://docs.python.org/3/library/time.html)
     - The time library was used to adjust the print speed on the `slowprint()` function.
 
+## __Data Model__
+
+### ***Classes***
+
+  - Classes are used on question types, allowing the personalisation of responses, including emoji choices. 
+
+  - Classes are also used on the wands and pets in the game, storing three and four options respectively that can be called. 
+
+### ***Functions***
+
+  - Functions are used on question types to avoid repetitive code and refactor as much as possible. 
+
+  - Functions are also used on repeating sequences, such as the player collecting a key, with `key_main()`
+
+  - Functions are also used to add collected items to the inventory, which is used predominantly on the `first_key_challenge()` to discern whether the player's chosen pet is capable of overcoming the selected obstacle and collect the key. This would be used further in future implementations, as described above.
+
+### ***Methods***
+
+  - Methods are used througout the game to print or return responses to user inputs and the user's advancement in the game. 
+
 ## __Testing__
 
 ### ***Python, HTML and CSS Testing***
