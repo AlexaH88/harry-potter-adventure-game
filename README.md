@@ -379,26 +379,24 @@ Each input is validated by a response from the terminal, allowing the user to co
     3. As a First Time Visitor, I want to try out the game, and immerse myself in the world of Harry Potter.
 
         1. The user is immediately pulled into the world of Harry Potter, both with the design of the site and the storyline which recalls the familiar characters and features of the books. 
-        2. As a Harry Potter fan, the user won't find it too difficult to play the game and get the answers correct. 
+        2. Trying out the game is intuitive and a welcoming experience for the user. 
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
+    1. As a Returning Visitor, I want to attempt to play the game better than the first, by losing as few times as possible.
 
-        1. The navigation bar clearly highlights the Sheet Music page.
-        2. Each piece of sheet music includes a playable audio file of the song, allowing the user to familiarise themselves with the song if they do not know it. 
-        3. The sheet music can be opened in a separate tab and used on a secondary computer screen to play along. It can also be downloaded, printed, and the zoom and page fit adjusted to enable a comfortable experience for the user. 
+        1. The user will now be more familiar with the game and will have already managed to get to a certain point at the previous visit. 
+        2. The user will be able to improve their streak by repeating the multiple choice options until they get it right. 
 
-    2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
+    2. As a Returning Visitor, I want to experience the game differently by choosing different inputs and seeing new outputs.
 
-        1. The navigation bar clearly highlights the Instructions page.
-        2. In the How to Play section, a hover effect turning the word 'here' purple and the cursor to a pointer make it clear to the user that this is a clickable element.   
-        3. The popup detailing the rules of the challenge is clean, easy to read and explains thorougly how to play.  
+        1. Having played the game previously, the user will enjoy trying out different inputs to get new witty retorts, and unexpected results. If the user is a Harry Potter fan, they will especially enjoy this feature.
+        2. Each answer has many different outputs depending on the inputs, which makes the game fun to play over and over again. 
 
-    3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
+    3. As a Returning Visitor, I want to test my knowledge on all things Harry Potter.
 
-        1. The footer contains links to the site creator's GitHub and Linkedin pages.
-        2. Whichever link they click, it will be opened up in a new tab to ensure the user can easily get back to the website.
+        1. The storyline and questions are loyal to the Harry Potter books, making it a very enjoyable experience for Harry Potter fans. 
+        2. There are many questions to get through, allowing the user to test their knowledge extensively. 
 
 -   #### Frequent User Goals
 
