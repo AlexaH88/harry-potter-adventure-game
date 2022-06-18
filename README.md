@@ -400,21 +400,19 @@ Each input is validated by a response from the terminal, allowing the user to co
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
+    1. As a Frequent User, I want to attempt to play the game in its entirety without losing once.
 
-        1. The user would already be comfortable with the website layout and could easily find the Play and Sheet Music pages in the navigation bar.
-        2. The user would already be familiar with how to use the sheet music and listen to the corresponding audio. 
-        3. The computer keyboard keys to be used are clearly indicated on the piano keys, thus facilitating their use. 
+        1. The user would already be comfortable with the gameplay and could easily follow the game.
+        2. The questions vary in difficulty and even die-hard Harry Potter fans may take several attempts to get them all right. The user would have played several times before and would have been able to note the correct answers down, to allow them to beat the game. 
 
-    2. As a Frequent User, I want to try and beat my personal best score on the challenge.
+    2. As a Frequent User, I want to change my experience by choosing a different name, pet, and hoping for a different wand.
 
-        1. The user would already be comfortable with the website layout and could easily find the Play Page in the navigation bar. 
-        2. Having noted their previous results, the user would easily be able to keep track of the clear and self-explanatory score board. 
+        1. The user would have already played the game several times and could now get playful with their inputs. 
+        2. The game isn't very long, meaning the user wouldn't need to go through the game too many times before other answers come up. 
 
-    3. As a Frequent User, I want to see if any new sheet music had been added.
+    3. As a Frequent User, I want to see if any new storylines have been added.
 
-        1. The user would already be comfortable with the website layout and could easily find the Sheet Music page in the navigation bar.
-        2. Here they would quickly see if any new sheet music had been added to the list.  
+        1. The user would already be comfortable with the game and would quickly notice if new content had been added.   
 
 ### ***Manual Testing***
 
