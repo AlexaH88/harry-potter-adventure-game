@@ -1,6 +1,6 @@
 <h1 align="center">Harry Potter Adventure Game</h1>
 
-The [Harry Potter Adventure Game](https://harry-potter-adventure-game.herokuapp.com/) has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.
+The [Harry Potter Adventure Game](https://harry-potter-adventure-game.onrender.com) has been developed for anyone interested in the world of Harry Potter, magic, and playing old-school text-based adventure games.
 
 <h2 align="center"><img src="assets/images/final-project.png"></h2>
 
